@@ -1,16 +1,8 @@
-## Dependencies
+# <img src="https://github.com/pixano/pixano-elements/blob/master/images/pixano_logo.png" alt="Pixano" height="100"/>
 
-- NodeJS
+Opensource, smart annotation tool for Computer Vision applications.
 
-## How to use
+Please visit our website:
 
-```
-# Install application dependencies
-npm i --no-package-lock
-# If Pixano element modules not published in NPM registry, link local path:
-npm i --no-save file:../pixano-elements/packages/core file:../pixano-elements/packages/graphics-2d file:../pixano-elements/packages/graphics-3d
-# Build application
-npm run build
-# Run application
-nodejs server/server.js /path/to/workspace/
-```
+- (Pixano)[http://pixano.cea.fr/]
+
