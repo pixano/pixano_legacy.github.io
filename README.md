@@ -4,5 +4,5 @@ Opensource, smart annotation tool for Computer Vision applications.
 
 Please visit our website:
 
-- (Pixano)[http://pixano.cea.fr/]
+- [Pixano](http://pixano.cea.fr/)
 
