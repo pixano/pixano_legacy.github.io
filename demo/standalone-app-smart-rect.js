@@ -17,6 +17,9 @@ import '@material/mwc-snackbar';
 import './attribute-picker';
 import { ImageSequenceLoader } from './data-loader';
 
+var FileSaver = require('file-saver');
+
+export const upload = html`<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path d="M17 12v5H3v-5H1v5a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5z"/><path d="M15 7l-5-6-5 6h4v8h2V7h4z"/></svg>`;
 export const increase = html`<svg enable-background="new 0 0 24 24" version="1.1" viewBox="0 0 24 24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="m16 7h-8c-0.6 0-1 0.4-1 1v8c0 0.6 0.4 1 1 1h8c0.6 0 1-0.4 1-1v-8c0-0.6-0.4-1-1-1zm0 9h-8v-8h8v8z"/><polygon points="5.2 6.7 6.8 5.2 3.9 2.3 6 0 0 0 0 6 2.3 3.9"/><polygon points="17.7 0 19.9 2.3 17 5.2 18.5 6.7 21.6 3.8 24 6 24 0"/><polygon points="18.8 17 17.2 18.5 20.1 21.6 18 24 24 24 24 17.7 21.7 19.9"/><polygon points="5.5 17 2.4 19.9 0 17.8 0 24 6.3 24 4.1 21.6 7 18.6"/></svg>`;
 export const decrease = html`<svg enable-background="new 0 0 24 24" version="1.1" viewBox="0 0 24 24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M17,8c0-0.6-0.4-1-1-1H8C7.4,7,7,7.4,7,8v8c0,0.6,0.4,1,1,1h8c0.6,0,1-0.4,1-1V8z M16,16H8V8h8V16z"/><polygon points="0.8 7 7 7 7 0.7 4.6 2.8 1.6 0 0 1.5 2.9 4.6"/><polygon points="21.2 4.6 24 1.6 22.5 0 19.4 2.9 17 0.8 17 7 23.3 7"/><polygon points="23.2 17 17 17 17 23.3 19.4 21.2 22.4 24 24 22.5 21.1 19.4"/><polygon points="2.8 19.4 0 22.4 1.5 24 4.6 21.1 7 23.3 7 17 0.7 17"/></svg>`;
 
@@ -75,36 +78,36 @@ class StandaloneSmartRectangleApp extends (LitElement)  {
 
     this.labels = [];
     this.mediaInfo = [
-      {timestamp: 6, url:['../images/sequence/00045.jpg']},
-      {timestamp: 7, url:['../images/sequence/00050.jpg']},
-      {timestamp: 8, url:['../images/sequence/00055.jpg']},
-      {timestamp: 9, url:['../images/sequence/00060.jpg']},
-      {timestamp: 10, url:['../images/sequence/00065.jpg']},
-      {timestamp: 11, url:['../images/sequence/00070.jpg']},
-      {timestamp: 12, url:['../images/sequence/00075.jpg']},
-      {timestamp: 13, url:['../images/sequence/00080.jpg']},
-      {timestamp: 14, url:['../images/sequence/00085.jpg']},
-      {timestamp: 15, url:['../images/sequence/00090.jpg']},
-      {timestamp: 16, url:['../images/sequence/00095.jpg']},
-      {timestamp: 17, url:['../images/sequence/00100.jpg']},
-      {timestamp: 18, url:['../images/sequence/00105.jpg']},
-      {timestamp: 19, url:['../images/sequence/00110.jpg']},
-      {timestamp: 20, url:['../images/sequence/00115.jpg']},
-      {timestamp: 21, url:['../images/sequence/00120.jpg']},
-      {timestamp: 22, url:['../images/sequence/00125.jpg']},
-      {timestamp: 23, url:['../images/sequence/00130.jpg']},
-      {timestamp: 24, url:['../images/sequence/00135.jpg']},
-      {timestamp: 25, url:['../images/sequence/00140.jpg']},
-      {timestamp: 26, url:['../images/sequence/00145.jpg']},
-      {timestamp: 27, url:['../images/sequence/00150.jpg']},
-      {timestamp: 28, url:['../images/sequence/00155.jpg']},
-      {timestamp: 29, url:['../images/sequence/00160.jpg']},
-      {timestamp: 30, url:['../images/sequence/00165.jpg']},
-      {timestamp: 31, url:['../images/sequence/00170.jpg']},
-      {timestamp: 32, url:['../images/sequence/00175.jpg']},
-      {timestamp: 33, url:['../images/sequence/00180.jpg']},
-      {timestamp: 34, url:['../images/sequence/00185.jpg']},
-      {timestamp: 35, url:['../images/sequence/00190.jpg']}
+      {timestamp: 0, url:['../images/sequence/00045.jpg']},
+      {timestamp: 1, url:['../images/sequence/00050.jpg']},
+      {timestamp: 2, url:['../images/sequence/00055.jpg']},
+      {timestamp: 3, url:['../images/sequence/00060.jpg']},
+      {timestamp: 4, url:['../images/sequence/00065.jpg']},
+      {timestamp: 5, url:['../images/sequence/00070.jpg']},
+      {timestamp: 6, url:['../images/sequence/00075.jpg']},
+      {timestamp: 7, url:['../images/sequence/00080.jpg']},
+      {timestamp: 8, url:['../images/sequence/00085.jpg']},
+      {timestamp: 9, url:['../images/sequence/00090.jpg']},
+      {timestamp: 10, url:['../images/sequence/00095.jpg']},
+      {timestamp: 11, url:['../images/sequence/00100.jpg']},
+      {timestamp: 12, url:['../images/sequence/00105.jpg']},
+      {timestamp: 13, url:['../images/sequence/00110.jpg']},
+      {timestamp: 14, url:['../images/sequence/00115.jpg']},
+      {timestamp: 15, url:['../images/sequence/00120.jpg']},
+      {timestamp: 16, url:['../images/sequence/00125.jpg']},
+      {timestamp: 17, url:['../images/sequence/00130.jpg']},
+      {timestamp: 18, url:['../images/sequence/00135.jpg']},
+      {timestamp: 19, url:['../images/sequence/00140.jpg']},
+      {timestamp: 20, url:['../images/sequence/00145.jpg']},
+      {timestamp: 21, url:['../images/sequence/00150.jpg']},
+      {timestamp: 22, url:['../images/sequence/00155.jpg']},
+      {timestamp: 23, url:['../images/sequence/00160.jpg']},
+      {timestamp: 24, url:['../images/sequence/00165.jpg']},
+      {timestamp: 25, url:['../images/sequence/00170.jpg']},
+      {timestamp: 26, url:['../images/sequence/00175.jpg']},
+      {timestamp: 27, url:['../images/sequence/00180.jpg']},
+      {timestamp: 28, url:['../images/sequence/00185.jpg']},
+      {timestamp: 29, url:['../images/sequence/00190.jpg']}
     ];
   }
 
@@ -114,20 +117,7 @@ class StandaloneSmartRectangleApp extends (LitElement)  {
       this.element.resize();
     }
     this.attributePicker.reloadSchema(this.label_schema);
-
-    // set first image and start loading video
-    this.element.image = this.mediaInfo ? this.mediaInfo[0].url[0] : '';
-    this.loader.init(this.mediaInfo || []).then((length) => {
-      this.maxFrameIdx = Math.max(length - 1, 0);
-      this.loader.abortLoading().then(() => {
-        this.loader.load(0).then(() => {
-          this._resetPlayback();
-        });
-      })
-    });
-
-    this.updateDisplayOfSelectedProperties();
-
+    
     window.addEventListener('keydown', (evt) => {
       switch(evt.key) {
         case 's': {
@@ -144,6 +134,25 @@ class StandaloneSmartRectangleApp extends (LitElement)  {
         }
       }
     })
+
+    // set first image and start loading video
+    this.newData(this.mediaInfo);    
+  }
+
+  newData(mediaInfo) {
+    // set first image and start loading video
+    this.element.image = mediaInfo[0].url[0];
+    this.loader.init(mediaInfo || []).then((length) => {
+      this.maxFrameIdx = Math.max(length - 1, 0);
+      this.loader.abortLoading().then(() => {
+        this.loader.load(0).then(() => {
+          this._resetPlayback();
+        });
+      })
+    });
+    this.labels = [];
+    this.element.shapes = [];
+    this.selectedIds = [];
   }
 
   updateDisplayOfSelectedProperties() {
@@ -157,21 +166,22 @@ class StandaloneSmartRectangleApp extends (LitElement)  {
     return this.attributePicker._colorFor(cat);
   }
 
-  _setPlaybackNext() {
-    this.shadowRoot.querySelector('playback-control').setNext();
-  }
-
-  _resetPlayback() {
-    this.shadowRoot.querySelector('playback-control').set(0);
-
-  }
-
   refresh() {
     if (!this.element) {
       return;
     }
     const frame_labels = this.labels.filter((l) => l.timestamp === this.targetFrameIdx);
     this.element.shapes = frame_labels;
+  }
+
+  onUpload(event) {
+    try {
+      const mediaInfo = Object.entries(event.target.files).map(([ts, f], idx) => {
+        const src = URL.createObjectURL(f);
+        return {timestamp: idx, url:[src]}
+      })
+      this.newData(mediaInfo);      
+    } catch(err) {}
   }
 
   onSliderChange(evt) {
@@ -193,7 +203,6 @@ class StandaloneSmartRectangleApp extends (LitElement)  {
    * Handle shape category changed
    */
   onAttributeChanged() {
-    console.log('attr updated');
     const value =  this.attributePicker.value;
     this.selectedIds.forEach((id) => {
       const label = this.labels.find((l) => l.id === id);
@@ -241,8 +250,27 @@ class StandaloneSmartRectangleApp extends (LitElement)  {
     }
   }
 
+  onRoiUp() {
+    if(this.mode == 'smart-create') {
+      this.element.roiUp();
+    }    
+  }
+
+  onRoiDown() {
+    if(this.mode == 'smart-create') {
+      this.element.roiDown();
+    }    
+  }
+  
+
   onReady() {
     this.shadowRoot.querySelector('mwc-linear-progress').style.display = 'none';
+  }
+
+  onSave() {
+    const json_string = JSON.stringify(this.labels, null, 1);
+    const blob = new Blob([json_string],{type: "text/plain;charset=utf-8"})
+    FileSaver.saveAs(blob, "my_json.json")
   }
 
   get element() {
@@ -253,6 +281,19 @@ class StandaloneSmartRectangleApp extends (LitElement)  {
     return this.shadowRoot.querySelector('attribute-picker');
   }
 
+  _setPlaybackNext() {
+    this.shadowRoot.querySelector('playback-control').setNext();
+  }
+
+  _resetPlayback() {
+    this.shadowRoot.querySelector('playback-control').set(0);
+
+  }
+
+  openDialog() {
+    this.shadowRoot.getElementById('up').click();
+  }
+
   static get styles() {
     return [
       css`
@@ -261,7 +302,6 @@ class StandaloneSmartRectangleApp extends (LitElement)  {
           height: 100%;
           overflow: hidden;
           --leftPanelWidth: 55px;
-          --headerHeight: 50px;
         }
         .main {
           height: 100%;
@@ -316,7 +356,7 @@ class StandaloneSmartRectangleApp extends (LitElement)  {
           color: white;
         }
         [name="canvas"] {
-          height: 100%;
+          height: calc(100% - 50px);
         }
         `]
   }
@@ -330,6 +370,12 @@ class StandaloneSmartRectangleApp extends (LitElement)  {
                 <img id="logo-im" src="../images/pixano-mono-grad.svg" alt="Pixano"  
                                   @click=${() => window.location.href = "http://pixano.cea.fr/"}>
               </div>
+
+
+              <mwc-icon-button @click="${() => this.openDialog()}" title="Upload images">
+                  ${upload}
+                  <input id="up" style="display:none;" accept="image/*.jpg|image/*.png" type="file" multiple @change=${this.onUpload}/>
+              </mwc-icon-button>
               <mwc-icon-button ?selected=${this.mode === 'update'}
                                 title="Edition (u)"
                                 icon="navigation"
@@ -344,12 +390,10 @@ class StandaloneSmartRectangleApp extends (LitElement)  {
                             @click="${() => this.mode = 'smart-create'}"
                             title="Smart creation (s)">
                             </mwc-icon-button>
-              <mwc-icon-button @click="${() => this.element.roiUp()}"
-                            title="Roi scale up (+)">${increase}
-                            </mwc-icon-button>
-              <mwc-icon-button @click="${() => this.element.roiDown()}"
-                            title="Roi scale down (-)">${decrease}
-                            </mwc-icon-button>
+              <mwc-icon-button @click="${this.onRoiUp}" title="Roi scale up (+)">${increase}</mwc-icon-button>
+              <mwc-icon-button @click="${this.onRoiDown}" title="Roi scale down (-)">${decrease}</mwc-icon-button>
+              <mwc-icon-button icon="save" @click="${this.onSave}" title="Save to json file">
+              </mwc-icon-button>
             </div>
             <div class="editor">
               <mwc-linear-progress indeterminate></mwc-linear-progress>
