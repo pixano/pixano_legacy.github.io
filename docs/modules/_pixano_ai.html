@@ -1,0 +1,1049 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>@pixano/ai | @pixano - v0.1.0</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../docs.html" class="title">@pixano - v0.1.0</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../docs.html">Globals</a>
+				</li>
+				<li>
+					<a href="_pixano_ai.html">@pixano/ai</a>
+				</li>
+			</ul>
+			<h1>Module @pixano/ai</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<a href="#pixanoai" id="pixanoai" style="color: inherit; text-decoration: none;">
+						<h1>@pixano/ai</h1>
+					</a>
+					<p>Pixano toolbox of AI algorithms for smart annotation in the browser.</p>
+					<a href="#import" id="import" style="color: inherit; text-decoration: none;">
+						<h2>Import</h2>
+					</a>
+					<pre><code class="language-javascript"><span class="hljs-keyword">import</span> { PixelToBoundingBox } <span class="hljs-keyword">from</span> <span class="hljs-string">"@pixano/ai/lib/pixel-to-bounding-box"</span>;</code></pre>
+					<a href="#example-bounding-box-detection-guided-by-a-user-click" id="example-bounding-box-detection-guided-by-a-user-click" style="color: inherit; text-decoration: none;">
+						<h2>Example: Bounding box detection guided by a user click</h2>
+					</a>
+					<p>Example usage:</p>
+					<pre><code class="language-javascript"><span class="hljs-keyword">const</span> image = <span class="hljs-keyword">new</span> Image();
+image.onload = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    <span class="hljs-keyword">const</span> detection = <span class="hljs-keyword">await</span> <span class="hljs-keyword">this</span>.boundingBoxCreator.predict(
+    {<span class="hljs-attr">x</span>: <span class="hljs-number">200</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">500</span>},
+    image
+);
+}
+image.src = <span class="hljs-string">'/path/to/your/image.jpg'</span>;</code></pre>
+				</div>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Classes</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_ai.pixeltoboundingbox.html" class="tsd-kind-icon">Pixel<wbr>ToBounding<wbr>Box</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Interfaces</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_pixano_ai.detection.html" class="tsd-kind-icon">Detection</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_pixano_ai.point.html" class="tsd-kind-icon">Point</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_pixano_ai.rectangle.html" class="tsd-kind-icon">Rectangle</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Object literals</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-object-literal tsd-parent-kind-module"><a href="_pixano_ai.html#coco_classes" class="tsd-kind-icon">COCO_<wbr>CLASSES</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Object literals</h2>
+				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-module">
+					<a name="coco_classes" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> COCO_<wbr>CLASSES</h3>
+					<div class="tsd-signature tsd-kind-icon">COCO_<wbr>CLASSES<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in packages/ai/src/class-index-map.ts:7</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>copyright</dt>
+							<dd><p>CEA-LIST/DIASI/SIALV/LVA (2019)</p>
+							</dd>
+							<dt>author</dt>
+							<dd><p>CEA-LIST/DIASI/SIALV/LVA <a href="mailto:&#x70;&#105;&#x78;&#97;&#x6e;&#x6f;&#x40;&#x63;&#101;&#97;&#x2e;&#102;&#114;">&#x70;&#105;&#x78;&#97;&#x6e;&#x6f;&#x40;&#x63;&#101;&#97;&#x2e;&#102;&#114;</a></p>
+							</dd>
+							<dt>license</dt>
+							<dd><p>CECILL-C</p>
+							</dd>
+						</dl>
+					</div>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.airplane" class="tsd-anchor"></a>
+						<h3>airplane</h3>
+						<div class="tsd-signature tsd-kind-icon">airplane<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 5</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:12</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.apple" class="tsd-anchor"></a>
+						<h3>apple</h3>
+						<div class="tsd-signature tsd-kind-icon">apple<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 53</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:55</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.backpack" class="tsd-anchor"></a>
+						<h3>backpack</h3>
+						<div class="tsd-signature tsd-kind-icon">backpack<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 27</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:32</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.banana" class="tsd-anchor"></a>
+						<h3>banana</h3>
+						<div class="tsd-signature tsd-kind-icon">banana<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 52</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:54</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.baseball_bat" class="tsd-anchor"></a>
+						<h3>baseball bat</h3>
+						<div class="tsd-signature tsd-kind-icon">baseball bat<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 39</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:42</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.baseball_glove" class="tsd-anchor"></a>
+						<h3>baseball glove</h3>
+						<div class="tsd-signature tsd-kind-icon">baseball glove<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 40</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:43</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.bear" class="tsd-anchor"></a>
+						<h3>bear</h3>
+						<div class="tsd-signature tsd-kind-icon">bear<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 23</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:29</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.bed" class="tsd-anchor"></a>
+						<h3>bed</h3>
+						<div class="tsd-signature tsd-kind-icon">bed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 65</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:67</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.bench" class="tsd-anchor"></a>
+						<h3>bench</h3>
+						<div class="tsd-signature tsd-kind-icon">bench<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 15</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:21</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.bicycle" class="tsd-anchor"></a>
+						<h3>bicycle</h3>
+						<div class="tsd-signature tsd-kind-icon">bicycle<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 2</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:9</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.bird" class="tsd-anchor"></a>
+						<h3>bird</h3>
+						<div class="tsd-signature tsd-kind-icon">bird<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 16</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:22</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.boat" class="tsd-anchor"></a>
+						<h3>boat</h3>
+						<div class="tsd-signature tsd-kind-icon">boat<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 9</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:16</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.book" class="tsd-anchor"></a>
+						<h3>book</h3>
+						<div class="tsd-signature tsd-kind-icon">book<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 84</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:81</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.bottle" class="tsd-anchor"></a>
+						<h3>bottle</h3>
+						<div class="tsd-signature tsd-kind-icon">bottle<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 44</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:47</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.bowl" class="tsd-anchor"></a>
+						<h3>bowl</h3>
+						<div class="tsd-signature tsd-kind-icon">bowl<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 51</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:53</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.broccoli" class="tsd-anchor"></a>
+						<h3>broccoli</h3>
+						<div class="tsd-signature tsd-kind-icon">broccoli<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 56</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:58</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.bus" class="tsd-anchor"></a>
+						<h3>bus</h3>
+						<div class="tsd-signature tsd-kind-icon">bus<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 6</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:13</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.cake" class="tsd-anchor"></a>
+						<h3>cake</h3>
+						<div class="tsd-signature tsd-kind-icon">cake<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 61</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:63</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.car" class="tsd-anchor"></a>
+						<h3>car</h3>
+						<div class="tsd-signature tsd-kind-icon">car<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 3</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:10</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.carrot" class="tsd-anchor"></a>
+						<h3>carrot</h3>
+						<div class="tsd-signature tsd-kind-icon">carrot<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 57</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:59</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.cat" class="tsd-anchor"></a>
+						<h3>cat</h3>
+						<div class="tsd-signature tsd-kind-icon">cat<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 17</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:23</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.cell_phone" class="tsd-anchor"></a>
+						<h3>cell phone</h3>
+						<div class="tsd-signature tsd-kind-icon">cell phone<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 77</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:75</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.chair" class="tsd-anchor"></a>
+						<h3>chair</h3>
+						<div class="tsd-signature tsd-kind-icon">chair<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 62</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:64</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.clock" class="tsd-anchor"></a>
+						<h3>clock</h3>
+						<div class="tsd-signature tsd-kind-icon">clock<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 85</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:82</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.couch" class="tsd-anchor"></a>
+						<h3>couch</h3>
+						<div class="tsd-signature tsd-kind-icon">couch<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 63</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:65</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.cow" class="tsd-anchor"></a>
+						<h3>cow</h3>
+						<div class="tsd-signature tsd-kind-icon">cow<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 21</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:27</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.cup" class="tsd-anchor"></a>
+						<h3>cup</h3>
+						<div class="tsd-signature tsd-kind-icon">cup<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 47</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:49</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.dining_table" class="tsd-anchor"></a>
+						<h3>dining table</h3>
+						<div class="tsd-signature tsd-kind-icon">dining table<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 67</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:68</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.dog" class="tsd-anchor"></a>
+						<h3>dog</h3>
+						<div class="tsd-signature tsd-kind-icon">dog<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 18</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:24</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.donut" class="tsd-anchor"></a>
+						<h3>donut</h3>
+						<div class="tsd-signature tsd-kind-icon">donut<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 60</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:62</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.elephant" class="tsd-anchor"></a>
+						<h3>elephant</h3>
+						<div class="tsd-signature tsd-kind-icon">elephant<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 22</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:28</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.fire_hydrant" class="tsd-anchor"></a>
+						<h3>fire hydrant</h3>
+						<div class="tsd-signature tsd-kind-icon">fire hydrant<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 11</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:18</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.fork" class="tsd-anchor"></a>
+						<h3>fork</h3>
+						<div class="tsd-signature tsd-kind-icon">fork<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 48</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:50</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.frisbee" class="tsd-anchor"></a>
+						<h3>frisbee</h3>
+						<div class="tsd-signature tsd-kind-icon">frisbee<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 34</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:37</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.giraffe" class="tsd-anchor"></a>
+						<h3>giraffe</h3>
+						<div class="tsd-signature tsd-kind-icon">giraffe<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 25</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:31</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.hair_drier" class="tsd-anchor"></a>
+						<h3>hair drier</h3>
+						<div class="tsd-signature tsd-kind-icon">hair drier<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 89</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:86</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.handbag" class="tsd-anchor"></a>
+						<h3>handbag</h3>
+						<div class="tsd-signature tsd-kind-icon">handbag<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 31</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:34</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.horse" class="tsd-anchor"></a>
+						<h3>horse</h3>
+						<div class="tsd-signature tsd-kind-icon">horse<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 19</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:25</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.hot_dog" class="tsd-anchor"></a>
+						<h3>hot dog</h3>
+						<div class="tsd-signature tsd-kind-icon">hot dog<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 58</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:60</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.keyboard" class="tsd-anchor"></a>
+						<h3>keyboard</h3>
+						<div class="tsd-signature tsd-kind-icon">keyboard<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 76</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:74</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.kite" class="tsd-anchor"></a>
+						<h3>kite</h3>
+						<div class="tsd-signature tsd-kind-icon">kite<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 38</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:41</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.knife" class="tsd-anchor"></a>
+						<h3>knife</h3>
+						<div class="tsd-signature tsd-kind-icon">knife<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 49</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:51</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.laptop" class="tsd-anchor"></a>
+						<h3>laptop</h3>
+						<div class="tsd-signature tsd-kind-icon">laptop<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 73</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:71</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.microwave" class="tsd-anchor"></a>
+						<h3>microwave</h3>
+						<div class="tsd-signature tsd-kind-icon">microwave<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 78</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:76</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.motorcycle" class="tsd-anchor"></a>
+						<h3>motorcycle</h3>
+						<div class="tsd-signature tsd-kind-icon">motorcycle<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 4</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:11</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.mouse" class="tsd-anchor"></a>
+						<h3>mouse</h3>
+						<div class="tsd-signature tsd-kind-icon">mouse<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 74</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:72</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.orange" class="tsd-anchor"></a>
+						<h3>orange</h3>
+						<div class="tsd-signature tsd-kind-icon">orange<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 55</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:57</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.oven" class="tsd-anchor"></a>
+						<h3>oven</h3>
+						<div class="tsd-signature tsd-kind-icon">oven<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 79</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:77</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.parking_meter" class="tsd-anchor"></a>
+						<h3>parking meter</h3>
+						<div class="tsd-signature tsd-kind-icon">parking meter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 14</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:20</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.person" class="tsd-anchor"></a>
+						<h3>person</h3>
+						<div class="tsd-signature tsd-kind-icon">person<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:8</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.pizza" class="tsd-anchor"></a>
+						<h3>pizza</h3>
+						<div class="tsd-signature tsd-kind-icon">pizza<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 59</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:61</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.potted_plant" class="tsd-anchor"></a>
+						<h3>potted plant</h3>
+						<div class="tsd-signature tsd-kind-icon">potted plant<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 64</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:66</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.refrigerator" class="tsd-anchor"></a>
+						<h3>refrigerator</h3>
+						<div class="tsd-signature tsd-kind-icon">refrigerator<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 82</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:80</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.remote" class="tsd-anchor"></a>
+						<h3>remote</h3>
+						<div class="tsd-signature tsd-kind-icon">remote<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 75</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:73</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.sandwich" class="tsd-anchor"></a>
+						<h3>sandwich</h3>
+						<div class="tsd-signature tsd-kind-icon">sandwich<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 54</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:56</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.scissors" class="tsd-anchor"></a>
+						<h3>scissors</h3>
+						<div class="tsd-signature tsd-kind-icon">scissors<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 87</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:84</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.sheep" class="tsd-anchor"></a>
+						<h3>sheep</h3>
+						<div class="tsd-signature tsd-kind-icon">sheep<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 20</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:26</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.sink" class="tsd-anchor"></a>
+						<h3>sink</h3>
+						<div class="tsd-signature tsd-kind-icon">sink<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 81</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:79</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.skateboard" class="tsd-anchor"></a>
+						<h3>skateboard</h3>
+						<div class="tsd-signature tsd-kind-icon">skateboard<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 41</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:44</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.skis" class="tsd-anchor"></a>
+						<h3>skis</h3>
+						<div class="tsd-signature tsd-kind-icon">skis<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 35</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:38</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.snowboard" class="tsd-anchor"></a>
+						<h3>snowboard</h3>
+						<div class="tsd-signature tsd-kind-icon">snowboard<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 36</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:39</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.spoon" class="tsd-anchor"></a>
+						<h3>spoon</h3>
+						<div class="tsd-signature tsd-kind-icon">spoon<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 50</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:52</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.sports_ball" class="tsd-anchor"></a>
+						<h3>sports ball</h3>
+						<div class="tsd-signature tsd-kind-icon">sports ball<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 37</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:40</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.stop_sign" class="tsd-anchor"></a>
+						<h3>stop sign</h3>
+						<div class="tsd-signature tsd-kind-icon">stop sign<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 13</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:19</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.suitcase" class="tsd-anchor"></a>
+						<h3>suitcase</h3>
+						<div class="tsd-signature tsd-kind-icon">suitcase<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 33</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:36</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.surfboard" class="tsd-anchor"></a>
+						<h3>surfboard</h3>
+						<div class="tsd-signature tsd-kind-icon">surfboard<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 42</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:45</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.teddy_bear" class="tsd-anchor"></a>
+						<h3>teddy bear</h3>
+						<div class="tsd-signature tsd-kind-icon">teddy bear<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 88</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:85</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.tennis_racket" class="tsd-anchor"></a>
+						<h3>tennis racket</h3>
+						<div class="tsd-signature tsd-kind-icon">tennis racket<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 43</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:46</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.tie" class="tsd-anchor"></a>
+						<h3>tie</h3>
+						<div class="tsd-signature tsd-kind-icon">tie<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 32</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:35</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.toaster" class="tsd-anchor"></a>
+						<h3>toaster</h3>
+						<div class="tsd-signature tsd-kind-icon">toaster<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 80</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:78</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.toilet" class="tsd-anchor"></a>
+						<h3>toilet</h3>
+						<div class="tsd-signature tsd-kind-icon">toilet<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 70</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:69</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.toothbrush" class="tsd-anchor"></a>
+						<h3>toothbrush</h3>
+						<div class="tsd-signature tsd-kind-icon">toothbrush<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 90</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:87</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.traffic_light" class="tsd-anchor"></a>
+						<h3>traffic light</h3>
+						<div class="tsd-signature tsd-kind-icon">traffic light<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 10</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:17</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.train" class="tsd-anchor"></a>
+						<h3>train</h3>
+						<div class="tsd-signature tsd-kind-icon">train<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 7</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:14</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.truck" class="tsd-anchor"></a>
+						<h3>truck</h3>
+						<div class="tsd-signature tsd-kind-icon">truck<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 8</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:15</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.tv" class="tsd-anchor"></a>
+						<h3>tv</h3>
+						<div class="tsd-signature tsd-kind-icon">tv<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 72</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:70</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.umbrella" class="tsd-anchor"></a>
+						<h3>umbrella</h3>
+						<div class="tsd-signature tsd-kind-icon">umbrella<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 28</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:33</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.vase" class="tsd-anchor"></a>
+						<h3>vase</h3>
+						<div class="tsd-signature tsd-kind-icon">vase<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 86</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:83</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.wine_glass" class="tsd-anchor"></a>
+						<h3>wine glass</h3>
+						<div class="tsd-signature tsd-kind-icon">wine glass<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 46</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:48</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="coco_classes.zebra" class="tsd-anchor"></a>
+						<h3>zebra</h3>
+						<div class="tsd-signature tsd-kind-icon">zebra<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 24</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in packages/ai/src/class-index-map.ts:30</li>
+							</ul>
+						</aside>
+					</section>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../docs.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="_pixano_ai.html">@pixano/ai</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_pixano_core.html">@pixano/core</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_pixano_graphics_2d.html">@pixano/graphics-<wbr>2d</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_pixano_graphics_3d.html">@pixano/graphics-<wbr>3d</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/_pixano_ai.pixeltoboundingbox.html" class="tsd-kind-icon">Pixel<wbr>ToBounding<wbr>Box</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/_pixano_ai.detection.html" class="tsd-kind-icon">Detection</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/_pixano_ai.point.html" class="tsd-kind-icon">Point</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/_pixano_ai.rectangle.html" class="tsd-kind-icon">Rectangle</a>
+					</li>
+					<li class=" tsd-kind-object-literal tsd-parent-kind-module">
+						<a href="_pixano_ai.html#coco_classes" class="tsd-kind-icon">COCO_<wbr>CLASSES</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
