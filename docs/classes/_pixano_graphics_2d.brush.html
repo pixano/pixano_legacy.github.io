@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Brush | @pixano - v0.1.0</title>
-	<meta name="description" content="">
+	<title>Brush | @pixano - v0.5.7</title>
+	<meta name="description" content="Documentation for @pixano - v0.5.7">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -13,7 +13,7 @@
 	<div class="tsd-page-toolbar">
 		<div class="container">
 			<div class="table-wrap">
-				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
 					<div class="field">
 						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
 						<input id="tsd-search-field" type="text" />
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../docs.html" class="title">@pixano - v0.1.0</a>
+					<a href="../docs.html" class="title">@pixano - v0.5.7</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -49,7 +49,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../docs.html">Globals</a>
+					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
 					<a href="../modules/_pixano_graphics_2d.html">@pixano/graphics-2d</a>
@@ -65,6 +65,13 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Brush utils graphics used when drawing on a canvas.</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -93,9 +100,14 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_pixano_graphics_2d.brush.html#_accessibleactive" class="tsd-kind-icon">_accessible<wbr>Active</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_pixano_graphics_2d.brush.html#_accessiblediv" class="tsd-kind-icon">_accessible<wbr>Div</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected"><a href="_pixano_graphics_2d.brush.html#_bounds" class="tsd-kind-icon">_bounds</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_pixano_graphics_2d.brush.html#_bounds" class="tsd-kind-icon">_bounds</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected"><a href="_pixano_graphics_2d.brush.html#_boundsid" class="tsd-kind-icon">_boundsID</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected"><a href="_pixano_graphics_2d.brush.html#_boundsrect" class="tsd-kind-icon">_bounds<wbr>Rect</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected"><a href="_pixano_graphics_2d.brush.html#_destroyed" class="tsd-kind-icon">_destroyed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected"><a href="_pixano_graphics_2d.brush.html#_enabledfilters" class="tsd-kind-icon">_enabled<wbr>Filters</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected"><a href="_pixano_graphics_2d.brush.html#_lastsortedindex" class="tsd-kind-icon">_last<wbr>Sorted<wbr>Index</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_pixano_graphics_2d.brush.html#_localbounds" class="tsd-kind-icon">_local<wbr>Bounds</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected"><a href="_pixano_graphics_2d.brush.html#_localboundsrect" class="tsd-kind-icon">_local<wbr>Bounds<wbr>Rect</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected"><a href="_pixano_graphics_2d.brush.html#_mask" class="tsd-kind-icon">_mask</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected"><a href="_pixano_graphics_2d.brush.html#_tempdisplayobjectparent" class="tsd-kind-icon">_temp<wbr>Display<wbr>Object<wbr>Parent</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected"><a href="_pixano_graphics_2d.brush.html#_zindex" class="tsd-kind-icon">_z<wbr>Index</a></li>
@@ -153,9 +165,12 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_pixano_graphics_2d.brush.html#_render" class="tsd-kind-icon">_render</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_pixano_graphics_2d.brush.html#addchild" class="tsd-kind-icon">add<wbr>Child</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_pixano_graphics_2d.brush.html#addchildat" class="tsd-kind-icon">add<wbr>Child<wbr>At</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_pixano_graphics_2d.brush.html#calculatebounds" class="tsd-kind-icon">calculate<wbr>Bounds</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_pixano_graphics_2d.brush.html#calculatebounds" class="tsd-kind-icon">calculate<wbr>Bounds</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_pixano_graphics_2d.brush.html#containerupdatetransform" class="tsd-kind-icon">container<wbr>Update<wbr>Transform</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_pixano_graphics_2d.brush.html#destroy" class="tsd-kind-icon">destroy</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_pixano_graphics_2d.brush.html#disabletempparent" class="tsd-kind-icon">disable<wbr>Temp<wbr>Parent</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_pixano_graphics_2d.brush.html#displayobjectupdatetransform" class="tsd-kind-icon">display<wbr>Object<wbr>Update<wbr>Transform</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_pixano_graphics_2d.brush.html#enabletempparent" class="tsd-kind-icon">enable<wbr>Temp<wbr>Parent</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_pixano_graphics_2d.brush.html#getbounds" class="tsd-kind-icon">get<wbr>Bounds</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_pixano_graphics_2d.brush.html#getchildat" class="tsd-kind-icon">get<wbr>Child<wbr>At</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_pixano_graphics_2d.brush.html#getchildbyname" class="tsd-kind-icon">get<wbr>Child<wbr>ByName</a></li>
@@ -171,7 +186,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_pixano_graphics_2d.brush.html#removechild" class="tsd-kind-icon">remove<wbr>Child</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_pixano_graphics_2d.brush.html#removechildat" class="tsd-kind-icon">remove<wbr>Child<wbr>At</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_pixano_graphics_2d.brush.html#removechildren" class="tsd-kind-icon">remove<wbr>Children</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_pixano_graphics_2d.brush.html#render" class="tsd-kind-icon">render</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_pixano_graphics_2d.brush.html#render" class="tsd-kind-icon">render</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_pixano_graphics_2d.brush.html#renderadvanced" class="tsd-kind-icon">render<wbr>Advanced</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_pixano_graphics_2d.brush.html#resetmoveextrema" class="tsd-kind-icon">reset<wbr>Move<wbr>Extrema</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_pixano_graphics_2d.brush.html#setchildindex" class="tsd-kind-icon">set<wbr>Child<wbr>Index</a></li>
@@ -202,7 +217,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides Container.__constructor</p>
 								<ul>
-									<li>Defined in packages/graphics-2d/src/shapes-2d.ts:699</li>
+									<li>Defined in packages/graphics-2d/src/graphic-brush.ts:22</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_pixano_graphics_2d.brush.html" class="tsd-signature-type">Brush</a></h4>
@@ -217,10 +232,10 @@
 					<h3>_accessible<wbr>Active</h3>
 					<div class="tsd-signature tsd-kind-icon">_accessible<wbr>Active<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#_accessibleactive">_accessibleActive</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#_accessibleactive">_accessibleActive</a></p>
 						<p>Overrides DisplayObject._accessibleActive</p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8477</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8558</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -242,10 +257,10 @@
 					<h3>_accessible<wbr>Div</h3>
 					<div class="tsd-signature tsd-kind-icon">_accessible<wbr>Div<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#_accessiblediv">_accessibleDiv</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#_accessiblediv">_accessibleDiv</a></p>
 						<p>Overrides DisplayObject._accessibleDiv</p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8483</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8564</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -262,15 +277,15 @@
 						</dl>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 					<a name="_bounds" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _bounds</h3>
+					<h3>_bounds</h3>
 					<div class="tsd-signature tsd-kind-icon">_bounds<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Bounds</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#_bounds">_bounds</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#_bounds">_bounds</a></p>
 						<p>Overrides DisplayObject._bounds</p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8595</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8680</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -285,14 +300,58 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected">
+					<a name="_boundsid" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _boundsID</h3>
+					<div class="tsd-signature tsd-kind-icon">_boundsID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#_boundsid">_boundsID</a></p>
+						<p>Overrides DisplayObject._boundsID</p>
+						<ul>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8693</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Flags the cached bounds as dirty.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>member</dt>
+							<dd><p>{number} PIXI.DisplayObject#_boundsID</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected">
+					<a name="_boundsrect" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _bounds<wbr>Rect</h3>
+					<div class="tsd-signature tsd-kind-icon">_bounds<wbr>Rect<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Bounds</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#_boundsrect">_boundsRect</a></p>
+						<p>Overrides DisplayObject._boundsRect</p>
+						<ul>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8700</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Cache of this display-object&#39;s bounds-rectangle.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>member</dt>
+							<dd><p>{PIXI.Bounds} PIXI.DisplayObject#_boundsRect</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected">
 					<a name="_destroyed" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _destroyed</h3>
 					<div class="tsd-signature tsd-kind-icon">_destroyed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#_destroyed">_destroyed</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#_destroyed">_destroyed</a></p>
 						<p>Overrides DisplayObject._destroyed</p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8609</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8721</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -307,14 +366,36 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected">
+					<a name="_enabledfilters" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _enabled<wbr>Filters</h3>
+					<div class="tsd-signature tsd-kind-icon">_enabled<wbr>Filters<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Filter</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#_enabledfilters">_enabledFilters</a></p>
+						<p>Overrides DisplayObject._enabledFilters</p>
+						<ul>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8674</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Currently enabled filters</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>member</dt>
+							<dd><p>{PIXI.Filter[]} PIXI.DisplayObject#_enabledFilters</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected">
 					<a name="_lastsortedindex" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _last<wbr>Sorted<wbr>Index</h3>
 					<div class="tsd-signature tsd-kind-icon">_last<wbr>Sorted<wbr>Index<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#_lastsortedindex">_lastSortedIndex</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#_lastsortedindex">_lastSortedIndex</a></p>
 						<p>Overrides DisplayObject._lastSortedIndex</p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8563</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8643</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -329,15 +410,59 @@
 						</dl>
 					</div>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="_localbounds" class="tsd-anchor"></a>
+					<h3>_local<wbr>Bounds</h3>
+					<div class="tsd-signature tsd-kind-icon">_local<wbr>Bounds<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Bounds</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#_localbounds">_localBounds</a></p>
+						<p>Overrides DisplayObject._localBounds</p>
+						<ul>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8686</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Local bounds object, swapped with <code>_bounds</code> when using <code>getLocalBounds()</code>.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>member</dt>
+							<dd><p>{PIXI.Bounds} PIXI.DisplayObject#_localBounds</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected">
+					<a name="_localboundsrect" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _local<wbr>Bounds<wbr>Rect</h3>
+					<div class="tsd-signature tsd-kind-icon">_local<wbr>Bounds<wbr>Rect<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Bounds</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#_localboundsrect">_localBoundsRect</a></p>
+						<p>Overrides DisplayObject._localBoundsRect</p>
+						<ul>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8707</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Cache of this display-object&#39;s local-bounds rectangle.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>member</dt>
+							<dd><p>{PIXI.Bounds} PIXI.DisplayObject#_localBoundsRect</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected">
 					<a name="_mask" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _mask</h3>
-					<div class="tsd-signature tsd-kind-icon">_mask<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Graphics</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Sprite</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
+					<div class="tsd-signature tsd-kind-icon">_mask<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Container</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">MaskData</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#_mask">_mask</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#_mask">_mask</a></p>
 						<p>Overrides DisplayObject._mask</p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8602</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8714</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -346,7 +471,7 @@
 						</div>
 						<dl class="tsd-comment-tags">
 							<dt>member</dt>
-							<dd><p>{PIXI.Graphics|PIXI.Sprite|null} PIXI.DisplayObject#_mask</p>
+							<dd><p>{PIXI.Container|PIXI.MaskData|null} PIXI.DisplayObject#_mask</p>
 							</dd>
 						</dl>
 					</div>
@@ -354,18 +479,18 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected">
 					<a name="_tempdisplayobjectparent" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _temp<wbr>Display<wbr>Object<wbr>Parent</h3>
-					<div class="tsd-signature tsd-kind-icon">_temp<wbr>Display<wbr>Object<wbr>Parent<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">DisplayObject</span></div>
+					<div class="tsd-signature tsd-kind-icon">_temp<wbr>Display<wbr>Object<wbr>Parent<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Container</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#_tempdisplayobjectparent">_tempDisplayObjectParent</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#_tempdisplayobjectparent">_tempDisplayObjectParent</a></p>
 						<p>Overrides DisplayObject._tempDisplayObjectParent</p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8624</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8794</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<dl class="tsd-comment-tags">
 							<dt>member</dt>
-							<dd><p>{PIXI.DisplayObject}</p>
+							<dd><p>{PIXI.Container}</p>
 							</dd>
 						</dl>
 					</div>
@@ -375,10 +500,10 @@
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _z<wbr>Index</h3>
 					<div class="tsd-signature tsd-kind-icon">_z<wbr>Index<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#_zindex">_zIndex</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#_zindex">_zIndex</a></p>
 						<p>Overrides DisplayObject._zIndex</p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8571</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8651</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -398,10 +523,10 @@
 					<h3>accessible</h3>
 					<div class="tsd-signature tsd-kind-icon">accessible<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#accessible">accessible</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#accessible">accessible</a></p>
 						<p>Overrides DisplayObject.accessible</p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8456</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8537</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -424,10 +549,10 @@
 					<h3>accessible<wbr>Children</h3>
 					<div class="tsd-signature tsd-kind-icon">accessible<wbr>Children<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#accessiblechildren">accessibleChildren</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#accessiblechildren">accessibleChildren</a></p>
 						<p>Overrides DisplayObject.accessibleChildren</p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8510</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8591</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -453,10 +578,10 @@
 					<h3>accessible<wbr>Hint</h3>
 					<div class="tsd-signature tsd-kind-icon">accessible<wbr>Hint<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#accessiblehint">accessibleHint</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#accessiblehint">accessibleHint</a></p>
 						<p>Overrides DisplayObject.accessibleHint</p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8471</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8552</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -478,10 +603,10 @@
 					<h3>accessible<wbr>Pointer<wbr>Events</h3>
 					<div class="tsd-signature tsd-kind-icon">accessible<wbr>Pointer<wbr>Events<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#accessiblepointerevents">accessiblePointerEvents</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#accessiblepointerevents">accessiblePointerEvents</a></p>
 						<p>Overrides DisplayObject.accessiblePointerEvents</p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8501</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8582</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -507,10 +632,10 @@
 					<h3>accessible<wbr>Title</h3>
 					<div class="tsd-signature tsd-kind-icon">accessible<wbr>Title<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#accessibletitle">accessibleTitle</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#accessibletitle">accessibleTitle</a></p>
 						<p>Overrides DisplayObject.accessibleTitle</p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8464</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8545</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -533,10 +658,10 @@
 					<h3>accessible<wbr>Type</h3>
 					<div class="tsd-signature tsd-kind-icon">accessible<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#accessibletype">accessibleType</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#accessibletype">accessibleType</a></p>
 						<p>Overrides DisplayObject.accessibleType</p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8492</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8573</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -562,10 +687,10 @@
 					<h3>alpha</h3>
 					<div class="tsd-signature tsd-kind-icon">alpha<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#alpha">alpha</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#alpha">alpha</a></p>
 						<p>Overrides DisplayObject.alpha</p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8523</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8604</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -584,10 +709,10 @@
 					<h3>angle</h3>
 					<div class="tsd-signature tsd-kind-icon">angle<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#angle">angle</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#angle">angle</a></p>
 						<p>Overrides DisplayObject.angle</p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8759</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8881</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -608,7 +733,7 @@
 					<div class="tsd-signature tsd-kind-icon">brush<wbr>Cursor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">PIXIGraphics</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in packages/graphics-2d/src/shapes-2d.ts:695</li>
+							<li>Defined in packages/graphics-2d/src/graphic-brush.ts:16</li>
 						</ul>
 					</aside>
 				</section>
@@ -618,7 +743,7 @@
 					<div class="tsd-signature tsd-kind-icon">brush<wbr>Size<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 3</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in packages/graphics-2d/src/shapes-2d.ts:697</li>
+							<li>Defined in packages/graphics-2d/src/graphic-brush.ts:18</li>
 						</ul>
 					</aside>
 				</section>
@@ -627,10 +752,10 @@
 					<h3>button<wbr>Mode</h3>
 					<div class="tsd-signature tsd-kind-icon">button<wbr>Mode<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#buttonmode">buttonMode</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#buttonmode">buttonMode</a></p>
 						<p>Overrides DisplayObject.buttonMode</p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8841</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8963</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -658,10 +783,10 @@
 					<h3>cache<wbr>AsBitmap</h3>
 					<div class="tsd-signature tsd-kind-icon">cache<wbr>AsBitmap<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#cacheasbitmap">cacheAsBitmap</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#cacheasbitmap">cacheAsBitmap</a></p>
 						<p>Overrides DisplayObject.cacheAsBitmap</p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8868</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8990</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -685,12 +810,12 @@
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="children" class="tsd-anchor"></a>
-					<h3>children</h3>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> children</h3>
 					<div class="tsd-signature tsd-kind-icon">children<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">DisplayObject</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#children">children</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#children">children</a></p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8265</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8326</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -711,10 +836,10 @@
 					<h3>cursor</h3>
 					<div class="tsd-signature tsd-kind-icon">cursor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#cursor">cursor</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#cursor">cursor</a></p>
 						<p>Overrides DisplayObject.cursor</p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8855</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8977</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -745,10 +870,10 @@
 					<h3>filter<wbr>Area</h3>
 					<div class="tsd-signature tsd-kind-icon">filter<wbr>Area<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Rectangle</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#filterarea">filterArea</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#filterarea">filterArea</a></p>
 						<p>Overrides DisplayObject.filterArea</p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8580</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8660</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -769,10 +894,10 @@
 					<h3>filters</h3>
 					<div class="tsd-signature tsd-kind-icon">filters<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Filter</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#filters">filters</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#filters">filters</a></p>
 						<p>Overrides DisplayObject.filters</p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8588</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8668</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -795,9 +920,9 @@
 					<h3>height</h3>
 					<div class="tsd-signature tsd-kind-icon">height<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#height">height</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#height">height</a></p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8431</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8501</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -816,10 +941,10 @@
 					<h3>hit<wbr>Area</h3>
 					<div class="tsd-signature tsd-kind-icon">hit<wbr>Area<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IHitArea</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#hitarea">hitArea</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#hitarea">hitArea</a></p>
 						<p>Overrides DisplayObject.hitArea</p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8829</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8951</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -850,7 +975,7 @@
 						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#interactive">interactive</a></p>
 						<p>Overrides DisplayObject.interactive</p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8817</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8939</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -880,9 +1005,9 @@
 					<h3>interactive<wbr>Children</h3>
 					<div class="tsd-signature tsd-kind-icon">interactive<wbr>Children<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#interactivechildren">interactiveChildren</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#interactivechildren">interactiveChildren</a></p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8439</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8517</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -906,7 +1031,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Active<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in packages/graphics-2d/src/shapes-2d.ts:698</li>
+							<li>Defined in packages/graphics-2d/src/graphic-brush.ts:20</li>
 						</ul>
 					</aside>
 				</section>
@@ -915,10 +1040,10 @@
 					<h3>is<wbr>Mask</h3>
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Mask<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#ismask">isMask</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#ismask">isMask</a></p>
 						<p>Overrides DisplayObject.isMask</p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8619</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8731</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -937,10 +1062,10 @@
 					<h3>is<wbr>Sprite</h3>
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Sprite<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#issprite">isSprite</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#issprite">isSprite</a></p>
 						<p>Overrides DisplayObject.isSprite</p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8614</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8726</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -956,13 +1081,13 @@
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 					<a name="localtransform" class="tsd-anchor"></a>
-					<h3>local<wbr>Transform</h3>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> local<wbr>Transform</h3>
 					<div class="tsd-signature tsd-kind-icon">local<wbr>Transform<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Matrix</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#localtransform">localTransform</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#localtransform">localTransform</a></p>
 						<p>Overrides DisplayObject.localTransform</p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8717</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8839</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -981,12 +1106,12 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 					<a name="mask" class="tsd-anchor"></a>
 					<h3>mask</h3>
-					<div class="tsd-signature tsd-kind-icon">mask<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Container</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">MaskData</span></div>
+					<div class="tsd-signature tsd-kind-icon">mask<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Container</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">MaskData</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#mask">mask</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#mask">mask</a></p>
 						<p>Overrides DisplayObject.mask</p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8795</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8917</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1010,7 +1135,7 @@
 							<dd><p>At the moment, PIXI.CanvasRenderer doesn&#39;t support PIXI.Sprite as mask.</p>
 							</dd>
 							<dt>member</dt>
-							<dd><p>{PIXI.Container|PIXI.MaskData}</p>
+							<dd><p>{PIXI.Container|PIXI.MaskData|null}</p>
 							</dd>
 						</dl>
 					</div>
@@ -1020,10 +1145,10 @@
 					<h3>name</h3>
 					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#name">name</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#name">name</a></p>
 						<p>Overrides DisplayObject.name</p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8875</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8997</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1045,10 +1170,10 @@
 					<h3>parent</h3>
 					<div class="tsd-signature tsd-kind-icon">parent<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Container</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#parent">parent</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#parent">parent</a></p>
 						<p>Overrides DisplayObject.parent</p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8548</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8628</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1059,20 +1184,18 @@
 							<dt>member</dt>
 							<dd><p>{PIXI.Container} PIXI.DisplayObject#parent</p>
 							</dd>
-							<dt>readonly</dt>
-							<dd></dd>
 						</dl>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 					<a name="pivot" class="tsd-anchor"></a>
 					<h3>pivot</h3>
-					<div class="tsd-signature tsd-kind-icon">pivot<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IPoint</span></div>
+					<div class="tsd-signature tsd-kind-icon">pivot<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ObservablePoint</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#pivot">pivot</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#pivot">pivot</a></p>
 						<p>Overrides DisplayObject.pivot</p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8738</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8860</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1082,7 +1205,7 @@
 						</div>
 						<dl class="tsd-comment-tags">
 							<dt>member</dt>
-							<dd><p>{PIXI.IPoint}</p>
+							<dd><p>{PIXI.ObservablePoint}</p>
 							</dd>
 						</dl>
 					</div>
@@ -1090,12 +1213,12 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 					<a name="position" class="tsd-anchor"></a>
 					<h3>position</h3>
-					<div class="tsd-signature tsd-kind-icon">position<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IPoint</span></div>
+					<div class="tsd-signature tsd-kind-icon">position<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ObservablePoint</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#position">position</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#position">position</a></p>
 						<p>Overrides DisplayObject.position</p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8724</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8846</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1105,7 +1228,7 @@
 						</div>
 						<dl class="tsd-comment-tags">
 							<dt>member</dt>
-							<dd><p>{PIXI.IPoint}</p>
+							<dd><p>{PIXI.ObservablePoint}</p>
 							</dd>
 						</dl>
 					</div>
@@ -1115,10 +1238,10 @@
 					<h3>renderable</h3>
 					<div class="tsd-signature tsd-kind-icon">renderable<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#renderable">renderable</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#renderable">renderable</a></p>
 						<p>Overrides DisplayObject.renderable</p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8541</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8622</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1139,10 +1262,10 @@
 					<h3>rotation</h3>
 					<div class="tsd-signature tsd-kind-icon">rotation<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#rotation">rotation</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#rotation">rotation</a></p>
 						<p>Overrides DisplayObject.rotation</p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8752</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8874</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1160,12 +1283,12 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 					<a name="scale" class="tsd-anchor"></a>
 					<h3>scale</h3>
-					<div class="tsd-signature tsd-kind-icon">scale<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IPoint</span></div>
+					<div class="tsd-signature tsd-kind-icon">scale<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ObservablePoint</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#scale">scale</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#scale">scale</a></p>
 						<p>Overrides DisplayObject.scale</p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8731</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8853</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1175,7 +1298,7 @@
 						</div>
 						<dl class="tsd-comment-tags">
 							<dt>member</dt>
-							<dd><p>{PIXI.IPoint}</p>
+							<dd><p>{PIXI.ObservablePoint}</p>
 							</dd>
 						</dl>
 					</div>
@@ -1185,10 +1308,10 @@
 					<h3>skew</h3>
 					<div class="tsd-signature tsd-kind-icon">skew<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ObservablePoint</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#skew">skew</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#skew">skew</a></p>
 						<p>Overrides DisplayObject.skew</p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8745</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8867</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1208,9 +1331,9 @@
 					<h3>sort<wbr>Dirty</h3>
 					<div class="tsd-signature tsd-kind-icon">sort<wbr>Dirty<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#sortdirty">sortDirty</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#sortdirty">sortDirty</a></p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8288</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8349</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1230,9 +1353,9 @@
 					<h3>sortable<wbr>Children</h3>
 					<div class="tsd-signature tsd-kind-icon">sortable<wbr>Children<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#sortablechildren">sortableChildren</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#sortablechildren">sortableChildren</a></p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8281</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8342</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1260,10 +1383,10 @@
 					<h3>transform</h3>
 					<div class="tsd-signature tsd-kind-icon">transform<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Transform</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#transform">transform</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#transform">transform</a></p>
 						<p>Overrides DisplayObject.transform</p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8517</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8598</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1283,10 +1406,10 @@
 					<h3>visible</h3>
 					<div class="tsd-signature tsd-kind-icon">visible<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#visible">visible</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#visible">visible</a></p>
 						<p>Overrides DisplayObject.visible</p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8532</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8613</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1307,9 +1430,9 @@
 					<h3>width</h3>
 					<div class="tsd-signature tsd-kind-icon">width<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#width">width</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#width">width</a></p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8425</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8495</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1325,13 +1448,13 @@
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 					<a name="worldalpha" class="tsd-anchor"></a>
-					<h3>world<wbr>Alpha</h3>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> world<wbr>Alpha</h3>
 					<div class="tsd-signature tsd-kind-icon">world<wbr>Alpha<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#worldalpha">worldAlpha</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#worldalpha">worldAlpha</a></p>
 						<p>Overrides DisplayObject.worldAlpha</p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8555</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8635</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1349,13 +1472,13 @@
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 					<a name="worldtransform" class="tsd-anchor"></a>
-					<h3>world<wbr>Transform</h3>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> world<wbr>Transform</h3>
 					<div class="tsd-signature tsd-kind-icon">world<wbr>Transform<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Matrix</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#worldtransform">worldTransform</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#worldtransform">worldTransform</a></p>
 						<p>Overrides DisplayObject.worldTransform</p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8710</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8832</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1373,13 +1496,13 @@
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 					<a name="worldvisible" class="tsd-anchor"></a>
-					<h3>world<wbr>Visible</h3>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> world<wbr>Visible</h3>
 					<div class="tsd-signature tsd-kind-icon">world<wbr>Visible<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#worldvisible">worldVisible</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#worldvisible">worldVisible</a></p>
 						<p>Overrides DisplayObject.worldVisible</p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8775</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8897</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1400,10 +1523,10 @@
 					<h3>x</h3>
 					<div class="tsd-signature tsd-kind-icon">x<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#x">x</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#x">x</a></p>
 						<p>Overrides DisplayObject.x</p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8696</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8818</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1423,10 +1546,10 @@
 					<h3>y</h3>
 					<div class="tsd-signature tsd-kind-icon">y<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#y">y</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#y">y</a></p>
 						<p>Overrides DisplayObject.y</p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8703</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8825</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1446,10 +1569,10 @@
 					<h3>z<wbr>Index</h3>
 					<div class="tsd-signature tsd-kind-icon">z<wbr>Index<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#zindex">zIndex</a></p>
+						<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#zindex">zIndex</a></p>
 						<p>Overrides DisplayObject.zIndex</p>
 						<ul>
-							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8768</li>
+							<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8890</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1478,9 +1601,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#_calculatebounds">_calculateBounds</a></p>
+								<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#_calculatebounds">_calculateBounds</a></p>
 								<ul>
-									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8381</li>
+									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8451</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1502,10 +1625,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#_recursivepostupdatetransform">_recursivePostUpdateTransform</a></p>
+								<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#_recursivepostupdatetransform">_recursivePostUpdateTransform</a></p>
 								<p>Overrides DisplayObject._recursivePostUpdateTransform</p>
 								<ul>
-									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8629</li>
+									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8736</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1527,9 +1650,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#_render">_render</a></p>
+								<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#_render">_render</a></p>
 								<ul>
-									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8401</li>
+									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8471</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1554,14 +1677,14 @@
 					<a name="addchild" class="tsd-anchor"></a>
 					<h3>add<wbr>Child</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Child&lt;TChildren&gt;<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>child<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TChildren</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TChildren</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">0</span><span class="tsd-signature-symbol">]</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Child&lt;TChildren&gt;<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>children<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TChildren</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TChildren</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">0</span><span class="tsd-signature-symbol">]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#addchild">addChild</a></p>
+								<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#addchild">addChild</a></p>
 								<ul>
-									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8303</li>
+									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8364</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1579,7 +1702,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>child: <span class="tsd-signature-type">TChildren</span></h5>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>children: <span class="tsd-signature-type">TChildren</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The DisplayObject(s) to add to the container</p>
 									</div>
@@ -1599,9 +1722,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#addchildat">addChildAt</a></p>
+								<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#addchildat">addChildAt</a></p>
 								<ul>
-									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8311</li>
+									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8372</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1635,25 +1758,56 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="calculatebounds" class="tsd-anchor"></a>
 					<h3>calculate<wbr>Bounds</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">calculate<wbr>Bounds<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#calculatebounds">calculateBounds</a></p>
-								<p>Overrides DisplayObject.calculateBounds</p>
+								<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#calculatebounds">calculateBounds</a></p>
 								<ul>
-									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8374</li>
+									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8435</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Recalculates the bounds of the container.</p>
 								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="containerupdatetransform" class="tsd-anchor"></a>
+					<h3>container<wbr>Update<wbr>Transform</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">container<wbr>Update<wbr>Transform<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#containerupdatetransform">containerUpdateTransform</a></p>
+								<ul>
+									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8509</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Container default updateTransform, does update children of container.
+									Will crash if there&#39;s no parent element.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>memberof</dt>
+									<dd><p>PIXI.Container#</p>
+									</dd>
+									<dt>function</dt>
+									<dd><p>containerUpdateTransform</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
@@ -1668,10 +1822,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#destroy">destroy</a></p>
+								<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#destroy">destroy</a></p>
 								<p>Overrides DisplayObject.destroy</p>
 								<ul>
-									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8415</li>
+									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8485</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1691,6 +1845,39 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="disabletempparent" class="tsd-anchor"></a>
+					<h3>disable<wbr>Temp<wbr>Parent</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">disable<wbr>Temp<wbr>Parent<span class="tsd-signature-symbol">(</span>cacheParent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DisplayObject</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#disabletempparent">disableTempParent</a></p>
+								<p>Overrides DisplayObject.disableTempParent</p>
+								<ul>
+									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8811</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Pair method for <code>enableTempParent</code></p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>cacheParent: <span class="tsd-signature-type">DisplayObject</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>actual parent of element</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 					<a name="displayobjectupdatetransform" class="tsd-anchor"></a>
 					<h3>display<wbr>Object<wbr>Update<wbr>Transform</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
@@ -1699,10 +1886,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#displayobjectupdatetransform">displayObjectUpdateTransform</a></p>
+								<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#displayobjectupdatetransform">displayObjectUpdateTransform</a></p>
 								<p>Overrides DisplayObject.displayObjectUpdateTransform</p>
 								<ul>
-									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8803</li>
+									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8925</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1724,6 +1911,34 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="enabletempparent" class="tsd-anchor"></a>
+					<h3>enable<wbr>Temp<wbr>Parent</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">enable<wbr>Temp<wbr>Parent<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DisplayObject</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#enabletempparent">enableTempParent</a></p>
+								<p>Overrides DisplayObject.enableTempParent</p>
+								<ul>
+									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8806</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Used in Renderer, cacheAsBitmap and other places where you call an <code>updateTransform</code> on root</p>
+								</div>
+								<pre><code>const cacheParent = elem.enable<span class="hljs-constructor">TempParent()</span>;
+elem.update<span class="hljs-constructor">Transform()</span>;
+elem.disable<span class="hljs-constructor">TempParent(<span class="hljs-params">cacheParent</span>)</span>;</code></pre>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">DisplayObject</span></h4>
+							<p>current parent</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 					<a name="getbounds" class="tsd-anchor"></a>
 					<h3>get<wbr>Bounds</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
@@ -1732,10 +1947,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#getbounds">getBounds</a></p>
+								<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#getbounds">getBounds</a></p>
 								<p>Overrides DisplayObject.getBounds</p>
 								<ul>
-									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8639</li>
+									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8746</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1766,9 +1981,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#getchildat">getChildAt</a></p>
+								<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#getchildat">getChildAt</a></p>
 								<ul>
-									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8339</li>
+									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8400</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1794,20 +2009,21 @@
 					<a name="getchildbyname" class="tsd-anchor"></a>
 					<h3>get<wbr>Child<wbr>ByName</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Child<wbr>ByName<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DisplayObject</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Child<wbr>ByName<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, deep<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DisplayObject</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#getchildbyname">getChildByName</a></p>
+								<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#getchildbyname">getChildByName</a></p>
 								<ul>
-									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8448</li>
+									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8529</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Returns the display object in the container.</p>
 								</div>
+								<p>Recursive searches are done in a preorder traversal.</p>
 								<dl class="tsd-comment-tags">
 									<dt>method</dt>
 									<dd><p>getChildByName</p>
@@ -1825,6 +2041,9 @@
 										<p>Instance name.</p>
 									</div>
 								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> deep: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h5>
+								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">DisplayObject</span></h4>
 							<p>The child with the specified name.</p>
@@ -1840,9 +2059,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#getchildindex">getChildIndex</a></p>
+								<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#getchildindex">getChildIndex</a></p>
 								<ul>
-									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8325</li>
+									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8386</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1873,10 +2092,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#getglobalposition">getGlobalPosition</a></p>
+								<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#getglobalposition">getGlobalPosition</a></p>
 								<p>Overrides DisplayObject.getGlobalPosition</p>
 								<ul>
-									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8887</li>
+									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:9009</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1910,15 +2129,15 @@
 					<a name="getlocalbounds" class="tsd-anchor"></a>
 					<h3>get<wbr>Local<wbr>Bounds</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Local<wbr>Bounds<span class="tsd-signature-symbol">(</span>rect<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">PIXI.Rectangle</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Rectangle</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Local<wbr>Bounds<span class="tsd-signature-symbol">(</span>rect<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">PIXI.Rectangle</span>, skipChildrenUpdate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Rectangle</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#getlocalbounds">getLocalBounds</a></p>
+								<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#getlocalbounds">getLocalBounds</a></p>
 								<p>Overrides DisplayObject.getLocalBounds</p>
 								<ul>
-									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8646</li>
+									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8444</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1930,6 +2149,9 @@
 							<ul class="tsd-parameters">
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> rect: <span class="tsd-signature-type">PIXI.Rectangle</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> skipChildrenUpdate: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Rectangle</span></h4>
@@ -1947,7 +2169,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/shapes-2d.ts:740</li>
+									<li>Defined in packages/graphics-2d/src/graphic-brush.ts:55</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -1964,7 +2186,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/shapes-2d.ts:712</li>
+									<li>Defined in packages/graphics-2d/src/graphic-brush.ts:35</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Point</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -1980,9 +2202,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#off">off</a></p>
+								<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#off">off</a></p>
 								<ul>
-									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:24092</li>
+									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:25520</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2013,7 +2235,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#on">on</a></p>
 								<ul>
-									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:24088</li>
+									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:25516</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2024,7 +2246,7 @@
 								<li>
 									<h5>fn: <span class="tsd-signature-symbol">(</span>displayObject<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DisplayObject</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
 									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
+										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>displayObject<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DisplayObject</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
@@ -2052,7 +2274,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#on">on</a></p>
 								<ul>
-									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:24090</li>
+									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:25518</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2080,9 +2302,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#onchildrenchange">onChildrenChange</a></p>
+								<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#onchildrenchange">onChildrenChange</a></p>
 								<ul>
-									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8294</li>
+									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8355</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2104,9 +2326,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#once">once</a></p>
+								<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#once">once</a></p>
 								<ul>
-									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:24085</li>
+									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:25513</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2117,7 +2339,7 @@
 								<li>
 									<h5>fn: <span class="tsd-signature-symbol">(</span>displayObject<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DisplayObject</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
 									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
+										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>displayObject<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DisplayObject</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
@@ -2143,9 +2365,9 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#once">once</a></p>
+								<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#once">once</a></p>
 								<ul>
-									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:24087</li>
+									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:25515</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2168,14 +2390,14 @@
 					<a name="removechild" class="tsd-anchor"></a>
 					<h3>remove<wbr>Child</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">remove<wbr>Child&lt;TChildren&gt;<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>child<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TChildren</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TChildren</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">0</span><span class="tsd-signature-symbol">]</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Child&lt;TChildren&gt;<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>children<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TChildren</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TChildren</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">0</span><span class="tsd-signature-symbol">]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#removechild">removeChild</a></p>
+								<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#removechild">removeChild</a></p>
 								<ul>
-									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8346</li>
+									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8407</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2192,7 +2414,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>child: <span class="tsd-signature-type">TChildren</span></h5>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>children: <span class="tsd-signature-type">TChildren</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The DisplayObject(s) to remove</p>
 									</div>
@@ -2212,9 +2434,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#removechildat">removeChildAt</a></p>
+								<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#removechildat">removeChildAt</a></p>
 								<ul>
-									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8353</li>
+									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8414</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2245,9 +2467,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#removechildren">removeChildren</a></p>
+								<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#removechildren">removeChildren</a></p>
 								<ul>
-									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8361</li>
+									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8422</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2269,19 +2491,18 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="render" class="tsd-anchor"></a>
 					<h3>render</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">render<span class="tsd-signature-symbol">(</span>renderer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Renderer</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#render">render</a></p>
-								<p>Overrides DisplayObject.render</p>
+								<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#render">render</a></p>
 								<ul>
-									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8387</li>
+									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8457</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2311,9 +2532,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#renderadvanced">renderAdvanced</a></p>
+								<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#renderadvanced">renderAdvanced</a></p>
 								<ul>
-									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8394</li>
+									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8464</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2344,7 +2565,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/shapes-2d.ts:744</li>
+									<li>Defined in packages/graphics-2d/src/graphic-brush.ts:59</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -2360,9 +2581,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#setchildindex">setChildIndex</a></p>
+								<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#setchildindex">setChildIndex</a></p>
 								<ul>
-									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8332</li>
+									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8393</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2398,10 +2619,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#setparent">setParent</a></p>
+								<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#setparent">setParent</a></p>
 								<p>Overrides DisplayObject.setParent</p>
 								<ul>
-									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8674</li>
+									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8774</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2432,10 +2653,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#settransform">setTransform</a></p>
+								<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#settransform">setTransform</a></p>
 								<p>Overrides DisplayObject.setTransform</p>
 								<ul>
-									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8689</li>
+									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8789</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2487,9 +2708,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#sortchildren">sortChildren</a></p>
+								<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#sortchildren">sortChildren</a></p>
 								<ul>
-									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8365</li>
+									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8426</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2510,9 +2731,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#swapchildren">swapChildren</a></p>
+								<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#swapchildren">swapChildren</a></p>
 								<ul>
-									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8318</li>
+									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8379</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2543,15 +2764,15 @@
 					<a name="toglobal" class="tsd-anchor"></a>
 					<h3>to<wbr>Global</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">to<wbr>Global<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IPoint</span>, point<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">PIXI.IPoint</span>, skipUpdate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IPoint</span></li>
+						<li class="tsd-signature tsd-kind-icon">to<wbr>Global<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IPointData</span>, point<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">PIXI.Point</span>, skipUpdate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Point</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#toglobal">toGlobal</a></p>
+								<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#toglobal">toGlobal</a></p>
 								<p>Overrides DisplayObject.toGlobal</p>
 								<ul>
-									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8656</li>
+									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8756</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2562,19 +2783,19 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>position: <span class="tsd-signature-type">IPoint</span></h5>
+									<h5>position: <span class="tsd-signature-type">IPointData</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The world origin to calculate from.</p>
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> point: <span class="tsd-signature-type">PIXI.IPoint</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> point: <span class="tsd-signature-type">PIXI.Point</span></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> skipUpdate: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IPoint</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Point</span></h4>
 							<p>A point object representing the position of this object.</p>
 						</li>
 					</ul>
@@ -2583,15 +2804,15 @@
 					<a name="tolocal" class="tsd-anchor"></a>
 					<h3>to<wbr>Local</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">to<wbr>Local<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IPoint</span>, from<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">PIXI.DisplayObject</span>, point<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">PIXI.IPoint</span>, skipUpdate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IPoint</span></li>
+						<li class="tsd-signature tsd-kind-icon">to<wbr>Local<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IPointData</span>, from<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">PIXI.DisplayObject</span>, point<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">PIXI.Point</span>, skipUpdate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Point</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#tolocal">toLocal</a></p>
+								<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#tolocal">toLocal</a></p>
 								<p>Overrides DisplayObject.toLocal</p>
 								<ul>
-									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8667</li>
+									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8767</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2602,7 +2823,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>position: <span class="tsd-signature-type">IPoint</span></h5>
+									<h5>position: <span class="tsd-signature-type">IPointData</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The world origin to calculate from.</p>
 									</div>
@@ -2611,13 +2832,13 @@
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> from: <span class="tsd-signature-type">PIXI.DisplayObject</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> point: <span class="tsd-signature-type">PIXI.IPoint</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> point: <span class="tsd-signature-type">PIXI.Point</span></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> skipUpdate: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IPoint</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Point</span></h4>
 							<p>A point object representing the position of this object</p>
 						</li>
 					</ul>
@@ -2632,7 +2853,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/shapes-2d.ts:720</li>
+									<li>Defined in packages/graphics-2d/src/graphic-brush.ts:42</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2663,10 +2884,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#updatetransform">updateTransform</a></p>
+								<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#updatetransform">updateTransform</a></p>
 								<p>Overrides DisplayObject.updateTransform</p>
 								<ul>
-									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8369</li>
+									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8430</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2687,9 +2908,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_pixano_graphics_2d.shape.html">Shape</a>.<a href="_pixano_graphics_2d.shape.html#mixin">mixin</a></p>
+								<p>Inherited from <a href="_pixano_graphics_2d.brush.html">Brush</a>.<a href="_pixano_graphics_2d.brush.html#mixin">mixin</a></p>
 								<ul>
-									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:8967</li>
+									<li>Defined in node_modules/pixi.js/pixi.js.d.ts:9229</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2716,7 +2937,7 @@
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="globals  ">
-						<a href="../docs.html"><em>Globals</em></a>
+						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="../modules/_pixano_ai.html">@pixano/ai</a>
@@ -2748,14 +2969,29 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="_pixano_graphics_2d.brush.html#_accessiblediv" class="tsd-kind-icon">_accessible<wbr>Div</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected">
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="_pixano_graphics_2d.brush.html#_bounds" class="tsd-kind-icon">_bounds</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected">
+								<a href="_pixano_graphics_2d.brush.html#_boundsid" class="tsd-kind-icon">_boundsID</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected">
+								<a href="_pixano_graphics_2d.brush.html#_boundsrect" class="tsd-kind-icon">_bounds<wbr>Rect</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected">
 								<a href="_pixano_graphics_2d.brush.html#_destroyed" class="tsd-kind-icon">_destroyed</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected">
+								<a href="_pixano_graphics_2d.brush.html#_enabledfilters" class="tsd-kind-icon">_enabled<wbr>Filters</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected">
 								<a href="_pixano_graphics_2d.brush.html#_lastsortedindex" class="tsd-kind-icon">_last<wbr>Sorted<wbr>Index</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_pixano_graphics_2d.brush.html#_localbounds" class="tsd-kind-icon">_local<wbr>Bounds</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected">
+								<a href="_pixano_graphics_2d.brush.html#_localboundsrect" class="tsd-kind-icon">_local<wbr>Bounds<wbr>Rect</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected">
 								<a href="_pixano_graphics_2d.brush.html#_mask" class="tsd-kind-icon">_mask</a>
@@ -2913,14 +3149,23 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
 								<a href="_pixano_graphics_2d.brush.html#addchildat" class="tsd-kind-icon">add<wbr>Child<wbr>At</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_pixano_graphics_2d.brush.html#calculatebounds" class="tsd-kind-icon">calculate<wbr>Bounds</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_pixano_graphics_2d.brush.html#containerupdatetransform" class="tsd-kind-icon">container<wbr>Update<wbr>Transform</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="_pixano_graphics_2d.brush.html#destroy" class="tsd-kind-icon">destroy</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_pixano_graphics_2d.brush.html#disabletempparent" class="tsd-kind-icon">disable<wbr>Temp<wbr>Parent</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="_pixano_graphics_2d.brush.html#displayobjectupdatetransform" class="tsd-kind-icon">display<wbr>Object<wbr>Update<wbr>Transform</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_pixano_graphics_2d.brush.html#enabletempparent" class="tsd-kind-icon">enable<wbr>Temp<wbr>Parent</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="_pixano_graphics_2d.brush.html#getbounds" class="tsd-kind-icon">get<wbr>Bounds</a>
@@ -2967,7 +3212,7 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_pixano_graphics_2d.brush.html#removechildren" class="tsd-kind-icon">remove<wbr>Children</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_pixano_graphics_2d.brush.html#render" class="tsd-kind-icon">render</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
@@ -3020,28 +3265,11 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
-				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
 				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
-				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
-				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
-				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
-				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
-				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
-				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
@@ -3049,34 +3277,21 @@
 				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
-				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
-				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
 			</ul>
 		</div>
 	</div>
 </footer>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>
-<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
 </body>
 </html>

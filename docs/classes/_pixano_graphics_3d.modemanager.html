@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ModeManager | @pixano - v0.1.0</title>
-	<meta name="description" content="">
+	<title>ModeManager | @pixano - v0.5.7</title>
+	<meta name="description" content="Documentation for @pixano - v0.5.7">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -13,7 +13,7 @@
 	<div class="tsd-page-toolbar">
 		<div class="container">
 			<div class="table-wrap">
-				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
 					<div class="field">
 						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
 						<input id="tsd-search-field" type="text" />
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../docs.html" class="title">@pixano - v0.1.0</a>
+					<a href="../docs.html" class="title">@pixano - v0.5.7</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -49,7 +49,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../docs.html">Globals</a>
+					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
 					<a href="../modules/_pixano_graphics_3d.html">@pixano/graphics-3d</a>
@@ -94,19 +94,21 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_pixano_graphics_3d.modemanager.html#edittarget" class="tsd-kind-icon">edit<wbr>Target</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_pixano_graphics_3d.modemanager.html#orbitcontrols" class="tsd-kind-icon">orbit<wbr>Controls</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_pixano_graphics_3d.modemanager.html#mode" class="tsd-kind-icon">mode</a></li>
+								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="_pixano_graphics_3d.modemanager.html#mode" class="tsd-kind-icon">mode</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_pixano_graphics_3d.modemanager.html#destroy" class="tsd-kind-icon">destroy</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_pixano_graphics_3d.modemanager.html#setmode" class="tsd-kind-icon">set<wbr>Mode</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_pixano_graphics_3d.modemanager.html#mousemovelistener" class="tsd-kind-icon">mouse<wbr>Move<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_pixano_graphics_3d.modemanager.html#mouseuplistener" class="tsd-kind-icon">mouse<wbr>UpListener</a></li>
 							</ul>
 						</section>
 					</div>
@@ -118,13 +120,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Mode<wbr>Manager<span class="tsd-signature-symbol">(</span>viewer<span class="tsd-signature-symbol">: </span><a href="_pixano_graphics_3d.sceneview.html" class="tsd-signature-type">SceneView</a>, eventTarget<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EventTarget</span>, annotations<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ObservableSet</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_pixano_graphics_3d.cuboid.html" class="tsd-signature-type">Cuboid</a><span class="tsd-signature-symbol">&gt;</span>, annotationPlots<span class="tsd-signature-symbol">: </span><a href="_pixano_graphics_3d.cuboidsetmanager.html" class="tsd-signature-type">CuboidSetManager</a>, groundPlot<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object3D</span>, pclPlot<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="_pixano_graphics_3d.pointcloudplot.html" class="tsd-signature-type">PointCloudPlot</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_pixano_graphics_3d.modemanager.html" class="tsd-signature-type">ModeManager</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Mode<wbr>Manager<span class="tsd-signature-symbol">(</span>viewer<span class="tsd-signature-symbol">: </span><a href="_pixano_graphics_3d.sceneview.html" class="tsd-signature-type">SceneView</a>, eventTarget<span class="tsd-signature-symbol">: </span><a href="_pixano_core.loader.html#eventtarget" class="tsd-signature-type">EventTarget</a>, annotations<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ObservableSet</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_pixano_graphics_3d.cuboid.html" class="tsd-signature-type">Cuboid</a><span class="tsd-signature-symbol">&gt;</span>, annotationPlots<span class="tsd-signature-symbol">: </span><a href="_pixano_graphics_3d.cuboidsetmanager.html" class="tsd-signature-type">CuboidSetManager</a>, groundPlot<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object3D</span>, pclPlot<span class="tsd-signature-symbol">: </span><a href="_pixano_graphics_3d.pointcloudplot.html" class="tsd-signature-type">PointCloudPlot</a>, groundSegmentation<span class="tsd-signature-symbol">: </span><a href="_pixano_graphics_3d.groundsegmentation.html" class="tsd-signature-type">GroundSegmentation</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_pixano_graphics_3d.modemanager.html" class="tsd-signature-type">ModeManager</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-3d/src/cuboid-manager.ts:46</li>
+									<li>Defined in packages/graphics-3d/src/cuboid-manager.ts:44</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -133,7 +135,7 @@
 									<h5>viewer: <a href="_pixano_graphics_3d.sceneview.html" class="tsd-signature-type">SceneView</a></h5>
 								</li>
 								<li>
-									<h5>eventTarget: <span class="tsd-signature-type">EventTarget</span></h5>
+									<h5>eventTarget: <a href="_pixano_core.loader.html#eventtarget" class="tsd-signature-type">EventTarget</a></h5>
 								</li>
 								<li>
 									<h5>annotations: <span class="tsd-signature-type">ObservableSet</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_pixano_graphics_3d.cuboid.html" class="tsd-signature-type">Cuboid</a><span class="tsd-signature-symbol">&gt;</span></h5>
@@ -145,19 +147,10 @@
 									<h5>groundPlot: <span class="tsd-signature-type">Object3D</span></h5>
 								</li>
 								<li>
-									<h5>pclPlot: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="_pixano_graphics_3d.pointcloudplot.html" class="tsd-signature-type">PointCloudPlot</a></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_pixano_graphics_3d.pointcloudplot.html" class="tsd-signature-type">PointCloudPlot</a></li>
-											</ul>
-											<ul class="tsd-descriptions">
-												<li class="tsd-description">
-													<h4 class="tsd-returns-title">Returns <a href="_pixano_graphics_3d.pointcloudplot.html" class="tsd-signature-type">PointCloudPlot</a></h4>
-												</li>
-											</ul>
-										</li>
-									</ul>
+									<h5>pclPlot: <a href="_pixano_graphics_3d.pointcloudplot.html" class="tsd-signature-type">PointCloudPlot</a></h5>
+								</li>
+								<li>
+									<h5>groundSegmentation: <a href="_pixano_graphics_3d.groundsegmentation.html" class="tsd-signature-type">GroundSegmentation</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_pixano_graphics_3d.modemanager.html" class="tsd-signature-type">ModeManager</a></h4>
@@ -173,24 +166,35 @@
 					<div class="tsd-signature tsd-kind-icon">edit<wbr>Target<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_pixano_graphics_3d.cuboid.html" class="tsd-signature-type">Cuboid</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in packages/graphics-3d/src/cuboid-manager.ts:36</li>
+							<li>Defined in packages/graphics-3d/src/cuboid-manager.ts:41</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="orbitcontrols" class="tsd-anchor"></a>
+					<h3>orbit<wbr>Controls</h3>
+					<div class="tsd-signature tsd-kind-icon">orbit<wbr>Controls<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">OrbitControls</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in packages/graphics-3d/src/cuboid-manager.ts:33</li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Accessors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
 					<a name="mode" class="tsd-anchor"></a>
 					<h3>mode</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> mode<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"edit"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"create"</span></li>
+					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> mode<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_pixano_graphics_3d.html#interactivemode" class="tsd-signature-type">InteractiveMode</a></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> mode<span class="tsd-signature-symbol">(</span>mode<span class="tsd-signature-symbol">: </span><a href="../modules/_pixano_graphics_3d.html#interactivemode" class="tsd-signature-type">InteractiveMode</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-3d/src/cuboid-manager.ts:42</li>
+									<li>Defined in packages/graphics-3d/src/cuboid-manager.ts:174</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -198,7 +202,29 @@
 									<p>&#39;edit&#39;, &#39;create&#39; or null depending on the currently active mode.</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"edit"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"create"</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_pixano_graphics_3d.html#interactivemode" class="tsd-signature-type">InteractiveMode</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in packages/graphics-3d/src/cuboid-manager.ts:181</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Switch to another mode -</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mode: <a href="../modules/_pixano_graphics_3d.html#interactivemode" class="tsd-signature-type">InteractiveMode</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>&#39;edit&#39;, &#39;create&#39; or &#39;none&#39;</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -215,7 +241,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-3d/src/cuboid-manager.ts:157</li>
+									<li>Defined in packages/graphics-3d/src/cuboid-manager.ts:155</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -223,29 +249,60 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="setmode" class="tsd-anchor"></a>
-					<h3>set<wbr>Mode</h3>
+					<a name="mousemovelistener" class="tsd-anchor"></a>
+					<h3>mouse<wbr>Move<wbr>Listener</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Mode<span class="tsd-signature-symbol">(</span>mode<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">mouse<wbr>Move<wbr>Listener<span class="tsd-signature-symbol">(</span>evt<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MouseEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-3d/src/cuboid-manager.ts:178</li>
+									<li>Defined in packages/graphics-3d/src/cuboid-manager.ts:122</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Switch to another mode -</p>
+									<p>Mouse movement to have the mouse position ready when needed</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> mode: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> = null</span></h5>
+									<h5>evt: <span class="tsd-signature-type">MouseEvent</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>&#39;edit&#39;, &#39;create&#39; or null</p>
+										<p>MouseEvent</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="mouseuplistener" class="tsd-anchor"></a>
+					<h3>mouse<wbr>UpListener</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">mouse<wbr>UpListener<span class="tsd-signature-symbol">(</span>evt<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MouseEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in packages/graphics-3d/src/cuboid-manager.ts:130</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Handle clicks</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>evt: <span class="tsd-signature-type">MouseEvent</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>MouseEvent</p>
 									</div>
 								</li>
 							</ul>
@@ -259,7 +316,7 @@
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="globals  ">
-						<a href="../docs.html"><em>Globals</em></a>
+						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="../modules/_pixano_ai.html">@pixano/ai</a>
@@ -302,6 +359,9 @@
 						<a href="_pixano_graphics_3d.groundrectangle.html" class="tsd-kind-icon">Ground<wbr>Rectangle</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="_pixano_graphics_3d.groundsegmentation.html" class="tsd-kind-icon">Ground<wbr>Segmentation</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="_pixano_graphics_3d.innerpointspainter.html" class="tsd-kind-icon">Inner<wbr>Points<wbr>Painter</a>
 					</li>
 				</ul>
@@ -315,69 +375,81 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_pixano_graphics_3d.modemanager.html#edittarget" class="tsd-kind-icon">edit<wbr>Target</a>
 							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_pixano_graphics_3d.modemanager.html#orbitcontrols" class="tsd-kind-icon">orbit<wbr>Controls</a>
+							</li>
+							<li class=" tsd-kind-accessor tsd-parent-kind-class">
 								<a href="_pixano_graphics_3d.modemanager.html#mode" class="tsd-kind-icon">mode</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_pixano_graphics_3d.modemanager.html#destroy" class="tsd-kind-icon">destroy</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_pixano_graphics_3d.modemanager.html#setmode" class="tsd-kind-icon">set<wbr>Mode</a>
+								<a href="_pixano_graphics_3d.modemanager.html#mousemovelistener" class="tsd-kind-icon">mouse<wbr>Move<wbr>Listener</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_pixano_graphics_3d.modemanager.html#mouseuplistener" class="tsd-kind-icon">mouse<wbr>UpListener</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="_pixano_graphics_3d.planefitting.html" class="tsd-kind-icon">Plane<wbr>Fitting</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="_pixano_graphics_3d.pointcloudplot.html" class="tsd-kind-icon">Point<wbr>Cloud<wbr>Plot</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="_pixano_graphics_3d.ransac.html" class="tsd-kind-icon">Ransac</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="_pixano_graphics_3d.sceneview.html" class="tsd-kind-icon">Scene<wbr>View</a>
 					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="_pixano_graphics_3d.sectionplane.html" class="tsd-kind-icon">Section<wbr>Plane</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="_pixano_graphics_3d.transformcontrols.html" class="tsd-kind-icon">Transform<wbr>Controls</a>
+					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/_pixano_graphics_3d.cuboid.html" class="tsd-kind-icon">Cuboid</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/_pixano_graphics_3d.html#boxsearch" class="tsd-kind-icon">box<wbr>Search</a>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="../modules/_pixano_graphics_3d.html#interactivemode" class="tsd-kind-icon">Interactive<wbr>Mode</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/_pixano_graphics_3d.html#boxsearch2" class="tsd-kind-icon">box<wbr>Search2</a>
+						<a href="../modules/_pixano_graphics_3d.html#axisalignedbox" class="tsd-kind-icon">axis<wbr>Aligned<wbr>Box</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="../modules/_pixano_graphics_3d.html#chunk" class="tsd-kind-icon">chunk</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/_pixano_graphics_3d.html#createbins" class="tsd-kind-icon">create<wbr>Bins</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/_pixano_graphics_3d.html#createbins2" class="tsd-kind-icon">create<wbr>Bins2</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="../modules/_pixano_graphics_3d.html#cubetocoordinates" class="tsd-kind-icon">cube<wbr>ToCoordinates</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/_pixano_graphics_3d.html#filterptsinbox" class="tsd-kind-icon">filter<wbr>Pts<wbr>InBox</a>
+						<a href="../modules/_pixano_graphics_3d.html#filtercentralarea" class="tsd-kind-icon">filter<wbr>Central<wbr>Area</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="../modules/_pixano_graphics_3d.html#findhighdensityz" class="tsd-kind-icon">find<wbr>High<wbr>DensityZ</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="../modules/_pixano_graphics_3d.html#findlowestz" class="tsd-kind-icon">find<wbr>LowestZ</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="../modules/_pixano_graphics_3d.html#findptsinbox" class="tsd-kind-icon">find<wbr>Pts<wbr>InBox</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/_pixano_graphics_3d.html#fittopts" class="tsd-kind-icon">fit<wbr>ToPts</a>
+						<a href="../modules/_pixano_graphics_3d.html#fitboxwithautoz" class="tsd-kind-icon">fit<wbr>Box<wbr>With<wbr>AutoZ</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/_pixano_graphics_3d.html#listptsinbox" class="tsd-kind-icon">list<wbr>Pts<wbr>InBox</a>
+						<a href="../modules/_pixano_graphics_3d.html#fittopts" class="tsd-kind-icon">fit<wbr>ToPts</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="../modules/_pixano_graphics_3d.html#mod" class="tsd-kind-icon">mod</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="../modules/_pixano_graphics_3d.html#normalizeangle" class="tsd-kind-icon">normalize<wbr>Angle</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/_pixano_graphics_3d.html#transformcloud" class="tsd-kind-icon">transform<wbr>Cloud</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/_pixano_graphics_3d.html#transformcloud2" class="tsd-kind-icon">transform<wbr>Cloud2</a>
 					</li>
 				</ul>
 			</nav>
@@ -389,63 +461,30 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
-				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
-				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
-				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
-				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
-				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
-				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
-				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
-				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
-				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
-				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
-				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
-			</ul>
-			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
 				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
-				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
-				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
 			</ul>
 		</div>
 	</div>
 </footer>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>
-<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
 </body>
 </html>
