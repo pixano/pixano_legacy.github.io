@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>SelectController | @pixano - v0.5.8</title>
-	<meta name="description" content="Documentation for @pixano - v0.5.8">
+	<title>SelectController | @pixano - v0.5.14</title>
+	<meta name="description" content="Documentation for @pixano - v0.5.14">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../docs.html" class="title">@pixano - v0.5.8</a>
+					<a href="../docs.html" class="title">@pixano - v0.5.14</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -65,6 +65,14 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Basic interaction that selects region when clicked on it.
+						Construction arguments are partially the public class properties (renderer, gmask, ...).</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -73,6 +81,11 @@
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">SelectController</span>
+								<ul class="tsd-hierarchy">
+									<li>
+										<a href="_pixano_graphics_2d.lockcontroller.html" class="tsd-signature-type">LockController</a>
+									</li>
+								</ul>
 							</li>
 						</ul>
 					</li>
@@ -91,11 +104,12 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_pixano_graphics_2d.selectcontroller.html#contours" class="tsd-kind-icon">contours</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_pixano_graphics_2d.selectcontroller.html#gmask" class="tsd-kind-icon">gmask</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_pixano_graphics_2d.selectcontroller.html#renderer" class="tsd-kind-icon">renderer</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_pixano_graphics_2d.selectcontroller.html#selectedid" class="tsd-kind-icon">selected<wbr>Id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_pixano_graphics_2d.selectcontroller.html#send" class="tsd-kind-icon">send</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_pixano_graphics_2d.selectcontroller.html#_activated" class="tsd-kind-icon">_activated</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_pixano_graphics_2d.selectcontroller.html#contours" class="tsd-kind-icon">contours</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_pixano_graphics_2d.selectcontroller.html#densepolygons" class="tsd-kind-icon">dense<wbr>Polygons</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_pixano_graphics_2d.selectcontroller.html#gmask" class="tsd-kind-icon">gmask</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_pixano_graphics_2d.selectcontroller.html#renderer" class="tsd-kind-icon">renderer</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_pixano_graphics_2d.selectcontroller.html#selectedid" class="tsd-kind-icon">selected<wbr>Id</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -107,7 +121,6 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_pixano_graphics_2d.selectcontroller.html#deactivate" class="tsd-kind-icon">deactivate</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_pixano_graphics_2d.selectcontroller.html#deselect" class="tsd-kind-icon">deselect</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_pixano_graphics_2d.selectcontroller.html#dispatchevent" class="tsd-kind-icon">dispatch<wbr>Event</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_pixano_graphics_2d.selectcontroller.html#drawdashedpolygon" class="tsd-kind-icon">draw<wbr>Dashed<wbr>Polygon</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_pixano_graphics_2d.selectcontroller.html#emit" class="tsd-kind-icon">emit</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_pixano_graphics_2d.selectcontroller.html#onkeyselectiondown" class="tsd-kind-icon">on<wbr>Key<wbr>Selection<wbr>Down</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_pixano_graphics_2d.selectcontroller.html#onpointerdownselectinstance" class="tsd-kind-icon">on<wbr>Pointer<wbr>Down<wbr>Select<wbr>Instance</a></li>
@@ -124,55 +137,20 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Select<wbr>Controller<span class="tsd-signature-symbol">(</span>renderer<span class="tsd-signature-symbol">: </span><a href="_pixano_graphics_2d.renderer.html" class="tsd-signature-type">Renderer</a>, gmask<span class="tsd-signature-symbol">: </span><a href="_pixano_graphics_2d.gmask.html" class="tsd-signature-type">GMask</a>, selectedId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> }</span>, send<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span>, contours<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PIXIGraphics</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_pixano_graphics_2d.selectcontroller.html" class="tsd-signature-type">SelectController</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Select<wbr>Controller<span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="_pixano_graphics_2d.selectcontroller.html" class="tsd-signature-type">SelectController</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_pixano_graphics_2d.selectcontroller.html" class="tsd-signature-type">SelectController</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_pixano_graphics_2d.controller.html">Controller</a>.<a href="_pixano_graphics_2d.controller.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in packages/graphics-2d/src/controller-mask.ts:171</li>
+									<li>Defined in packages/graphics-2d/src/controller-mask.ts:41</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>renderer: <a href="_pixano_graphics_2d.renderer.html" class="tsd-signature-type">Renderer</a></h5>
-								</li>
-								<li>
-									<h5>gmask: <a href="_pixano_graphics_2d.gmask.html" class="tsd-signature-type">GMask</a></h5>
-								</li>
-								<li>
-									<h5>selectedId: <span class="tsd-signature-symbol">{ </span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> }</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter">
-											<h5>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<h5>send: <span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-signature">
-											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-											</ul>
-											<ul class="tsd-descriptions">
-												<li class="tsd-description">
-													<h4 class="tsd-parameters-title">Parameters</h4>
-													<ul class="tsd-parameters">
-														<li>
-															<h5>event: <span class="tsd-signature-type">Event</span></h5>
-														</li>
-													</ul>
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<h5>contours: <span class="tsd-signature-type">PIXIGraphics</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> props: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="_pixano_graphics_2d.selectcontroller.html" class="tsd-signature-type">SelectController</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = {}</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_pixano_graphics_2d.selectcontroller.html" class="tsd-signature-type">SelectController</a></h4>
@@ -182,43 +160,64 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_activated" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _activated</h3>
+					<div class="tsd-signature tsd-kind-icon">_activated<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_pixano_graphics_2d.controller.html">Controller</a>.<a href="_pixano_graphics_2d.controller.html#_activated">_activated</a></p>
+						<ul>
+							<li>Defined in packages/graphics-2d/src/controller-base.ts:10</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="contours" class="tsd-anchor"></a>
-					<h3>contours</h3>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> contours</h3>
 					<div class="tsd-signature tsd-kind-icon">contours<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Graphics</span><span class="tsd-signature-symbol"> = new PIXIGraphics()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in packages/graphics-2d/src/controller-mask.ts:163</li>
+							<li>Defined in packages/graphics-2d/src/controller-mask.ts:39</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-					<a name="gmask" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> gmask</h3>
-					<div class="tsd-signature tsd-kind-icon">gmask<span class="tsd-signature-symbol">:</span> <a href="_pixano_graphics_2d.gmask.html" class="tsd-signature-type">GMask</a></div>
+					<a name="densepolygons" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> dense<wbr>Polygons</h3>
+					<div class="tsd-signature tsd-kind-icon">dense<wbr>Polygons<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_pixano_graphics_2d.densepolygon.html" class="tsd-signature-type">DensePolygon</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = new Array()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in packages/graphics-2d/src/controller-mask.ts:161</li>
+							<li>Defined in packages/graphics-2d/src/controller-mask.ts:41</li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="gmask" class="tsd-anchor"></a>
+					<h3>gmask</h3>
+					<div class="tsd-signature tsd-kind-icon">gmask<span class="tsd-signature-symbol">:</span> <a href="_pixano_graphics_2d.graphicmask.html" class="tsd-signature-type">GraphicMask</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in packages/graphics-2d/src/controller-mask.ts:33</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="renderer" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> renderer</h3>
+					<h3>renderer</h3>
 					<div class="tsd-signature tsd-kind-icon">renderer<span class="tsd-signature-symbol">:</span> <a href="_pixano_graphics_2d.renderer.html" class="tsd-signature-type">Renderer</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in packages/graphics-2d/src/controller-mask.ts:159</li>
+							<li>Defined in packages/graphics-2d/src/controller-mask.ts:31</li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="selectedid" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> selected<wbr>Id</h3>
+					<h3>selected<wbr>Id</h3>
 					<div class="tsd-signature tsd-kind-icon">selected<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in packages/graphics-2d/src/controller-mask.ts:167</li>
+							<li>Defined in packages/graphics-2d/src/controller-mask.ts:35</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -226,37 +225,6 @@
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter">
 								<h5>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
-							</li>
-						</ul>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="send" class="tsd-anchor"></a>
-					<h3>send</h3>
-					<div class="tsd-signature tsd-kind-icon">send<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in packages/graphics-2d/src/controller-mask.ts:171</li>
-						</ul>
-					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-signature">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-parameters-title">Parameters</h4>
-										<ul class="tsd-parameters">
-											<li>
-												<h5>event: <span class="tsd-signature-type">Event</span></h5>
-											</li>
-										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-									</li>
-								</ul>
 							</li>
 						</ul>
 					</div>
@@ -275,7 +243,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_pixano_graphics_2d.controller.html">Controller</a>.<a href="_pixano_graphics_2d.controller.html#activate">activate</a></p>
 								<ul>
-									<li>Defined in packages/graphics-2d/src/controller-mask.ts:185</li>
+									<li>Defined in packages/graphics-2d/src/controller-mask.ts:53</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -333,7 +301,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_pixano_graphics_2d.controller.html">Controller</a>.<a href="_pixano_graphics_2d.controller.html#bindings">bindings</a></p>
 								<ul>
-									<li>Defined in packages/graphics-2d/src/controller-base.ts:27</li>
+									<li>Defined in packages/graphics-2d/src/controller-base.ts:34</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -351,7 +319,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_pixano_graphics_2d.controller.html">Controller</a>.<a href="_pixano_graphics_2d.controller.html#deactivate">deactivate</a></p>
 								<ul>
-									<li>Defined in packages/graphics-2d/src/controller-mask.ts:191</li>
+									<li>Defined in packages/graphics-2d/src/controller-mask.ts:66</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -368,7 +336,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/controller-mask.ts:238</li>
+									<li>Defined in packages/graphics-2d/src/controller-mask.ts:85</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -404,36 +372,6 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-					<a name="drawdashedpolygon" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> draw<wbr>Dashed<wbr>Polygon</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">draw<wbr>Dashed<wbr>Polygon<span class="tsd-signature-symbol">(</span>polygon<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Point</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in packages/graphics-2d/src/controller-mask.ts:214</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Draw dashed polygons to contour graphics</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>polygon: <span class="tsd-signature-type">Point</span><span class="tsd-signature-symbol">[]</span></h5>
-									<div class="tsd-comment tsd-typography">
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="emit" class="tsd-anchor"></a>
 					<h3>emit</h3>
@@ -445,7 +383,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_pixano_graphics_2d.controller.html">Controller</a>.<a href="_pixano_graphics_2d.controller.html#emit">emit</a></p>
 								<ul>
-									<li>Defined in packages/graphics-2d/src/controller-base.ts:23</li>
+									<li>Defined in packages/graphics-2d/src/controller-base.ts:30</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -484,7 +422,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/controller-mask.ts:247</li>
+									<li>Defined in packages/graphics-2d/src/controller-mask.ts:94</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -501,19 +439,19 @@
 					<a name="onpointerdownselectinstance" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Pointer<wbr>Down<wbr>Select<wbr>Instance</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Pointer<wbr>Down<wbr>Select<wbr>Instance<span class="tsd-signature-symbol">(</span>evt<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">InteractionEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Pointer<wbr>Down<wbr>Select<wbr>Instance<span class="tsd-signature-symbol">(</span>evt<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PIXIInteractionEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/controller-mask.ts:197</li>
+									<li>Defined in packages/graphics-2d/src/controller-mask.ts:72</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>evt: <span class="tsd-signature-type">InteractionEvent</span></h5>
+									<h5>evt: <span class="tsd-signature-type">PIXIInteractionEvent</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -566,7 +504,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_pixano_graphics_2d.controller.html">Controller</a>.<a href="_pixano_graphics_2d.controller.html#reset">reset</a></p>
 								<ul>
-									<li>Defined in packages/graphics-2d/src/controller-base.ts:12</li>
+									<li>Defined in packages/graphics-2d/src/controller-base.ts:19</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -605,20 +543,23 @@
 							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 								<a href="_pixano_graphics_2d.selectcontroller.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_pixano_graphics_2d.selectcontroller.html#_activated" class="tsd-kind-icon">_activated</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="_pixano_graphics_2d.selectcontroller.html#contours" class="tsd-kind-icon">contours</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-								<a href="_pixano_graphics_2d.selectcontroller.html#gmask" class="tsd-kind-icon">gmask</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-								<a href="_pixano_graphics_2d.selectcontroller.html#renderer" class="tsd-kind-icon">renderer</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-								<a href="_pixano_graphics_2d.selectcontroller.html#selectedid" class="tsd-kind-icon">selected<wbr>Id</a>
+								<a href="_pixano_graphics_2d.selectcontroller.html#densepolygons" class="tsd-kind-icon">dense<wbr>Polygons</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_pixano_graphics_2d.selectcontroller.html#send" class="tsd-kind-icon">send</a>
+								<a href="_pixano_graphics_2d.selectcontroller.html#gmask" class="tsd-kind-icon">gmask</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_pixano_graphics_2d.selectcontroller.html#renderer" class="tsd-kind-icon">renderer</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_pixano_graphics_2d.selectcontroller.html#selectedid" class="tsd-kind-icon">selected<wbr>Id</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="_pixano_graphics_2d.selectcontroller.html#activate" class="tsd-kind-icon">activate</a>
@@ -637,9 +578,6 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_pixano_graphics_2d.selectcontroller.html#dispatchevent" class="tsd-kind-icon">dispatch<wbr>Event</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-								<a href="_pixano_graphics_2d.selectcontroller.html#drawdashedpolygon" class="tsd-kind-icon">draw<wbr>Dashed<wbr>Polygon</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_pixano_graphics_2d.selectcontroller.html#emit" class="tsd-kind-icon">emit</a>

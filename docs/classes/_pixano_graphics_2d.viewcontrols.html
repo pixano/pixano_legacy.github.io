@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ViewControls | @pixano - v0.5.8</title>
-	<meta name="description" content="Documentation for @pixano - v0.5.8">
+	<title>ViewControls | @pixano - v0.5.14</title>
+	<meta name="description" content="Documentation for @pixano - v0.5.14">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../docs.html" class="title">@pixano - v0.5.8</a>
+					<a href="../docs.html" class="title">@pixano - v0.5.14</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -103,6 +103,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_pixano_graphics_2d.viewcontrols.html#disablezoom" class="tsd-kind-icon">disable<wbr>Zoom</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_pixano_graphics_2d.viewcontrols.html#dispatchevent" class="tsd-kind-icon">dispatch<wbr>Event</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_pixano_graphics_2d.viewcontrols.html#enablezoom" class="tsd-kind-icon">enable<wbr>Zoom</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_pixano_graphics_2d.viewcontrols.html#notifyupdate" class="tsd-kind-icon">notify<wbr>Update</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_pixano_graphics_2d.viewcontrols.html#onedgemove" class="tsd-kind-icon">on<wbr>Edge<wbr>Move</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_pixano_graphics_2d.viewcontrols.html#onpan" class="tsd-kind-icon">on<wbr>Pan</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_pixano_graphics_2d.viewcontrols.html#onpaninit" class="tsd-kind-icon">on<wbr>Pan<wbr>Init</a></li>
@@ -111,6 +112,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_pixano_graphics_2d.viewcontrols.html#removeeventlistener" class="tsd-kind-icon">remove<wbr>Event<wbr>Listener</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_pixano_graphics_2d.viewcontrols.html#triggeronzoom" class="tsd-kind-icon">trigger<wbr>OnZoom</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_pixano_graphics_2d.viewcontrols.html#wheeldistance" class="tsd-kind-icon">wheel<wbr>Distance</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_pixano_graphics_2d.viewcontrols.html#zoomfct" class="tsd-kind-icon">zoom<wbr>Fct</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_pixano_graphics_2d.viewcontrols.html#zoomin" class="tsd-kind-icon">zoom<wbr>In</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_pixano_graphics_2d.viewcontrols.html#zoomout" class="tsd-kind-icon">zoom<wbr>Out</a></li>
 							</ul>
@@ -130,7 +132,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/view-controls.ts:17</li>
+									<li>Defined in packages/graphics-2d/src/view-controls.ts:18</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -152,7 +154,7 @@
 					<div class="tsd-signature tsd-kind-icon">viewer<span class="tsd-signature-symbol">:</span> <a href="_pixano_graphics_2d.renderer.html" class="tsd-signature-type">Renderer</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in packages/graphics-2d/src/view-controls.ts:17</li>
+							<li>Defined in packages/graphics-2d/src/view-controls.ts:18</li>
 						</ul>
 					</aside>
 				</section>
@@ -243,7 +245,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/view-controls.ts:44</li>
+									<li>Defined in packages/graphics-2d/src/view-controls.ts:45</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -260,7 +262,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/view-controls.ts:36</li>
+									<li>Defined in packages/graphics-2d/src/view-controls.ts:37</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -306,7 +308,24 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/view-controls.ts:40</li>
+									<li>Defined in packages/graphics-2d/src/view-controls.ts:41</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="notifyupdate" class="tsd-anchor"></a>
+					<h3>notify<wbr>Update</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">notify<wbr>Update<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in packages/graphics-2d/src/view-controls.ts:178</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -317,19 +336,19 @@
 					<a name="onedgemove" class="tsd-anchor"></a>
 					<h3>on<wbr>Edge<wbr>Move</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Edge<wbr>Move<span class="tsd-signature-symbol">(</span>evt<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">InteractionEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Edge<wbr>Move<span class="tsd-signature-symbol">(</span>evt<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PIXIInteractionEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/view-controls.ts:191</li>
+									<li>Defined in packages/graphics-2d/src/view-controls.ts:188</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>evt: <span class="tsd-signature-type">InteractionEvent</span></h5>
+									<h5>evt: <span class="tsd-signature-type">PIXIInteractionEvent</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -340,13 +359,13 @@
 					<a name="onpan" class="tsd-anchor"></a>
 					<h3>on<wbr>Pan</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Pan<span class="tsd-signature-symbol">(</span>evt<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">InteractionEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Pan<span class="tsd-signature-symbol">(</span>evt<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PIXIInteractionEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/view-controls.ts:164</li>
+									<li>Defined in packages/graphics-2d/src/view-controls.ts:151</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -357,7 +376,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>evt: <span class="tsd-signature-type">InteractionEvent</span></h5>
+									<h5>evt: <span class="tsd-signature-type">PIXIInteractionEvent</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -374,7 +393,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/view-controls.ts:147</li>
+									<li>Defined in packages/graphics-2d/src/view-controls.ts:134</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -402,7 +421,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/view-controls.ts:182</li>
+									<li>Defined in packages/graphics-2d/src/view-controls.ts:169</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -424,7 +443,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/view-controls.ts:84</li>
+									<li>Defined in packages/graphics-2d/src/view-controls.ts:86</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -490,7 +509,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/view-controls.ts:51</li>
+									<li>Defined in packages/graphics-2d/src/view-controls.ts:52</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -507,7 +526,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/view-controls.ts:59</li>
+									<li>Defined in packages/graphics-2d/src/view-controls.ts:61</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -528,6 +547,43 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="zoomfct" class="tsd-anchor"></a>
+					<h3>zoom<wbr>Fct</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">zoom<wbr>Fct<span class="tsd-signature-symbol">(</span>scaleFactor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, center<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in packages/graphics-2d/src/view-controls.ts:105</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Generalized zoom function</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>scaleFactor: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>scale factor to be applied</p>
+									</div>
+								</li>
+								<li>
+									<h5>center: <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>point where the zoom will be centered</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="zoomin" class="tsd-anchor"></a>
 					<h3>zoom<wbr>In</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -537,7 +593,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/view-controls.ts:118</li>
+									<li>Defined in packages/graphics-2d/src/view-controls.ts:92</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -554,7 +610,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/view-controls.ts:127</li>
+									<li>Defined in packages/graphics-2d/src/view-controls.ts:96</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -615,6 +671,9 @@
 								<a href="_pixano_graphics_2d.viewcontrols.html#enablezoom" class="tsd-kind-icon">enable<wbr>Zoom</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_pixano_graphics_2d.viewcontrols.html#notifyupdate" class="tsd-kind-icon">notify<wbr>Update</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_pixano_graphics_2d.viewcontrols.html#onedgemove" class="tsd-kind-icon">on<wbr>Edge<wbr>Move</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
@@ -637,6 +696,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_pixano_graphics_2d.viewcontrols.html#wheeldistance" class="tsd-kind-icon">wheel<wbr>Distance</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_pixano_graphics_2d.viewcontrols.html#zoomfct" class="tsd-kind-icon">zoom<wbr>Fct</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_pixano_graphics_2d.viewcontrols.html#zoomin" class="tsd-kind-icon">zoom<wbr>In</a>

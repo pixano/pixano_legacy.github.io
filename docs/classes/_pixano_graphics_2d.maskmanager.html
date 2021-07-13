@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>MaskManager | @pixano - v0.5.8</title>
-	<meta name="description" content="Documentation for @pixano - v0.5.8">
+	<title>MaskManager | @pixano - v0.5.14</title>
+	<meta name="description" content="Documentation for @pixano - v0.5.14">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../docs.html" class="title">@pixano - v0.5.8</a>
+					<a href="../docs.html" class="title">@pixano - v0.5.14</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -136,13 +136,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Mask<wbr>Manager<span class="tsd-signature-symbol">(</span>renderer<span class="tsd-signature-symbol">?: </span><a href="_pixano_graphics_2d.renderer.html" class="tsd-signature-type">Renderer</a>, gmask<span class="tsd-signature-symbol">?: </span><a href="_pixano_graphics_2d.gmask.html" class="tsd-signature-type">GMask</a>, selectedId<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_pixano_graphics_2d.maskmanager.html" class="tsd-signature-type">MaskManager</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Mask<wbr>Manager<span class="tsd-signature-symbol">(</span>renderer<span class="tsd-signature-symbol">?: </span><a href="_pixano_graphics_2d.renderer.html" class="tsd-signature-type">Renderer</a>, gmask<span class="tsd-signature-symbol">?: </span><a href="_pixano_graphics_2d.graphicmask.html" class="tsd-signature-type">GraphicMask</a>, selectedId<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_pixano_graphics_2d.maskmanager.html" class="tsd-signature-type">MaskManager</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/controller-mask.ts:437</li>
+									<li>Defined in packages/graphics-2d/src/controller-mask.ts:608</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -151,7 +151,7 @@
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> renderer: <a href="_pixano_graphics_2d.renderer.html" class="tsd-signature-type">Renderer</a><span class="tsd-signature-symbol"> = new Renderer()</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> gmask: <a href="_pixano_graphics_2d.gmask.html" class="tsd-signature-type">GMask</a><span class="tsd-signature-symbol"> = new GMask()</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> gmask: <a href="_pixano_graphics_2d.graphicmask.html" class="tsd-signature-type">GraphicMask</a><span class="tsd-signature-symbol"> = new GraphicMask()</span></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> selectedId: <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol"> = [0, 0, 0]</span></h5>
@@ -170,17 +170,17 @@
 					<div class="tsd-signature tsd-kind-icon">contour<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Graphics</span><span class="tsd-signature-symbol"> = new PIXIGraphics()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in packages/graphics-2d/src/controller-mask.ts:431</li>
+							<li>Defined in packages/graphics-2d/src/controller-mask.ts:602</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="gmask" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> gmask</h3>
-					<div class="tsd-signature tsd-kind-icon">gmask<span class="tsd-signature-symbol">:</span> <a href="_pixano_graphics_2d.gmask.html" class="tsd-signature-type">GMask</a></div>
+					<div class="tsd-signature tsd-kind-icon">gmask<span class="tsd-signature-symbol">:</span> <a href="_pixano_graphics_2d.graphicmask.html" class="tsd-signature-type">GraphicMask</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in packages/graphics-2d/src/controller-mask.ts:428</li>
+							<li>Defined in packages/graphics-2d/src/controller-mask.ts:599</li>
 						</ul>
 					</aside>
 				</section>
@@ -190,7 +190,7 @@
 					<div class="tsd-signature tsd-kind-icon">mode<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;select&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in packages/graphics-2d/src/controller-mask.ts:422</li>
+							<li>Defined in packages/graphics-2d/src/controller-mask.ts:593</li>
 						</ul>
 					</aside>
 				</section>
@@ -200,7 +200,7 @@
 					<div class="tsd-signature tsd-kind-icon">modes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in packages/graphics-2d/src/controller-mask.ts:433</li>
+							<li>Defined in packages/graphics-2d/src/controller-mask.ts:604</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -218,7 +218,7 @@
 					<div class="tsd-signature tsd-kind-icon">renderer<span class="tsd-signature-symbol">:</span> <a href="_pixano_graphics_2d.renderer.html" class="tsd-signature-type">Renderer</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in packages/graphics-2d/src/controller-mask.ts:420</li>
+							<li>Defined in packages/graphics-2d/src/controller-mask.ts:591</li>
 						</ul>
 					</aside>
 				</section>
@@ -228,7 +228,7 @@
 					<div class="tsd-signature tsd-kind-icon">selected<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in packages/graphics-2d/src/controller-mask.ts:424</li>
+							<li>Defined in packages/graphics-2d/src/controller-mask.ts:595</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -327,7 +327,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/controller-mask.ts:542</li>
+									<li>Defined in packages/graphics-2d/src/controller-mask.ts:720</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -388,7 +388,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/controller-mask.ts:527</li>
+									<li>Defined in packages/graphics-2d/src/controller-mask.ts:705</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -420,7 +420,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/controller-mask.ts:492</li>
+									<li>Defined in packages/graphics-2d/src/controller-mask.ts:670</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -450,7 +450,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/controller-mask.ts:505</li>
+									<li>Defined in packages/graphics-2d/src/controller-mask.ts:683</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -522,16 +522,27 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/controller-mask.ts:456</li>
+									<li>Defined in packages/graphics-2d/src/controller-mask.ts:634</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Change the controler linked to the mode:</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>mode: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>string, the mode whome controler has to be changed</p>
+									</div>
 								</li>
 								<li>
 									<h5>controller: <a href="_pixano_graphics_2d.controller.html" class="tsd-signature-type">Controller</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the new controler</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
@@ -548,7 +559,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/controller-mask.ts:474</li>
+									<li>Defined in packages/graphics-2d/src/controller-mask.ts:652</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -582,7 +593,7 @@
 					<div class="tsd-signature tsd-kind-icon">target<wbr>Class<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in packages/graphics-2d/src/controller-mask.ts:437</li>
+							<li>Defined in packages/graphics-2d/src/controller-mask.ts:608</li>
 						</ul>
 					</aside>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
@@ -591,7 +602,7 @@
 						<div class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in packages/graphics-2d/src/controller-mask.ts:437</li>
+								<li>Defined in packages/graphics-2d/src/controller-mask.ts:608</li>
 							</ul>
 						</aside>
 					</section>

@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>@pixano/core | @pixano - v0.5.8</title>
-	<meta name="description" content="Documentation for @pixano - v0.5.8">
+	<title>@pixano/core | @pixano - v0.5.14</title>
+	<meta name="description" content="Documentation for @pixano - v0.5.14">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../docs.html" class="title">@pixano - v0.5.8</a>
+					<a href="../docs.html" class="title">@pixano - v0.5.14</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -119,6 +119,7 @@
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_pixano_core.html#magicselect" class="tsd-kind-icon">magic<wbr>Select</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_pixano_core.html#mergetracks" class="tsd-kind-icon">merge<wbr>Tracks</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_pixano_core.html#opacity" class="tsd-kind-icon">opacity</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_pixano_core.html#paintbrush" class="tsd-kind-icon">paint<wbr>Brush</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_pixano_core.html#pointer" class="tsd-kind-icon">pointer</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_pixano_core.html#polyline" class="tsd-kind-icon">polyline</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_pixano_core.html#rectify" class="tsd-kind-icon">rectify</a></li>
@@ -147,6 +148,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="_pixano_core.html#observable" class="tsd-kind-icon">observable</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_core.html#observe" class="tsd-kind-icon">observe</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_core.html#pasteclipboard" class="tsd-kind-icon">paste<wbr>Clipboard</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_core.html#rgbtohex" class="tsd-kind-icon">rgb<wbr>ToHex</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="_pixano_core.html#searchsorted" class="tsd-kind-icon">search<wbr>Sorted</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_core.html#shuffle" class="tsd-kind-icon">shuffle</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_core.html#unobserve" class="tsd-kind-icon">unobserve</a></li>
@@ -286,7 +288,7 @@
 					<div class="tsd-signature tsd-kind-icon">demo<wbr>Styles<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CSSResult</span><span class="tsd-signature-symbol"> = css&#x60;main {display: flex;height: 100%;width: 100%;--mdc-theme-secondary: #79005D;}.right-panel {position: absolute;display: flex;flex-direction: column;right: 0px;top: 0px;bottom: 0px;display: flex;margin: auto;width: auto;}.icon {-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;right: 0px;margin-bottom: 10px;margin-left: 10px;margin-right: 10px;display: flex;margin-top: 10px;height: 24px;width: 24px;z-index: 1;color: black;background: white;fill: var(--mdc-theme-secondary);padding: 10px;border-radius: 50%;cursor: pointer;font-size: 18px;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-o-transition: all 0.5s ease;-ms-transition: all 0.5s ease;transition: all 0.5s ease;}.icon:hover {background: var(--mdc-theme-secondary);fill: white;}svg {overflow: visible;width: inherit;}.icons {height: calc(100% - 44px);padding-top: 60px;flex-wrap: wrap;display: flex;flex-direction: column;align-items: flex-end;}&#x60;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in packages/core/src/style.ts:37</li>
+							<li>Defined in packages/core/src/style.ts:39</li>
 						</ul>
 					</aside>
 				</section>
@@ -313,10 +315,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="genericstyles" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> generic<wbr>Styles</h3>
-					<div class="tsd-signature tsd-kind-icon">generic<wbr>Styles<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CSSResult</span><span class="tsd-signature-symbol"> = css&#x60;#container {width: 100%;height: 100%;display: flex;flex-direction: column;}[name&#x3D;&quot;slider&quot;] {height: 50px;flex: 0 0 50px;display: flex;}playback-control {background: #f9f9f9;color: var(--font-color);}&#x60;</span></div>
+					<div class="tsd-signature tsd-kind-icon">generic<wbr>Styles<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CSSResult</span><span class="tsd-signature-symbol"> = css&#x60;#container {width: 100%;height: 100%;display: flex;flex-direction: column;}[name&#x3D;&quot;slider&quot;] &gt; div {height: 50px;flex: 0 0 50px;display: flex;}playback-control {background: #f9f9f9;color: var(--font-color);}&#x60;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in packages/core/src/style.ts:103</li>
+							<li>Defined in packages/core/src/style.ts:104</li>
 						</ul>
 					</aside>
 				</section>
@@ -367,6 +369,16 @@
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in packages/core/src/style.ts:22</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
+					<a name="paintbrush" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> paint<wbr>Brush</h3>
+					<div class="tsd-signature tsd-kind-icon">paint<wbr>Brush<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TemplateResult</span><span class="tsd-signature-symbol"> = html&#x60;&lt;svg width&#x3D;&quot;24pt&quot; height&#x3D;&quot;24pt&quot; viewBox&#x3D;&quot;0 0 24 24&quot; version&#x3D;&quot;1.1&quot;&gt;&lt;path style&#x3D;&quot;stroke:none;fill-rule:nonzero;fill-opacity:1;&quot; d&#x3D;&quot;M 23.410156 2.175781 C 23.03125 1.800781 22.535156 1.589844 22.003906 1.582031 C 21.996094 1.582031 21.988281 1.582031 21.980469 1.582031 C 21.457031 1.582031 20.960938 1.78125 20.585938 2.144531 L 9.324219 12.914062 C 10.527344 13.21875 11.558594 13.992188 12.230469 15.125 C 12.4375 15.46875 12.597656 15.835938 12.71875 16.210938 L 23.441406 5 C 23.800781 4.621094 24 4.125 24 3.605469 C 24 3.066406 23.789062 2.558594 23.410156 2.175781 Z M 23.410156 2.175781 &quot;/&gt;&lt;path style&#x3D;&quot; stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;&quot; d&#x3D;&quot;M 8.277344 14.171875 C 8.222656 14.167969 8.164062 14.167969 8.109375 14.167969 C 7.15625 14.167969 6.214844 14.5 5.445312 15.050781 C 4.519531 15.71875 4.148438 16.675781 3.46875 17.550781 C 2.617188 18.644531 1.304688 19.179688 0 19.542969 C 0.757812 21.546875 3.578125 22.371094 5.425781 22.414062 C 5.492188 22.414062 5.558594 22.417969 5.625 22.417969 C 7.71875 22.417969 10.183594 21.636719 11.191406 19.578125 C 12.300781 17.320312 10.933594 14.28125 8.277344 14.171875 Z M 8.277344 14.171875 &quot;/&gt;&lt;/svg&gt;&#x60;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in packages/core/src/style.ts:36</li>
 						</ul>
 					</aside>
 				</section>
@@ -526,7 +538,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/core/src/utils.ts:213</li>
+									<li>Defined in packages/core/src/utils.ts:222</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -595,7 +607,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/core/src/utils.ts:236</li>
+									<li>Defined in packages/core/src/utils.ts:245</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -641,7 +653,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/core/src/utils.ts:253</li>
+									<li>Defined in packages/core/src/utils.ts:262</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -678,7 +690,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/core/src/utils.ts:281</li>
+									<li>Defined in packages/core/src/utils.ts:290</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -777,10 +789,39 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/core/src/utils.ts:244</li>
+									<li>Defined in packages/core/src/utils.ts:253</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="rgbtohex" class="tsd-anchor"></a>
+					<h3>rgb<wbr>ToHex</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">rgb<wbr>ToHex<span class="tsd-signature-symbol">(</span>r<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, g<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in packages/core/src/utils.ts:218</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>r: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>g: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>b: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -826,7 +867,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/core/src/utils.ts:342</li>
+									<li>Defined in packages/core/src/utils.ts:352</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -900,7 +941,7 @@
 							<dd><p>CEA-LIST/DIASI/SIALV/LVA (2019)</p>
 							</dd>
 							<dt>author</dt>
-							<dd><p>CEA-LIST/DIASI/SIALV/LVA <a href="mailto:&#112;&#x69;&#x78;&#x61;&#x6e;&#x6f;&#x40;&#x63;&#101;&#97;&#x2e;&#x66;&#114;">&#112;&#x69;&#x78;&#x61;&#x6e;&#x6f;&#x40;&#x63;&#101;&#97;&#x2e;&#x66;&#114;</a></p>
+							<dd><p>CEA-LIST/DIASI/SIALV/LVA <a href="mailto:&#x70;&#105;&#120;&#x61;&#x6e;&#111;&#x40;&#x63;&#x65;&#97;&#x2e;&#102;&#x72;">&#x70;&#105;&#120;&#x61;&#x6e;&#111;&#x40;&#x63;&#x65;&#97;&#x2e;&#102;&#x72;</a></p>
 							</dd>
 							<dt>license</dt>
 							<dd><p>CECILL-C</p>
@@ -2504,6 +2545,9 @@
 						<a href="_pixano_core.html#opacity" class="tsd-kind-icon">opacity</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="_pixano_core.html#paintbrush" class="tsd-kind-icon">paint<wbr>Brush</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="_pixano_core.html#pointer" class="tsd-kind-icon">pointer</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
@@ -2571,6 +2615,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="_pixano_core.html#pasteclipboard" class="tsd-kind-icon">paste<wbr>Clipboard</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="_pixano_core.html#rgbtohex" class="tsd-kind-icon">rgb<wbr>ToHex</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="_pixano_core.html#searchsorted" class="tsd-kind-icon">search<wbr>Sorted</a>
