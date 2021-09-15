@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>PolygonCreateController | @pixano - v0.5.14</title>
-	<meta name="description" content="Documentation for @pixano - v0.5.14">
+	<title>PolygonCreateController | @pixano - v0.5.16</title>
+	<meta name="description" content="Documentation for @pixano - v0.5.16">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../docs.html" class="title">@pixano - v0.5.14</a>
+					<a href="../index.html" class="title">@pixano - v0.5.16</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -49,7 +49,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../index.html">Globals</a>
 				</li>
 				<li>
 					<a href="../modules/_pixano_graphics_2d.html">@pixano/graphics-2d</a>
@@ -100,10 +100,14 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_pixano_graphics_2d.polygoncreatecontroller.html#_activated" class="tsd-kind-icon">_activated</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_pixano_graphics_2d.polygoncreatecontroller.html#cross" class="tsd-kind-icon">cross</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_pixano_graphics_2d.polygoncreatecontroller.html#graphics" class="tsd-kind-icon">graphics</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_pixano_graphics_2d.polygoncreatecontroller.html#id" class="tsd-kind-icon">id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_pixano_graphics_2d.polygoncreatecontroller.html#iscreating" class="tsd-kind-icon">is<wbr>Creating</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_pixano_graphics_2d.polygoncreatecontroller.html#isopenedpolygon" class="tsd-kind-icon">is<wbr>Opened<wbr>Polygon</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_pixano_graphics_2d.polygoncreatecontroller.html#observer" class="tsd-kind-icon">observer</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_pixano_graphics_2d.polygoncreatecontroller.html#renderer" class="tsd-kind-icon">renderer</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_pixano_graphics_2d.polygoncreatecontroller.html#shapes" class="tsd-kind-icon">shapes</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_pixano_graphics_2d.polygoncreatecontroller.html#targetshapes" class="tsd-kind-icon">target<wbr>Shapes</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_pixano_graphics_2d.polygoncreatecontroller.html#tmpshape" class="tsd-kind-icon">tmp<wbr>Shape</a></li>
 							</ul>
 						</section>
@@ -118,6 +122,9 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_pixano_graphics_2d.polygoncreatecontroller.html#dispatchevent" class="tsd-kind-icon">dispatch<wbr>Event</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_pixano_graphics_2d.polygoncreatecontroller.html#emit" class="tsd-kind-icon">emit</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_pixano_graphics_2d.polygoncreatecontroller.html#emitcreate" class="tsd-kind-icon">emit<wbr>Create</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_pixano_graphics_2d.polygoncreatecontroller.html#emitupdate" class="tsd-kind-icon">emit<wbr>Update</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_pixano_graphics_2d.polygoncreatecontroller.html#getgraphic" class="tsd-kind-icon">get<wbr>Graphic</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_pixano_graphics_2d.polygoncreatecontroller.html#getshape" class="tsd-kind-icon">get<wbr>Shape</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_pixano_graphics_2d.polygoncreatecontroller.html#onkeydowncreate" class="tsd-kind-icon">on<wbr>Key<wbr>Down<wbr>Create</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected"><a href="_pixano_graphics_2d.polygoncreatecontroller.html#onrootdown" class="tsd-kind-icon">on<wbr>Root<wbr>Down</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_pixano_graphics_2d.polygoncreatecontroller.html#onrootmove" class="tsd-kind-icon">on<wbr>Root<wbr>Move</a></li>
@@ -182,7 +189,29 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_pixano_graphics_2d.shapecreatecontroller.html">ShapeCreateController</a>.<a href="_pixano_graphics_2d.shapecreatecontroller.html#cross">cross</a></p>
 						<ul>
-							<li>Defined in packages/graphics-2d/src/controller.ts:486</li>
+							<li>Defined in packages/graphics-2d/src/controller.ts:494</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="graphics" class="tsd-anchor"></a>
+					<h3>graphics</h3>
+					<div class="tsd-signature tsd-kind-icon">graphics<span class="tsd-signature-symbol">:</span> <a href="_pixano_core.observableset.html#set" class="tsd-signature-type">Set</a><span class="tsd-signature-symbol">&lt;</span><a href="_pixano_graphics_2d.graphic.html" class="tsd-signature-type">Graphic</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_pixano_graphics_2d.shapecreatecontroller.html">ShapeCreateController</a>.<a href="_pixano_graphics_2d.shapecreatecontroller.html#graphics">graphics</a></p>
+						<ul>
+							<li>Defined in packages/graphics-2d/src/controller.ts:491</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="id" class="tsd-anchor"></a>
+					<h3>id</h3>
+					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = Math.random().toString(36).substring(2)</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_pixano_graphics_2d.shapecreatecontroller.html">ShapeCreateController</a>.<a href="_pixano_graphics_2d.shapecreatecontroller.html#id">id</a></p>
+						<ul>
+							<li>Defined in packages/graphics-2d/src/controller.ts:505</li>
 						</ul>
 					</aside>
 				</section>
@@ -193,7 +222,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_pixano_graphics_2d.shapecreatecontroller.html">ShapeCreateController</a>.<a href="_pixano_graphics_2d.shapecreatecontroller.html#iscreating">isCreating</a></p>
 						<ul>
-							<li>Defined in packages/graphics-2d/src/controller.ts:491</li>
+							<li>Defined in packages/graphics-2d/src/controller.ts:499</li>
 						</ul>
 					</aside>
 				</section>
@@ -207,6 +236,17 @@
 						</ul>
 					</aside>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="observer" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> observer</h3>
+					<div class="tsd-signature tsd-kind-icon">observer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> = null</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_pixano_graphics_2d.shapecreatecontroller.html">ShapeCreateController</a>.<a href="_pixano_graphics_2d.shapecreatecontroller.html#observer">observer</a></p>
+						<ul>
+							<li>Defined in packages/graphics-2d/src/controller.ts:503</li>
+						</ul>
+					</aside>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="renderer" class="tsd-anchor"></a>
 					<h3>renderer</h3>
@@ -214,7 +254,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_pixano_graphics_2d.shapecreatecontroller.html">ShapeCreateController</a>.<a href="_pixano_graphics_2d.shapecreatecontroller.html#renderer">renderer</a></p>
 						<ul>
-							<li>Defined in packages/graphics-2d/src/controller.ts:481</li>
+							<li>Defined in packages/graphics-2d/src/controller.ts:485</li>
 						</ul>
 					</aside>
 				</section>
@@ -225,7 +265,18 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_pixano_graphics_2d.shapecreatecontroller.html">ShapeCreateController</a>.<a href="_pixano_graphics_2d.shapecreatecontroller.html#shapes">shapes</a></p>
 						<ul>
-							<li>Defined in packages/graphics-2d/src/controller.ts:483</li>
+							<li>Defined in packages/graphics-2d/src/controller.ts:487</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="targetshapes" class="tsd-anchor"></a>
+					<h3>target<wbr>Shapes</h3>
+					<div class="tsd-signature tsd-kind-icon">target<wbr>Shapes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ObservableSet</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_pixano_graphics_2d.shapedata.html" class="tsd-signature-type">ShapeData</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_pixano_graphics_2d.shapecreatecontroller.html">ShapeCreateController</a>.<a href="_pixano_graphics_2d.shapecreatecontroller.html#targetshapes">targetShapes</a></p>
+						<ul>
+							<li>Defined in packages/graphics-2d/src/controller.ts:489</li>
 						</ul>
 					</aside>
 				</section>
@@ -236,7 +287,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_pixano_graphics_2d.shapecreatecontroller.html">ShapeCreateController</a>.<a href="_pixano_graphics_2d.shapecreatecontroller.html#tmpshape">tmpShape</a></p>
 						<ul>
-							<li>Defined in packages/graphics-2d/src/controller.ts:489</li>
+							<li>Defined in packages/graphics-2d/src/controller.ts:497</li>
 						</ul>
 					</aside>
 				</section>
@@ -255,7 +306,7 @@
 								<p>Inherited from <a href="_pixano_graphics_2d.shapecreatecontroller.html">ShapeCreateController</a>.<a href="_pixano_graphics_2d.shapecreatecontroller.html#activate">activate</a></p>
 								<p>Overrides <a href="_pixano_graphics_2d.controller.html">Controller</a>.<a href="_pixano_graphics_2d.controller.html#activate">activate</a></p>
 								<ul>
-									<li>Defined in packages/graphics-2d/src/controller.ts:511</li>
+									<li>Defined in packages/graphics-2d/src/controller.ts:540</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -330,7 +381,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/controller-polygon.ts:294</li>
+									<li>Defined in packages/graphics-2d/src/controller-polygon.ts:295</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -349,7 +400,7 @@
 								<p>Inherited from <a href="_pixano_graphics_2d.shapecreatecontroller.html">ShapeCreateController</a>.<a href="_pixano_graphics_2d.shapecreatecontroller.html#deactivate">deactivate</a></p>
 								<p>Overrides <a href="_pixano_graphics_2d.controller.html">Controller</a>.<a href="_pixano_graphics_2d.controller.html#deactivate">deactivate</a></p>
 								<ul>
-									<li>Defined in packages/graphics-2d/src/controller.ts:533</li>
+									<li>Defined in packages/graphics-2d/src/controller.ts:556</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -436,10 +487,83 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_pixano_graphics_2d.shapecreatecontroller.html">ShapeCreateController</a>.<a href="_pixano_graphics_2d.shapecreatecontroller.html#emitcreate">emitCreate</a></p>
 								<ul>
-									<li>Defined in packages/graphics-2d/src/controller.ts:548</li>
+									<li>Defined in packages/graphics-2d/src/controller.ts:571</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="emitupdate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> emit<wbr>Update</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">emit<wbr>Update<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_pixano_graphics_2d.shapecreatecontroller.html">ShapeCreateController</a>.<a href="_pixano_graphics_2d.shapecreatecontroller.html#emitupdate">emitUpdate</a></p>
+								<ul>
+									<li>Defined in packages/graphics-2d/src/controller.ts:578</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="getgraphic" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>Graphic</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Graphic<span class="tsd-signature-symbol">(</span>s<span class="tsd-signature-symbol">: </span><a href="../interfaces/_pixano_graphics_2d.shapedata.html" class="tsd-signature-type">ShapeData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="_pixano_graphics_2d.graphic.html" class="tsd-signature-type">Graphic</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_pixano_graphics_2d.shapecreatecontroller.html">ShapeCreateController</a>.<a href="_pixano_graphics_2d.shapecreatecontroller.html#getgraphic">getGraphic</a></p>
+								<ul>
+									<li>Defined in packages/graphics-2d/src/controller.ts:610</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Retrieve graphical shape for a given shape data</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>s: <a href="../interfaces/_pixano_graphics_2d.shapedata.html" class="tsd-signature-type">ShapeData</a></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="_pixano_graphics_2d.graphic.html" class="tsd-signature-type">Graphic</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="getshape" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>Shape</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Shape<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_pixano_graphics_2d.shapedata.html" class="tsd-signature-type">ShapeData</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_pixano_graphics_2d.shapecreatecontroller.html">ShapeCreateController</a>.<a href="_pixano_graphics_2d.shapecreatecontroller.html#getshape">getShape</a></p>
+								<ul>
+									<li>Defined in packages/graphics-2d/src/controller.ts:619</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>id: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_pixano_graphics_2d.shapedata.html" class="tsd-signature-type">ShapeData</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -506,7 +630,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_pixano_graphics_2d.shapecreatecontroller.html">ShapeCreateController</a>.<a href="_pixano_graphics_2d.shapecreatecontroller.html#onrootmove">onRootMove</a></p>
 								<ul>
-									<li>Defined in packages/graphics-2d/src/controller-polygon.ts:277</li>
+									<li>Defined in packages/graphics-2d/src/controller-polygon.ts:278</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -530,7 +654,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_pixano_graphics_2d.shapecreatecontroller.html">ShapeCreateController</a>.<a href="_pixano_graphics_2d.shapecreatecontroller.html#onrootup">onRootUp</a></p>
 								<ul>
-									<li>Defined in packages/graphics-2d/src/controller.ts:570</li>
+									<li>Defined in packages/graphics-2d/src/controller.ts:602</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -600,7 +724,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_pixano_graphics_2d.shapecreatecontroller.html">ShapeCreateController</a>.<a href="_pixano_graphics_2d.shapecreatecontroller.html#mouse">mouse</a></p>
 						<ul>
-							<li>Defined in packages/graphics-2d/src/controller.ts:493</li>
+							<li>Defined in packages/graphics-2d/src/controller.ts:501</li>
 						</ul>
 					</aside>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
@@ -609,7 +733,7 @@
 						<div class="tsd-signature tsd-kind-icon">x<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in packages/graphics-2d/src/controller.ts:493</li>
+								<li>Defined in packages/graphics-2d/src/controller.ts:501</li>
 							</ul>
 						</aside>
 					</section>
@@ -619,7 +743,7 @@
 						<div class="tsd-signature tsd-kind-icon">y<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in packages/graphics-2d/src/controller.ts:493</li>
+								<li>Defined in packages/graphics-2d/src/controller.ts:501</li>
 							</ul>
 						</aside>
 					</section>
@@ -630,7 +754,7 @@
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+						<a href="../index.html"><em>Globals</em></a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="../modules/_pixano_ai.html">@pixano/ai</a>
@@ -662,17 +786,29 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 								<a href="_pixano_graphics_2d.polygoncreatecontroller.html#cross" class="tsd-kind-icon">cross</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_pixano_graphics_2d.polygoncreatecontroller.html#graphics" class="tsd-kind-icon">graphics</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_pixano_graphics_2d.polygoncreatecontroller.html#id" class="tsd-kind-icon">id</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 								<a href="_pixano_graphics_2d.polygoncreatecontroller.html#iscreating" class="tsd-kind-icon">is<wbr>Creating</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_pixano_graphics_2d.polygoncreatecontroller.html#isopenedpolygon" class="tsd-kind-icon">is<wbr>Opened<wbr>Polygon</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_pixano_graphics_2d.polygoncreatecontroller.html#observer" class="tsd-kind-icon">observer</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="_pixano_graphics_2d.polygoncreatecontroller.html#renderer" class="tsd-kind-icon">renderer</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="_pixano_graphics_2d.polygoncreatecontroller.html#shapes" class="tsd-kind-icon">shapes</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_pixano_graphics_2d.polygoncreatecontroller.html#targetshapes" class="tsd-kind-icon">target<wbr>Shapes</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 								<a href="_pixano_graphics_2d.polygoncreatecontroller.html#tmpshape" class="tsd-kind-icon">tmp<wbr>Shape</a>
@@ -700,6 +836,15 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 								<a href="_pixano_graphics_2d.polygoncreatecontroller.html#emitcreate" class="tsd-kind-icon">emit<wbr>Create</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_pixano_graphics_2d.polygoncreatecontroller.html#emitupdate" class="tsd-kind-icon">emit<wbr>Update</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_pixano_graphics_2d.polygoncreatecontroller.html#getgraphic" class="tsd-kind-icon">get<wbr>Graphic</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_pixano_graphics_2d.polygoncreatecontroller.html#getshape" class="tsd-kind-icon">get<wbr>Shape</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 								<a href="_pixano_graphics_2d.polygoncreatecontroller.html#onkeydowncreate" class="tsd-kind-icon">on<wbr>Key<wbr>Down<wbr>Create</a>

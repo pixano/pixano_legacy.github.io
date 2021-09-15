@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>@pixano/ai | @pixano - v0.5.14</title>
-	<meta name="description" content="Documentation for @pixano - v0.5.14">
+	<title>@pixano/ai | @pixano - v0.5.16</title>
+	<meta name="description" content="Documentation for @pixano - v0.5.16">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../docs.html" class="title">@pixano - v0.5.14</a>
+					<a href="../index.html" class="title">@pixano - v0.5.16</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -49,7 +49,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../index.html">Globals</a>
 				</li>
 				<li>
 					<a href="_pixano_ai.html">@pixano/ai</a>
@@ -71,19 +71,19 @@
 					<a href="#import" id="import" style="color: inherit; text-decoration: none;">
 						<h2>Import</h2>
 					</a>
-					<pre><code class="language-javascript"><span class="hljs-keyword">import</span> { PixelToBoundingBox } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@pixano/ai/lib/pixel-to-bounding-box&quot;</span>;</code></pre>
+					<pre><code class="language-javascript"><span class="hljs-keyword">import</span> { PixelToBoundingBox } <span class="hljs-keyword">from</span> <span class="hljs-string">"@pixano/ai/lib/pixel-to-bounding-box"</span>;</code></pre>
 					<a href="#example-bounding-box-detection-guided-by-a-user-click" id="example-bounding-box-detection-guided-by-a-user-click" style="color: inherit; text-decoration: none;">
 						<h2>Example: Bounding box detection guided by a user click</h2>
 					</a>
 					<p>Example usage:</p>
 					<pre><code class="language-javascript"><span class="hljs-keyword">const</span> image = <span class="hljs-keyword">new</span> Image();
-image.onload = <span class="hljs-function">() =&gt;</span> {
-    <span class="hljs-keyword">const</span> detection = <span class="hljs-keyword">await</span> <span class="hljs-built_in">this</span>.boundingBoxCreator.predict(
+image.onload = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    <span class="hljs-keyword">const</span> detection = <span class="hljs-keyword">await</span> <span class="hljs-keyword">this</span>.boundingBoxCreator.predict(
     {<span class="hljs-attr">x</span>: <span class="hljs-number">200</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">500</span>},
     image
 );
 }
-image.src = <span class="hljs-string">&#x27;/path/to/your/image.jpg&#x27;</span>;</code></pre>
+image.src = <span class="hljs-string">'/path/to/your/image.jpg'</span>;</code></pre>
 				</div>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -536,7 +536,7 @@ image.src = <span class="hljs-string">&#x27;/path/to/your/image.jpg&#x27;</span>
 							<dd><p>CEA-LIST/DIASI/SIALV/LVA (2019)</p>
 							</dd>
 							<dt>author</dt>
-							<dd><p>CEA-LIST/DIASI/SIALV/LVA <a href="mailto:&#112;&#x69;&#120;&#x61;&#110;&#x6f;&#64;&#99;&#x65;&#x61;&#x2e;&#102;&#114;">&#112;&#x69;&#120;&#x61;&#110;&#x6f;&#64;&#99;&#x65;&#x61;&#x2e;&#102;&#114;</a></p>
+							<dd><p>CEA-LIST/DIASI/SIALV/LVA <a href="mailto:&#x70;&#x69;&#x78;&#x61;&#x6e;&#111;&#x40;&#99;&#101;&#x61;&#x2e;&#x66;&#114;">&#x70;&#x69;&#x78;&#x61;&#x6e;&#111;&#x40;&#99;&#101;&#x61;&#x2e;&#x66;&#114;</a></p>
 							</dd>
 							<dt>license</dt>
 							<dd><p>CECILL-C</p>
@@ -1350,7 +1350,7 @@ image.src = <span class="hljs-string">&#x27;/path/to/your/image.jpg&#x27;</span>
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+						<a href="../index.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="_pixano_ai.html">@pixano/ai</a>

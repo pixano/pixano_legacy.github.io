@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>@pixano/graphics-2d | @pixano - v0.5.14</title>
-	<meta name="description" content="Documentation for @pixano - v0.5.14">
+	<title>@pixano/graphics-2d | @pixano - v0.5.16</title>
+	<meta name="description" content="Documentation for @pixano - v0.5.16">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../docs.html" class="title">@pixano - v0.5.14</a>
+					<a href="../index.html" class="title">@pixano - v0.5.16</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -49,7 +49,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../index.html">Globals</a>
 				</li>
 				<li>
 					<a href="_pixano_graphics_2d.html">@pixano/graphics-2d</a>
@@ -74,53 +74,53 @@
 					<pre><code class="language-bash">npm install @pixano/graphics-2d</code></pre>
 					<p>Include with a module bundler like <a href="http://rollupjs.org/">rollup</a> or <a href="https://webpack.github.io/">webpack</a> using ES6 modules:</p>
 					<pre><code class="language-javascript"><span class="hljs-comment">// import all 2d elements</span>
-<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;@pixano/graphics-2d&quot;</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-string">"@pixano/graphics-2d"</span>;
 <span class="hljs-comment">// or a specific element</span>
-<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;@pixano/graphics-2d/lib/pxn-rectangle&quot;</span>;</code></pre>
+<span class="hljs-keyword">import</span> <span class="hljs-string">"@pixano/graphics-2d/lib/pxn-rectangle"</span>;</code></pre>
 					<p>The <a href="https://github.com/umdjs/umd">UMD</a> build is also available on <a href="http://unpkg.com/">unpkg</a>:</p>
-					<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://unpkg.com/@pixano/graphics-2d/dist/graphics-2d.min.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></pre>
+					<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://unpkg.com/@pixano/graphics-2d/dist/graphics-2d.min.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></pre>
 					<a href="#example-rectangle-annotation" id="example-rectangle-annotation" style="color: inherit; text-decoration: none;">
 						<h2>Example: Rectangle annotation</h2>
 					</a>
 					<p>Example usage:</p>
-					<pre><code class="language-javascript"><span class="hljs-keyword">import</span> { css, html, LitElement} <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;lit-element&#x27;</span>;
-<span class="hljs-keyword">import</span> <span class="hljs-string">&#x27;@pixano/graphics-2d&#x27;</span>;
+					<pre><code class="language-javascript"><span class="hljs-keyword">import</span> { css, html, LitElement} <span class="hljs-keyword">from</span> <span class="hljs-string">'lit-element'</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-string">'@pixano/graphics-2d'</span>;
 
 <span class="hljs-keyword">const</span> colors = [
-  <span class="hljs-string">&#x27;blue&#x27;</span>, <span class="hljs-string">&#x27;green&#x27;</span>, <span class="hljs-string">&#x27;purple&#x27;</span>,
-  <span class="hljs-string">&#x27;yellow&#x27;</span>, <span class="hljs-string">&#x27;pink&#x27;</span>, <span class="hljs-string">&#x27;orange&#x27;</span>, <span class="hljs-string">&#x27;tan&#x27;</span>
+  <span class="hljs-string">'blue'</span>, <span class="hljs-string">'green'</span>, <span class="hljs-string">'purple'</span>,
+  <span class="hljs-string">'yellow'</span>, <span class="hljs-string">'pink'</span>, <span class="hljs-string">'orange'</span>, <span class="hljs-string">'tan'</span>
 ];
 
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyDemoRectangle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">LitElement</span> </span>{
 
-  <span class="hljs-function"><span class="hljs-title">onCreate</span>(<span class="hljs-params">evt</span>)</span> {
+  onCreate(evt) {
     <span class="hljs-comment">// listening to the create event dispatched</span>
     <span class="hljs-comment">// by the element to assign a nice color to</span>
     <span class="hljs-comment">// the new rectangle.</span>
     <span class="hljs-keyword">const</span> newObj = evt.detail;
-    newObj.color = colors[<span class="hljs-built_in">this</span>.element.shapes.size % colors.length];
-    <span class="hljs-built_in">this</span>.element.mode = <span class="hljs-string">&#x27;edit&#x27;</span>;
+    newObj.color = colors[<span class="hljs-keyword">this</span>.element.shapes.size % colors.length];
+    <span class="hljs-keyword">this</span>.element.mode = <span class="hljs-string">'edit'</span>;
   }
 
-  <span class="hljs-keyword">get</span> <span class="hljs-title">element</span>() {
+  <span class="hljs-keyword">get</span> element() {
     <span class="hljs-comment">// Utility getter of the element</span>
-    <span class="hljs-keyword">return</span> <span class="hljs-built_in">this</span>.shadowRoot.querySelector(<span class="hljs-string">&#x27;pxn-rectangle&#x27;</span>);
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.shadowRoot.querySelector(<span class="hljs-string">'pxn-rectangle'</span>);
   }
 
-  <span class="hljs-function"><span class="hljs-title">render</span>(<span class="hljs-params"></span>)</span> {
+  render() {
     <span class="hljs-comment">// Render the template with the rectangle element</span>
     <span class="hljs-comment">// enriched with some buttons to interact with it.</span>
     <span class="hljs-keyword">return</span> html`<span class="xml">
-    <span class="hljs-tag">&lt;<span class="hljs-name">pxn-rectangle</span> <span class="hljs-attr">image</span>=<span class="hljs-string">&quot;image.jpg&quot;</span> @<span class="hljs-attr">create</span>=</span></span><span class="hljs-subst">${<span class="hljs-built_in">this</span>.onCreate}</span><span class="xml"><span class="hljs-tag">&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">pxn-rectangle</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">pxn-rectangle</span> <span class="hljs-attr">image</span>=<span class="hljs-string">"image.jpg"</span> @<span class="hljs-attr">create</span>=</span></span><span class="hljs-subst">${<span class="hljs-keyword">this</span>.onCreate}</span><span class="xml"><span class="hljs-tag">&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">pxn-rectangle</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> @<span class="hljs-attr">click</span>=</span></span><span class="hljs-subst">${() =&gt; <span class="hljs-built_in">this</span>.element.mode = <span class="hljs-string">&#x27;create&#x27;</span>}</span><span class="xml"><span class="hljs-tag">&gt;</span>Add<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> @<span class="hljs-attr">click</span>=</span></span><span class="hljs-subst">${() =&gt; <span class="hljs-built_in">this</span>.element.zoomIn()}</span><span class="xml"><span class="hljs-tag">&gt;</span>+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> @<span class="hljs-attr">click</span>=</span></span><span class="hljs-subst">${() =&gt; <span class="hljs-built_in">this</span>.element.zoomOut()}</span><span class="xml"><span class="hljs-tag">&gt;</span>-<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> @<span class="hljs-attr">click</span>=</span></span><span class="hljs-subst">${() =&gt; <span class="hljs-keyword">this</span>.element.mode = <span class="hljs-string">'create'</span>}</span><span class="xml"><span class="hljs-tag">&gt;</span>Add<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> @<span class="hljs-attr">click</span>=</span></span><span class="hljs-subst">${() =&gt; <span class="hljs-keyword">this</span>.element.zoomIn()}</span><span class="xml"><span class="hljs-tag">&gt;</span>+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> @<span class="hljs-attr">click</span>=</span></span><span class="hljs-subst">${() =&gt; <span class="hljs-keyword">this</span>.element.zoomOut()}</span><span class="xml"><span class="hljs-tag">&gt;</span>-<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>`</span>;
   }
 }
 
-customElements.define(<span class="hljs-string">&#x27;my-demo-rectangle&#x27;</span>, MyDemoRectangle);</code></pre>
+customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDemoRectangle);</code></pre>
 					<a href="#api" id="api" style="color: inherit; text-decoration: none;">
 						<h2>API</h2>
 					</a>
@@ -210,18 +210,18 @@ customElements.define(<span class="hljs-string">&#x27;my-demo-rectangle&#x27;</s
 					</tbody></table>
 					<p>*InteractionMode depends on the element:</p>
 					<pre><code class="language-ts"><span class="hljs-comment">// pxn-rectangle | pxn-polygon | pxn-graph</span>
-<span class="hljs-keyword">type</span> InteractiveMode =  <span class="hljs-string">&#x27;edit&#x27;</span> | <span class="hljs-string">&#x27;create&#x27;</span> | <span class="hljs-string">&#x27;none&#x27;</span>;
+<span class="hljs-keyword">type</span> InteractiveMode =  <span class="hljs-string">'edit'</span> | <span class="hljs-string">'create'</span> | <span class="hljs-string">'none'</span>;
 
 <span class="hljs-comment">// pxn-segmentation</span>
-<span class="hljs-keyword">type</span> InteractiveMode =  <span class="hljs-string">&#x27;select&#x27;</span> | <span class="hljs-string">&#x27;edit-add&#x27;</span> | <span class="hljs-string">&#x27;edit-remove&#x27;</span> | <span class="hljs-string">&#x27;create&#x27;</span> | <span class="hljs-string">&#x27;none&#x27;</span>;
+<span class="hljs-keyword">type</span> InteractiveMode =  <span class="hljs-string">'select'</span> | <span class="hljs-string">'edit-add'</span> | <span class="hljs-string">'edit-remove'</span> | <span class="hljs-string">'create'</span> | <span class="hljs-string">'none'</span>;
 
 <span class="hljs-comment">// pxn-smart-rectangle</span>
-<span class="hljs-keyword">type</span> InteractiveMode =  <span class="hljs-string">&#x27;edit&#x27;</span> | <span class="hljs-string">&#x27;create&#x27;</span> | <span class="hljs-string">&#x27;smart-create&#x27;</span> | <span class="hljs-string">&#x27;none&#x27;</span>;</code></pre>
+<span class="hljs-keyword">type</span> InteractiveMode =  <span class="hljs-string">'edit'</span> | <span class="hljs-string">'create'</span> | <span class="hljs-string">'smart-create'</span> | <span class="hljs-string">'none'</span>;</code></pre>
 					<p>**The 2d shapes have the following format:</p>
 					<pre><code class="language-ts"><span class="hljs-comment">// 2d shape</span>
 <span class="hljs-keyword">interface</span> ShapeData {
   <span class="hljs-comment">// unique id</span>
-  <span class="hljs-attr">id</span>: <span class="hljs-built_in">string</span>;
+  id: <span class="hljs-built_in">string</span>;
   <span class="hljs-comment">// geometry of the shape</span>
   geometry: Geometry;
   <span class="hljs-comment">// optional color to be displayed</span>
@@ -237,7 +237,7 @@ customElements.define(<span class="hljs-string">&#x27;my-demo-rectangle&#x27;</s
   <span class="hljs-comment">// e.g. rectangle: [x_left, y_top, x_right, y_bottom]</span>
   <span class="hljs-comment">// e.g. polygon: [x1, y1, x2, y2, ...]</span>
   <span class="hljs-comment">// e.g. multi_polygon: []</span>
-  <span class="hljs-attr">vertices</span>: <span class="hljs-built_in">number</span>[];
+  vertices: <span class="hljs-built_in">number</span>[];
   <span class="hljs-comment">// edges: [[0,1],[0,2]...]</span>
   edges?: [<span class="hljs-built_in">number</span>, <span class="hljs-built_in">number</span>][];
   <span class="hljs-comment">// edges: [true,false...]</span>
@@ -248,11 +248,11 @@ customElements.define(<span class="hljs-string">&#x27;my-demo-rectangle&#x27;</s
   dim?: <span class="hljs-built_in">number</span>;
   <span class="hljs-comment">// in case of multi polygon</span>
   <span class="hljs-comment">// array of array of vertices</span>
-  <span class="hljs-comment">// e.g. multi_polygon: [[x1, y1, x2, y2...], [x&#x27;1, y&#x27;1, ...]]</span>
+  <span class="hljs-comment">// e.g. multi_polygon: [[x1, y1, x2, y2...], [x'1, y'1, ...]]</span>
   mvertices?: <span class="hljs-built_in">number</span>[][];
 }
 
-<span class="hljs-keyword">type</span> GeometryType = <span class="hljs-string">&#x27;rectangle&#x27;</span> | <span class="hljs-string">&#x27;polygon&#x27;</span> | <span class="hljs-string">&#x27;multi_polygon&#x27;</span>;</code></pre>
+<span class="hljs-keyword">type</span> GeometryType = <span class="hljs-string">'rectangle'</span> | <span class="hljs-string">'polygon'</span> | <span class="hljs-string">'multi_polygon'</span>;</code></pre>
 					<a href="#pxn-rectangle" id="pxn-rectangle" style="color: inherit; text-decoration: none;">
 						<h4>pxn-rectangle</h4>
 					</a>
@@ -317,7 +317,7 @@ customElements.define(<span class="hljs-string">&#x27;my-demo-rectangle&#x27;</s
 					</tbody></table>
 					<p>*The mask is stored as an ImageData:</p>
 					<pre><code class="language-ts"><span class="hljs-keyword">interface</span> ImageData {
-  <span class="hljs-comment">// Data contains the ImageData object&#x27;s pixel data. it is stored as a one-dimensional array in the RGBA order, with integer values between 0 and 255 (inclusive).</span>
+  <span class="hljs-comment">// Data contains the ImageData object's pixel data. it is stored as a one-dimensional array in the RGBA order, with integer values between 0 and 255 (inclusive).</span>
   <span class="hljs-comment">// Here [R, G, B, A] correspond to:</span>
   <span class="hljs-comment">// R: instance index from 1 to 255 (0 is for background or semantic classes)</span>
   <span class="hljs-comment">// G: additional instance index if #instances &gt; 255 (often equals to 0)</span>
@@ -326,7 +326,7 @@ customElements.define(<span class="hljs-string">&#x27;my-demo-rectangle&#x27;</s
   <span class="hljs-comment">// All the pixels of a new person A will have a [1, 0, 2] value</span>
   <span class="hljs-comment">// All the pixels of a new car B will have a [2, 0, 3] value</span>
   <span class="hljs-comment">// All the pixels of a new person C will have a [3, 0, 2] value</span>
-  <span class="hljs-attr">data</span>: <span class="hljs-built_in">Uint8ClampedArray</span>;
+  data: <span class="hljs-built_in">Uint8ClampedArray</span>;
   height: <span class="hljs-built_in">number</span>;
   width: <span class="hljs-built_in">number</span>;
 }</code></pre>
@@ -336,25 +336,25 @@ customElements.define(<span class="hljs-string">&#x27;my-demo-rectangle&#x27;</s
 <span class="hljs-keyword">import</span> cv2
 <span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
 
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">readb64</span>(<span class="hljs-params">uri</span>):</span>
-  encoded_data = uri.split(<span class="hljs-string">&#x27;,&#x27;</span>)[<span class="hljs-number">1</span>]
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">readb64</span><span class="hljs-params">(uri)</span>:</span>
+  encoded_data = uri.split(<span class="hljs-string">','</span>)[<span class="hljs-number">1</span>]
   nparr = np.fromstring(base64.b64decode(encoded_data), np.uint8)
   img = cv2.imdecode(nparr, cv2.IMREAD_UNCHANGED)
   <span class="hljs-keyword">return</span> img
 
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">writeb64</span>(<span class="hljs-params">img</span>):</span>
-    retval, buffer = cv2.imencode(<span class="hljs-string">&#x27;.png&#x27;</span>, img)
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">writeb64</span><span class="hljs-params">(img)</span>:</span>
+    retval, buffer = cv2.imencode(<span class="hljs-string">'.png'</span>, img)
     pic_str = base64.b64encode(buffer)
     pic_str = pic_str.decode()
     <span class="hljs-keyword">return</span> pic_str
 
 <span class="hljs-comment"># assuming you stored the mask in a json file of the following structure</span>
-<span class="hljs-comment"># { annotations: [{mask: &quot;data:image/png;base64,iVBORw0KGgoAA...&quot;}]}</span>
-<span class="hljs-keyword">with</span> <span class="hljs-built_in">open</span>(filename, <span class="hljs-string">&#x27;r&#x27;</span>) <span class="hljs-keyword">as</span> f:
-  annotations = json.load(f)[<span class="hljs-string">&quot;annotations&quot;</span>]
+<span class="hljs-comment"># { annotations: [{mask: "data:image/png;base64,iVBORw0KGgoAA..."}]}</span>
+<span class="hljs-keyword">with</span> open(filename, <span class="hljs-string">'r'</span>) <span class="hljs-keyword">as</span> f:
+  annotations = json.load(f)[<span class="hljs-string">"annotations"</span>]
 <span class="hljs-keyword">for</span> ann <span class="hljs-keyword">in</span> annotations:
-  mask = readb64(ann[<span class="hljs-string">&quot;mask&quot;</span>])
-  <span class="hljs-built_in">print</span>(mask.shape)
+  mask = readb64(ann[<span class="hljs-string">"mask"</span>])
+  print(mask.shape)
   <span class="hljs-comment"># should be (height,width,3)</span>
   <span class="hljs-comment"># corresponding to [id1, id2, classIdx]</span>
   <span class="hljs-comment"># id1 and id2 are zeros in case of semantic segmentation</span>
@@ -387,11 +387,11 @@ customElements.define(<span class="hljs-string">&#x27;my-demo-rectangle&#x27;</s
 						| -------------------- | -------------- | -------- |------------
 					| <code>graphType</code>          | <code>GraphSettings</code>| <code>defaultSkeleton</code>      | Skeleton structure</p>
 					<pre><code class="language-ts"><span class="hljs-keyword">export</span> <span class="hljs-keyword">interface</span> IGraphSettings {
-  <span class="hljs-attr">radius</span>: <span class="hljs-built_in">number</span>;
+  radius: <span class="hljs-built_in">number</span>;
   <span class="hljs-comment">// Set list of node colors or empty if all take the shape color</span>
   nodeColors: <span class="hljs-built_in">number</span>[];
   <span class="hljs-comment">// Set one color for all edges or same as nodes</span>
-  edgeColorType: <span class="hljs-string">&quot;default&quot;</span> | <span class="hljs-string">&quot;node&quot;</span>;
+  edgeColorType: <span class="hljs-string">"default"</span> | <span class="hljs-string">"node"</span>;
   <span class="hljs-comment">// Set skeleton #keypoints with their names</span>
   vertexNames: <span class="hljs-built_in">string</span>[];
   <span class="hljs-comment">// Set skeleton links between its vertices</span>
@@ -401,17 +401,17 @@ customElements.define(<span class="hljs-string">&#x27;my-demo-rectangle&#x27;</s
 }
 
 <span class="hljs-keyword">const</span> defaultSkeletonSettings = {
-  <span class="hljs-attr">radius</span>: <span class="hljs-number">4</span>,
-  <span class="hljs-attr">nodeColors</span>: [
+  radius: <span class="hljs-number">4</span>,
+  nodeColors: [
     <span class="hljs-number">0Xe6194b</span>, <span class="hljs-number">0X3cb44b</span>, <span class="hljs-number">0Xffe119</span>, <span class="hljs-number">0X4363d8</span>, <span class="hljs-number">0Xf58231</span>, <span class="hljs-number">0X911eb4</span>,
     <span class="hljs-number">0X46f0f0</span>, <span class="hljs-number">0Xf032e6</span>, <span class="hljs-number">0Xbcf60c</span>, <span class="hljs-number">0Xfabebe</span>, <span class="hljs-number">0X008080</span>, <span class="hljs-number">0Xe6beff</span>,
     <span class="hljs-number">0X9a6324</span>, <span class="hljs-number">0Xfffac8</span>, <span class="hljs-number">0X800000</span>, <span class="hljs-number">0Xaaffc3</span>, <span class="hljs-number">0X808000</span>, <span class="hljs-number">0Xffd8b1</span>,
     <span class="hljs-number">0X000075</span>, <span class="hljs-number">0X808080</span>, <span class="hljs-number">0Xffffff</span>, <span class="hljs-number">0X000000</span>
   ],
-  <span class="hljs-attr">edgeColorType</span>: <span class="hljs-string">&quot;node&quot;</span>,
-  <span class="hljs-attr">edges</span>: [[<span class="hljs-number">0</span>,<span class="hljs-number">1</span>], [<span class="hljs-number">0</span>,<span class="hljs-number">2</span>]],
-  <span class="hljs-attr">vertexNames</span>: [<span class="hljs-string">&#x27;header&#x27;</span>, <span class="hljs-string">&#x27;RFoot&#x27;</span>, <span class="hljs-string">&#x27;LFoot&#x27;</span>],
-  <span class="hljs-attr">showVertexName</span>: <span class="hljs-literal">true</span>
+  edgeColorType: <span class="hljs-string">"node"</span>,
+  edges: [[<span class="hljs-number">0</span>,<span class="hljs-number">1</span>], [<span class="hljs-number">0</span>,<span class="hljs-number">2</span>]],
+  vertexNames: [<span class="hljs-string">'header'</span>, <span class="hljs-string">'RFoot'</span>, <span class="hljs-string">'LFoot'</span>],
+  showVertexName: <span class="hljs-literal">true</span>
 };</code></pre>
 					<a href="#methods" id="methods" style="color: inherit; text-decoration: none;">
 						<h3>Methods</h3>
@@ -552,19 +552,19 @@ customElements.define(<span class="hljs-string">&#x27;my-demo-rectangle&#x27;</s
 							</tr>
 					</tbody></table>
 					<pre><code class="language-ts"><span class="hljs-keyword">interface</span> ShapeDataDetail {
-  <span class="hljs-attr">detail</span>: ShapeData;
+  detail: ShapeData;
 }
 
 <span class="hljs-keyword">interface</span> ShapeDatasDetail {
-  <span class="hljs-attr">detail</span>: ShapeData[];
+  detail: ShapeData[];
 }
 
 <span class="hljs-keyword">interface</span> ShapeDataIdxDetail {
-  <span class="hljs-attr">detail</span>: <span class="hljs-built_in">string</span>[];
+  detail: <span class="hljs-built_in">string</span>[];
 }
 
 <span class="hljs-keyword">interface</span> ModeDetail {
-  <span class="hljs-attr">detail</span>: InteractionMode;
+  detail: InteractionMode;
 }</code></pre>
 					<a href="#shortcuts" id="shortcuts" style="color: inherit; text-decoration: none;">
 						<h3>Shortcuts</h3>
@@ -642,11 +642,8 @@ customElements.define(<span class="hljs-string">&#x27;my-demo-rectangle&#x27;</s
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.clickcontroller.html" class="tsd-kind-icon">Click<wbr>Controller</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.controller.html" class="tsd-kind-icon">Controller</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.createbrushcontroller.html" class="tsd-kind-icon">Create<wbr>Brush<wbr>Controller</a></li>
-								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.createcontroller.html" class="tsd-kind-icon">Create<wbr>Controller</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.createpolygoncontroller.html" class="tsd-kind-icon">Create<wbr>Polygon<wbr>Controller</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.drawingcross.html" class="tsd-kind-icon">Drawing<wbr>Cross</a></li>
-								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.editionaddcontroller.html" class="tsd-kind-icon">Edition<wbr>Add<wbr>Controller</a></li>
-								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.editionremovecontroller.html" class="tsd-kind-icon">Edition<wbr>Remove<wbr>Controller</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.graph.html" class="tsd-kind-icon">Graph</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.graphcreatecontroller.html" class="tsd-kind-icon">Graph<wbr>Create<wbr>Controller</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.graphic.html" class="tsd-kind-icon">Graphic</a></li>
@@ -657,7 +654,6 @@ customElements.define(<span class="hljs-string">&#x27;my-demo-rectangle&#x27;</s
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.graphicrectangle.html" class="tsd-kind-icon">Graphic<wbr>Rectangle</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.graphsupdatecontroller.html" class="tsd-kind-icon">Graphs<wbr>Update<wbr>Controller</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.lockcontroller.html" class="tsd-kind-icon">Lock<wbr>Controller</a></li>
-								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.maskmanager.html" class="tsd-kind-icon">Mask<wbr>Manager</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.polygon.html" class="tsd-kind-icon">Polygon</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.polygoncreatecontroller.html" class="tsd-kind-icon">Polygon<wbr>Create<wbr>Controller</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.polygonseditcontroller.html" class="tsd-kind-icon">Polygons<wbr>Edit<wbr>Controller</a></li>
@@ -728,6 +724,7 @@ customElements.define(<span class="hljs-string">&#x27;my-demo-rectangle&#x27;</s
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_graphics_2d.html#getshape" class="tsd-kind-icon">get<wbr>Shape</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_graphics_2d.html#hextorgb255" class="tsd-kind-icon">hex<wbr>ToRgb255</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_graphics_2d.html#insertmidnode" class="tsd-kind-icon">insert<wbr>Mid<wbr>Node</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_graphics_2d.html#invertcolor" class="tsd-kind-icon">invert<wbr>Color</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_graphics_2d.html#isclockwise" class="tsd-kind-icon">is<wbr>Clockwise</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_graphics_2d.html#isincludedrect" class="tsd-kind-icon">is<wbr>Included<wbr>Rect</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_graphics_2d.html#isinside" class="tsd-kind-icon">is<wbr>Inside</a></li>
@@ -774,7 +771,7 @@ customElements.define(<span class="hljs-string">&#x27;my-demo-rectangle&#x27;</s
 					<div class="tsd-signature tsd-kind-icon">distinct<wbr>Colors<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [[230, 25, 75], // 0 red-pink[60, 180, 75], // 1 green[255, 225, 25], // 2 yellow[0, 130, 200], // 3 blue[245, 130, 48], // 4 orange[145, 30, 180], // 5 purple[70, 240, 240], // 6 cyan[240, 50, 230], // 7 pink-purple[210, 245, 60], // 8 yellow-green[250, 190, 190], // 9 light pink[0, 128, 128], // 10 blue green[230, 190, 255], // 11 light purple[170, 110, 40], // 12 brown[255, 250, 200], // 13 light yellow green[128, 0, 0], // 14 dark red[170, 255, 195], // 15 green fluo[128, 128, 0], // 16 dark green-brown[255, 215, 180], // 17 beige[0, 0, 128], // 18 dark blue[128, 128, 128] // 19 grey]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in packages/graphics-2d/src/utils-mask.ts:163</li>
+							<li>Defined in packages/graphics-2d/src/utils-mask.ts:168</li>
 						</ul>
 					</aside>
 				</section>
@@ -794,7 +791,7 @@ customElements.define(<span class="hljs-string">&#x27;my-demo-rectangle&#x27;</s
 					<div class="tsd-signature tsd-kind-icon">track<wbr>Colors<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [&#x27;#ff1100&#x27;, &#x27;#ff867d&#x27;, &#x27;#ffe0de&#x27;, &#x27;#a89594&#x27;, &#x27;#ad514c&#x27;, &#x27;#ad0900&#x27;, &#x27;#610500&#x27;, &#x27;#59302e&#x27;, &#x27;#61504f&#x27;,&#x27;#ff9500&#x27;, &#x27;#ffc778&#x27;, &#x27;#ffe0ad&#x27;, &#x27;#b36f00&#x27;, &#x27;#b38d50&#x27;, &#x27;#5e3e0b&#x27;, &#x27;#fffb00&#x27;, &#x27;#8f8d00&#x27;, &#x27;#f2f188&#x27;,&#x27;#6fff00&#x27;, &#x27;#ceffa8&#x27;, &#x27;#3c8a00&#x27;, &#x27;#173600&#x27;, &#x27;#5f8544&#x27;, &#x27;#00ffcc&#x27;, &#x27;#00997a&#x27;, &#x27;#004a3b&#x27;, &#x27;#409483&#x27;,&#x27;#00b7ff&#x27;, &#x27;#0077a6&#x27;, &#x27;#004b69&#x27;, &#x27;#96e1ff&#x27;, &#x27;#3c7f99&#x27;, &#x27;#002aff&#x27;, &#x27;#001891&#x27;, &#x27;#2a387d&#x27;, &#x27;#7a91ff&#x27;,&#x27;#4400ff&#x27;, &#x27;#230085&#x27;, &#x27;#15014d&#x27;, &#x27;#533b96&#x27;, &#x27;#b296ff&#x27;, &#x27;#895eff&#x27;, &#x27;#ff00fb&#x27;, &#x27;#850083&#x27;, &#x27;#360035&#x27;,&#x27;#fc95fb&#x27;, &#x27;#8f278e&#x27;, &#x27;#a86da8&#x27;, &#x27;#873587&#x27;, &#x27;#ff0062&#x27;, &#x27;#bf2e66&#x27;, &#x27;#73002c&#x27;]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in packages/graphics-2d/src/utils-video.ts:319</li>
+							<li>Defined in packages/graphics-2d/src/utils-video.ts:315</li>
 						</ul>
 					</aside>
 				</section>
@@ -811,7 +808,7 @@ customElements.define(<span class="hljs-string">&#x27;my-demo-rectangle&#x27;</s
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/utils-mask.ts:186</li>
+									<li>Defined in packages/graphics-2d/src/utils-mask.ts:191</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -889,7 +886,7 @@ customElements.define(<span class="hljs-string">&#x27;my-demo-rectangle&#x27;</s
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/utils-mask.ts:73</li>
+									<li>Defined in packages/graphics-2d/src/utils-mask.ts:78</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -998,7 +995,7 @@ customElements.define(<span class="hljs-string">&#x27;my-demo-rectangle&#x27;</s
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/utils-mask.ts:61</li>
+									<li>Defined in packages/graphics-2d/src/utils-mask.ts:66</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1035,7 +1032,7 @@ customElements.define(<span class="hljs-string">&#x27;my-demo-rectangle&#x27;</s
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/utils-video.ts:222</li>
+									<li>Defined in packages/graphics-2d/src/utils-video.ts:217</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1127,7 +1124,7 @@ customElements.define(<span class="hljs-string">&#x27;my-demo-rectangle&#x27;</s
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/utils-mask.ts:112</li>
+									<li>Defined in packages/graphics-2d/src/utils-mask.ts:117</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1164,7 +1161,7 @@ customElements.define(<span class="hljs-string">&#x27;my-demo-rectangle&#x27;</s
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/controller-mask.ts:783</li>
+									<li>Defined in packages/graphics-2d/src/controller-mask.ts:637</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1197,7 +1194,7 @@ customElements.define(<span class="hljs-string">&#x27;my-demo-rectangle&#x27;</s
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/utils-mask.ts:46</li>
+									<li>Defined in packages/graphics-2d/src/utils-mask.ts:51</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1223,9 +1220,14 @@ customElements.define(<span class="hljs-string">&#x27;my-demo-rectangle&#x27;</s
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/utils-mask.ts:15</li>
+									<li>Defined in packages/graphics-2d/src/utils-mask.ts:20</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fused id is idx1 + 256<em>idx2 + 256</em>256*cls</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1307,7 +1309,7 @@ customElements.define(<span class="hljs-string">&#x27;my-demo-rectangle&#x27;</s
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/utils-mask.ts:146</li>
+									<li>Defined in packages/graphics-2d/src/utils-mask.ts:151</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1368,7 +1370,7 @@ customElements.define(<span class="hljs-string">&#x27;my-demo-rectangle&#x27;</s
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/utils-video.ts:217</li>
+									<li>Defined in packages/graphics-2d/src/utils-video.ts:212</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1428,7 +1430,7 @@ customElements.define(<span class="hljs-string">&#x27;my-demo-rectangle&#x27;</s
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/utils-mask.ts:139</li>
+									<li>Defined in packages/graphics-2d/src/utils-mask.ts:144</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1454,7 +1456,7 @@ customElements.define(<span class="hljs-string">&#x27;my-demo-rectangle&#x27;</s
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/utils-mask.ts:31</li>
+									<li>Defined in packages/graphics-2d/src/utils-mask.ts:36</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1477,7 +1479,7 @@ customElements.define(<span class="hljs-string">&#x27;my-demo-rectangle&#x27;</s
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/controller-mask.ts:755</li>
+									<li>Defined in packages/graphics-2d/src/controller-mask.ts:609</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1621,6 +1623,29 @@ customElements.define(<span class="hljs-string">&#x27;my-demo-rectangle&#x27;</s
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="invertcolor" class="tsd-anchor"></a>
+					<h3>invert<wbr>Color</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">invert<wbr>Color<span class="tsd-signature-symbol">(</span>rgb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in packages/graphics-2d/src/utils-video.ts:327</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>rgb: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="isclockwise" class="tsd-anchor"></a>
 					<h3>is<wbr>Clockwise</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
@@ -1630,7 +1655,7 @@ customElements.define(<span class="hljs-string">&#x27;my-demo-rectangle&#x27;</s
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/utils-mask.ts:128</li>
+									<li>Defined in packages/graphics-2d/src/utils-mask.ts:133</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1688,7 +1713,7 @@ customElements.define(<span class="hljs-string">&#x27;my-demo-rectangle&#x27;</s
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/utils-mask.ts:19</li>
+									<li>Defined in packages/graphics-2d/src/utils-mask.ts:24</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1780,22 +1805,19 @@ customElements.define(<span class="hljs-string">&#x27;my-demo-rectangle&#x27;</s
 					<a name="mergetracks" class="tsd-anchor"></a>
 					<h3>merge<wbr>Tracks</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">merge<wbr>Tracks<span class="tsd-signature-symbol">(</span>tracks<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span>, t1<span class="tsd-signature-symbol">: </span><a href="../interfaces/_pixano_graphics_2d.trackdata.html" class="tsd-signature-type">TrackData</a>, t2<span class="tsd-signature-symbol">: </span><a href="../interfaces/_pixano_graphics_2d.trackdata.html" class="tsd-signature-type">TrackData</a>, fIx<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">merge<wbr>Tracks<span class="tsd-signature-symbol">(</span>tracks<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span>, t1Id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, t2Id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>keysIntersection<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>trackId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/utils-video.ts:185</li>
+									<li>Defined in packages/graphics-2d/src/utils-video.ts:190</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Merge two tracks.
-										If they do not overlap, do concatenation of keyshapes.
-										If they overlap at current timestamp, cut both tracks at timestamp and join the older left-side sub-track
-										with the newer right-side sub-track. Create tracks with remaining sub-tracks.
-									If they overlap but not at current time, do as above with the first timestamp of overlap.</p>
+									Do the concatenation of keyshapes if the two tracks do not overlap.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1803,7 +1825,7 @@ customElements.define(<span class="hljs-string">&#x27;my-demo-rectangle&#x27;</s
 								<li>
 									<h5>tracks: <span class="tsd-signature-symbol">{}</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>tracks to be merged</p>
+										<p>the set of tracks</p>
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-index-signature">
@@ -1812,16 +1834,32 @@ customElements.define(<span class="hljs-string">&#x27;my-demo-rectangle&#x27;</s
 									</ul>
 								</li>
 								<li>
-									<h5>t1: <a href="../interfaces/_pixano_graphics_2d.trackdata.html" class="tsd-signature-type">TrackData</a></h5>
+									<h5>t1Id: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the id of the first track</p>
+									</div>
 								</li>
 								<li>
-									<h5>t2: <a href="../interfaces/_pixano_graphics_2d.trackdata.html" class="tsd-signature-type">TrackData</a></h5>
-								</li>
-								<li>
-									<h5>fIx: <span class="tsd-signature-type">number</span></h5>
+									<h5>t2Id: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the id of the second track</p>
+									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>keysIntersection<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>trackId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h4>
+							<p>a object containing the id <code>trackId</code> of the merged track and the
+								list <code>keysIntersection</code> of the frames at which the tracks overlaps.
+								If the tracks do not overlap, <code>keysIntersection</code> is empty.
+								If the tracks overlap, an empty string is returned instead of the id
+							of the merged track.</p>
+							<ul class="tsd-parameters">
+								<li class="tsd-parameter">
+									<h5>keys<wbr>Intersection<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li class="tsd-parameter">
+									<h5>track<wbr>Id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
 						</li>
 					</ul>
 				</section>
@@ -1965,7 +2003,7 @@ customElements.define(<span class="hljs-string">&#x27;my-demo-rectangle&#x27;</s
 					<a name="simplify" class="tsd-anchor"></a>
 					<h3>simplify</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">simplify<span class="tsd-signature-symbol">(</span>points<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span>, tolerance<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, highestQuality<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">simplify<span class="tsd-signature-symbol">(</span>points<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span>, tolerance<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, highestQuality<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -1988,7 +2026,10 @@ customElements.define(<span class="hljs-string">&#x27;my-demo-rectangle&#x27;</s
 									</div>
 								</li>
 								<li>
-									<h5>tolerance: <span class="tsd-signature-type">number</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> tolerance: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>number</p>
+									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> highestQuality: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
@@ -2010,7 +2051,7 @@ customElements.define(<span class="hljs-string">&#x27;my-demo-rectangle&#x27;</s
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/utils-video.ts:313</li>
+									<li>Defined in packages/graphics-2d/src/utils-video.ts:309</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2046,13 +2087,13 @@ customElements.define(<span class="hljs-string">&#x27;my-demo-rectangle&#x27;</s
 					<a name="splittrack" class="tsd-anchor"></a>
 					<h3>split<wbr>Track</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">split<wbr>Track<span class="tsd-signature-symbol">(</span>t<span class="tsd-signature-symbol">: </span><a href="../interfaces/_pixano_graphics_2d.trackdata.html" class="tsd-signature-type">TrackData</a>, fIdx<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, tracks<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_pixano_graphics_2d.trackdata.html" class="tsd-signature-type">TrackData</a></li>
+						<li class="tsd-signature tsd-kind-icon">split<wbr>Track<span class="tsd-signature-symbol">(</span>tId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, fIdx<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, tracks<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_pixano_graphics_2d.trackdata.html" class="tsd-signature-type">TrackData</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/utils-video.ts:247</li>
+									<li>Defined in packages/graphics-2d/src/utils-video.ts:242</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2063,9 +2104,7 @@ customElements.define(<span class="hljs-string">&#x27;my-demo-rectangle&#x27;</s
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>t: <a href="../interfaces/_pixano_graphics_2d.trackdata.html" class="tsd-signature-type">TrackData</a></h5>
-									<div class="tsd-comment tsd-typography">
-									</div>
+									<h5>tId: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
 									<h5>fIdx: <span class="tsd-signature-type">number</span></h5>
@@ -2087,7 +2126,7 @@ customElements.define(<span class="hljs-string">&#x27;my-demo-rectangle&#x27;</s
 					<a name="switchtrack" class="tsd-anchor"></a>
 					<h3>switch<wbr>Track</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">switch<wbr>Track<span class="tsd-signature-symbol">(</span>t1<span class="tsd-signature-symbol">: </span><a href="../interfaces/_pixano_graphics_2d.trackdata.html" class="tsd-signature-type">TrackData</a>, t2<span class="tsd-signature-symbol">: </span><a href="../interfaces/_pixano_graphics_2d.trackdata.html" class="tsd-signature-type">TrackData</a>, fIdx<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">switch<wbr>Track<span class="tsd-signature-symbol">(</span>tracks<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span>, t1Id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, t2Id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, fIdx<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -2104,10 +2143,21 @@ customElements.define(<span class="hljs-string">&#x27;my-demo-rectangle&#x27;</s
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>t1: <a href="../interfaces/_pixano_graphics_2d.trackdata.html" class="tsd-signature-type">TrackData</a></h5>
+									<h5>tracks: <span class="tsd-signature-symbol">{}</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>tracks to be switched</p>
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-index-signature">
+											<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><a href="../interfaces/_pixano_graphics_2d.trackdata.html" class="tsd-signature-type">TrackData</a></h5>
+										</li>
+									</ul>
 								</li>
 								<li>
-									<h5>t2: <a href="../interfaces/_pixano_graphics_2d.trackdata.html" class="tsd-signature-type">TrackData</a></h5>
+									<h5>t1Id: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>t2Id: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
 									<h5>fIdx: <span class="tsd-signature-type">number</span></h5>
@@ -2127,7 +2177,7 @@ customElements.define(<span class="hljs-string">&#x27;my-demo-rectangle&#x27;</s
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/utils-video.ts:281</li>
+									<li>Defined in packages/graphics-2d/src/utils-video.ts:277</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2181,7 +2231,7 @@ customElements.define(<span class="hljs-string">&#x27;my-demo-rectangle&#x27;</s
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/controller-mask.ts:771</li>
+									<li>Defined in packages/graphics-2d/src/controller-mask.ts:625</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2276,7 +2326,7 @@ customElements.define(<span class="hljs-string">&#x27;my-demo-rectangle&#x27;</s
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+						<a href="../index.html"><em>Globals</em></a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="_pixano_ai.html">@pixano/ai</a>
@@ -2322,19 +2372,10 @@ customElements.define(<span class="hljs-string">&#x27;my-demo-rectangle&#x27;</s
 						<a href="../classes/_pixano_graphics_2d.createbrushcontroller.html" class="tsd-kind-icon">Create<wbr>Brush<wbr>Controller</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/_pixano_graphics_2d.createcontroller.html" class="tsd-kind-icon">Create<wbr>Controller</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="../classes/_pixano_graphics_2d.createpolygoncontroller.html" class="tsd-kind-icon">Create<wbr>Polygon<wbr>Controller</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="../classes/_pixano_graphics_2d.drawingcross.html" class="tsd-kind-icon">Drawing<wbr>Cross</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/_pixano_graphics_2d.editionaddcontroller.html" class="tsd-kind-icon">Edition<wbr>Add<wbr>Controller</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/_pixano_graphics_2d.editionremovecontroller.html" class="tsd-kind-icon">Edition<wbr>Remove<wbr>Controller</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="../classes/_pixano_graphics_2d.graph.html" class="tsd-kind-icon">Graph</a>
@@ -2365,9 +2406,6 @@ customElements.define(<span class="hljs-string">&#x27;my-demo-rectangle&#x27;</s
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="../classes/_pixano_graphics_2d.lockcontroller.html" class="tsd-kind-icon">Lock<wbr>Controller</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/_pixano_graphics_2d.maskmanager.html" class="tsd-kind-icon">Mask<wbr>Manager</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="../classes/_pixano_graphics_2d.polygon.html" class="tsd-kind-icon">Polygon</a>
@@ -2533,6 +2571,9 @@ customElements.define(<span class="hljs-string">&#x27;my-demo-rectangle&#x27;</s
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="_pixano_graphics_2d.html#insertmidnode" class="tsd-kind-icon">insert<wbr>Mid<wbr>Node</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="_pixano_graphics_2d.html#invertcolor" class="tsd-kind-icon">invert<wbr>Color</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="_pixano_graphics_2d.html#isclockwise" class="tsd-kind-icon">is<wbr>Clockwise</a>
