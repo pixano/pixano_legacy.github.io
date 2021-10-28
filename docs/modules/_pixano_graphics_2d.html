@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>@pixano/graphics-2d | @pixano - v0.5.16</title>
-	<meta name="description" content="Documentation for @pixano - v0.5.16">
+	<title>@pixano/graphics-2d | @pixano - v0.5.17</title>
+	<meta name="description" content="Documentation for @pixano - v0.5.17">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">@pixano - v0.5.16</a>
+					<a href="../index.html" class="title">@pixano - v0.5.17</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -213,10 +213,14 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 <span class="hljs-keyword">type</span> InteractiveMode =  <span class="hljs-string">'edit'</span> | <span class="hljs-string">'create'</span> | <span class="hljs-string">'none'</span>;
 
 <span class="hljs-comment">// pxn-segmentation</span>
-<span class="hljs-keyword">type</span> InteractiveMode =  <span class="hljs-string">'select'</span> | <span class="hljs-string">'edit-add'</span> | <span class="hljs-string">'edit-remove'</span> | <span class="hljs-string">'create'</span> | <span class="hljs-string">'none'</span>;
+<span class="hljs-keyword">type</span> InteractiveMode =  <span class="hljs-string">'edit'</span> | <span class="hljs-string">'create'</span> | <span class="hljs-string">'create-brush'</span> | <span class="hljs-string">'none'</span>;
 
 <span class="hljs-comment">// pxn-smart-rectangle</span>
-<span class="hljs-keyword">type</span> InteractiveMode =  <span class="hljs-string">'edit'</span> | <span class="hljs-string">'create'</span> | <span class="hljs-string">'smart-create'</span> | <span class="hljs-string">'none'</span>;</code></pre>
+<span class="hljs-keyword">type</span> InteractiveMode =  <span class="hljs-string">'edit'</span> | <span class="hljs-string">'create'</span> | <span class="hljs-string">'smart-create'</span> | <span class="hljs-string">'none'</span>;
+
+
+<span class="hljs-comment">// pxn-smart-segmentation</span>
+<span class="hljs-keyword">type</span> InteractiveMode =  <span class="hljs-string">'edit'</span> | <span class="hljs-string">'create'</span> | <span class="hljs-string">'create-brush'</span> | <span class="hljs-string">'smart-create'</span> | <span class="hljs-string">'none'</span>;</code></pre>
 					<p>**The 2d shapes have the following format:</p>
 					<pre><code class="language-ts"><span class="hljs-comment">// 2d shape</span>
 <span class="hljs-keyword">interface</span> ShapeData {
@@ -629,6 +633,7 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 							<h3>Enumerations</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-enum tsd-parent-kind-module"><a href="../enums/_pixano_graphics_2d.editionmode.html" class="tsd-kind-icon">Edition<wbr>Mode</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-module"><a href="../enums/_pixano_graphics_2d.editionmode-1.html" class="tsd-kind-icon">Edition<wbr>Mode</a></li>
 								<li class="tsd-kind-enum tsd-parent-kind-module"><a href="../enums/_pixano_graphics_2d.maskvisumode.html" class="tsd-kind-icon">Mask<wbr>Visu<wbr>Mode</a></li>
 							</ul>
 						</section>
@@ -639,7 +644,6 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.brush.html" class="tsd-kind-icon">Brush</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.canvas.html" class="tsd-kind-icon">Canvas</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.canvas2d.html" class="tsd-kind-icon">Canvas2d</a></li>
-								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.clickcontroller.html" class="tsd-kind-icon">Click<wbr>Controller</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.controller.html" class="tsd-kind-icon">Controller</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.createbrushcontroller.html" class="tsd-kind-icon">Create<wbr>Brush<wbr>Controller</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.createpolygoncontroller.html" class="tsd-kind-icon">Create<wbr>Polygon<wbr>Controller</a></li>
@@ -648,6 +652,7 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.graphcreatecontroller.html" class="tsd-kind-icon">Graph<wbr>Create<wbr>Controller</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.graphic.html" class="tsd-kind-icon">Graphic</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.graphicgraph.html" class="tsd-kind-icon">Graphic<wbr>Graph</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.graphicline.html" class="tsd-kind-icon">Graphic<wbr>Line</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.graphicmask.html" class="tsd-kind-icon">Graphic<wbr>Mask</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.graphicmultipolygon.html" class="tsd-kind-icon">Graphic<wbr>Multi<wbr>Polygon</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.graphicpolygon.html" class="tsd-kind-icon">Graphic<wbr>Polygon</a></li>
@@ -662,14 +667,15 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.regblob.html" class="tsd-kind-icon">Reg<wbr>Blob</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.renderer.html" class="tsd-kind-icon">Renderer</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.segmentation.html" class="tsd-kind-icon">Segmentation</a></li>
-								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.segmentationinteractive.html" class="tsd-kind-icon">Segmentation<wbr>Interactive</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.selectcontroller.html" class="tsd-kind-icon">Select<wbr>Controller</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.shapecreatecontroller.html" class="tsd-kind-icon">Shape<wbr>Create<wbr>Controller</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.shapeseditcontroller.html" class="tsd-kind-icon">Shapes<wbr>Edit<wbr>Controller</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.smartcreatecontroller.html" class="tsd-kind-icon">Smart<wbr>Create<wbr>Controller</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.smartrectangle.html" class="tsd-kind-icon">Smart<wbr>Rectangle</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.smartrectanglecreatecontroller.html" class="tsd-kind-icon">Smart<wbr>Rectangle<wbr>Create<wbr>Controller</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.smartsegmentation.html" class="tsd-kind-icon">Smart<wbr>Segmentation</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.smarttracking.html" class="tsd-kind-icon">Smart<wbr>Tracking</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.tracking.html" class="tsd-kind-icon">Tracking</a></li>
-								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.trackingsmartcontroller.html" class="tsd-kind-icon">Tracking<wbr>Smart<wbr>Controller</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.viewcontrols.html" class="tsd-kind-icon">View<wbr>Controls</a></li>
 							</ul>
 						</section>
@@ -791,7 +797,7 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 					<div class="tsd-signature tsd-kind-icon">track<wbr>Colors<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [&#x27;#ff1100&#x27;, &#x27;#ff867d&#x27;, &#x27;#ffe0de&#x27;, &#x27;#a89594&#x27;, &#x27;#ad514c&#x27;, &#x27;#ad0900&#x27;, &#x27;#610500&#x27;, &#x27;#59302e&#x27;, &#x27;#61504f&#x27;,&#x27;#ff9500&#x27;, &#x27;#ffc778&#x27;, &#x27;#ffe0ad&#x27;, &#x27;#b36f00&#x27;, &#x27;#b38d50&#x27;, &#x27;#5e3e0b&#x27;, &#x27;#fffb00&#x27;, &#x27;#8f8d00&#x27;, &#x27;#f2f188&#x27;,&#x27;#6fff00&#x27;, &#x27;#ceffa8&#x27;, &#x27;#3c8a00&#x27;, &#x27;#173600&#x27;, &#x27;#5f8544&#x27;, &#x27;#00ffcc&#x27;, &#x27;#00997a&#x27;, &#x27;#004a3b&#x27;, &#x27;#409483&#x27;,&#x27;#00b7ff&#x27;, &#x27;#0077a6&#x27;, &#x27;#004b69&#x27;, &#x27;#96e1ff&#x27;, &#x27;#3c7f99&#x27;, &#x27;#002aff&#x27;, &#x27;#001891&#x27;, &#x27;#2a387d&#x27;, &#x27;#7a91ff&#x27;,&#x27;#4400ff&#x27;, &#x27;#230085&#x27;, &#x27;#15014d&#x27;, &#x27;#533b96&#x27;, &#x27;#b296ff&#x27;, &#x27;#895eff&#x27;, &#x27;#ff00fb&#x27;, &#x27;#850083&#x27;, &#x27;#360035&#x27;,&#x27;#fc95fb&#x27;, &#x27;#8f278e&#x27;, &#x27;#a86da8&#x27;, &#x27;#873587&#x27;, &#x27;#ff0062&#x27;, &#x27;#bf2e66&#x27;, &#x27;#73002c&#x27;]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in packages/graphics-2d/src/utils-video.ts:315</li>
+							<li>Defined in packages/graphics-2d/src/utils-video.ts:314</li>
 						</ul>
 					</aside>
 				</section>
@@ -1032,7 +1038,7 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/utils-video.ts:217</li>
+									<li>Defined in packages/graphics-2d/src/utils-video.ts:216</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1086,7 +1092,7 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/utils-video.ts:129</li>
+									<li>Defined in packages/graphics-2d/src/utils-video.ts:128</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1161,7 +1167,7 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/controller-mask.ts:637</li>
+									<li>Defined in packages/graphics-2d/src/controller-mask.ts:650</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1370,7 +1376,7 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/utils-video.ts:212</li>
+									<li>Defined in packages/graphics-2d/src/utils-video.ts:211</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1479,7 +1485,7 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/controller-mask.ts:609</li>
+									<li>Defined in packages/graphics-2d/src/controller-mask.ts:622</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1632,7 +1638,7 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/utils-video.ts:327</li>
+									<li>Defined in packages/graphics-2d/src/utils-video.ts:326</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1811,7 +1817,7 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/utils-video.ts:190</li>
+									<li>Defined in packages/graphics-2d/src/utils-video.ts:189</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1873,7 +1879,7 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/utils-video.ts:151</li>
+									<li>Defined in packages/graphics-2d/src/utils-video.ts:150</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2051,7 +2057,7 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/utils-video.ts:309</li>
+									<li>Defined in packages/graphics-2d/src/utils-video.ts:308</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2093,7 +2099,7 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/utils-video.ts:242</li>
+									<li>Defined in packages/graphics-2d/src/utils-video.ts:241</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2132,7 +2138,7 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/utils-video.ts:166</li>
+									<li>Defined in packages/graphics-2d/src/utils-video.ts:165</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2177,7 +2183,7 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/utils-video.ts:277</li>
+									<li>Defined in packages/graphics-2d/src/utils-video.ts:276</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2231,7 +2237,7 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/controller-mask.ts:625</li>
+									<li>Defined in packages/graphics-2d/src/controller-mask.ts:638</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2348,6 +2354,9 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 						<a href="../enums/_pixano_graphics_2d.editionmode.html" class="tsd-kind-icon">Edition<wbr>Mode</a>
 					</li>
 					<li class=" tsd-kind-enum tsd-parent-kind-module">
+						<a href="../enums/_pixano_graphics_2d.editionmode-1.html" class="tsd-kind-icon">Edition<wbr>Mode</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-module">
 						<a href="../enums/_pixano_graphics_2d.maskvisumode.html" class="tsd-kind-icon">Mask<wbr>Visu<wbr>Mode</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
@@ -2361,9 +2370,6 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="../classes/_pixano_graphics_2d.canvas2d.html" class="tsd-kind-icon">Canvas2d</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/_pixano_graphics_2d.clickcontroller.html" class="tsd-kind-icon">Click<wbr>Controller</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="../classes/_pixano_graphics_2d.controller.html" class="tsd-kind-icon">Controller</a>
@@ -2388,6 +2394,9 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="../classes/_pixano_graphics_2d.graphicgraph.html" class="tsd-kind-icon">Graphic<wbr>Graph</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/_pixano_graphics_2d.graphicline.html" class="tsd-kind-icon">Graphic<wbr>Line</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="../classes/_pixano_graphics_2d.graphicmask.html" class="tsd-kind-icon">Graphic<wbr>Mask</a>
@@ -2432,9 +2441,6 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 						<a href="../classes/_pixano_graphics_2d.segmentation.html" class="tsd-kind-icon">Segmentation</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/_pixano_graphics_2d.segmentationinteractive.html" class="tsd-kind-icon">Segmentation<wbr>Interactive</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="../classes/_pixano_graphics_2d.selectcontroller.html" class="tsd-kind-icon">Select<wbr>Controller</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
@@ -2450,10 +2456,16 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 						<a href="../classes/_pixano_graphics_2d.smartrectangle.html" class="tsd-kind-icon">Smart<wbr>Rectangle</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/_pixano_graphics_2d.tracking.html" class="tsd-kind-icon">Tracking</a>
+						<a href="../classes/_pixano_graphics_2d.smartrectanglecreatecontroller.html" class="tsd-kind-icon">Smart<wbr>Rectangle<wbr>Create<wbr>Controller</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/_pixano_graphics_2d.trackingsmartcontroller.html" class="tsd-kind-icon">Tracking<wbr>Smart<wbr>Controller</a>
+						<a href="../classes/_pixano_graphics_2d.smartsegmentation.html" class="tsd-kind-icon">Smart<wbr>Segmentation</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/_pixano_graphics_2d.smarttracking.html" class="tsd-kind-icon">Smart<wbr>Tracking</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/_pixano_graphics_2d.tracking.html" class="tsd-kind-icon">Tracking</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="../classes/_pixano_graphics_2d.viewcontrols.html" class="tsd-kind-icon">View<wbr>Controls</a>

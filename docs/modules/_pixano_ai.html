@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>@pixano/ai | @pixano - v0.5.16</title>
-	<meta name="description" content="Documentation for @pixano - v0.5.16">
+	<title>@pixano/ai | @pixano - v0.5.17</title>
+	<meta name="description" content="Documentation for @pixano - v0.5.17">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">@pixano - v0.5.16</a>
+					<a href="../index.html" class="title">@pixano - v0.5.17</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -110,10 +110,16 @@ image.src = <span class="hljs-string">'/path/to/your/image.jpg'</span>;</code></
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_ai.html#change" class="tsd-kind-icon">change</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_ai.html#cropimage" class="tsd-kind-icon">crop<wbr>Image</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_ai.html#cxy_wh_2_rect" class="tsd-kind-icon">cxy_<wbr>wh_<wbr>2_rect</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_ai.html#generatepoints" class="tsd-kind-icon">generate<wbr>Points</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_ai.html#get_axis_aligned_bbox" class="tsd-kind-icon">get_<wbr>axis_<wbr>aligned_<wbr>bbox</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_ai.html#get_subwindow_tracking" class="tsd-kind-icon">get_<wbr>subwindow_<wbr>tracking</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_ai.html#isinside" class="tsd-kind-icon">is<wbr>Inside</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_ai.html#ismodelcached" class="tsd-kind-icon">is<wbr>Model<wbr>Cached</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_ai.html#loadgraphmodel" class="tsd-kind-icon">load<wbr>Graph<wbr>Model</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_ai.html#loadimage" class="tsd-kind-icon">load<wbr>Image</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_ai.html#logmodelload" class="tsd-kind-icon">log<wbr>Model<wbr>Load</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_ai.html#python2round" class="tsd-kind-icon">python2round</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_ai.html#rectifyfisheyefrompolyline" class="tsd-kind-icon">rectify<wbr>Fisheye<wbr>From<wbr>Polyline</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_ai.html#sz" class="tsd-kind-icon">sz</a></li>
@@ -142,7 +148,7 @@ image.src = <span class="hljs-string">'/path/to/your/image.jpg'</span>;</code></
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/ai/src/tracker.ts:389</li>
+									<li>Defined in packages/ai/src/tracker.ts:382</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -156,6 +162,37 @@ image.src = <span class="hljs-string">'/path/to/your/image.jpg'</span>;</code></
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="cropimage" class="tsd-anchor"></a>
+					<h3>crop<wbr>Image</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">crop<wbr>Image<span class="tsd-signature-symbol">(</span>image<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLImageElement</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">HTMLCanvasElement</span>, roi<span class="tsd-signature-symbol">: </span><a href="../interfaces/_pixano_ai.rectangle.html" class="tsd-signature-type">Rectangle</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLCanvasElement</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in packages/ai/src/pixel-to-bounding-box.ts:168</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Crop an image.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>image: <span class="tsd-signature-type">HTMLImageElement</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">HTMLCanvasElement</span></h5>
+								</li>
+								<li>
+									<h5>roi: <a href="../interfaces/_pixano_ai.rectangle.html" class="tsd-signature-type">Rectangle</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">HTMLCanvasElement</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="cxy_wh_2_rect" class="tsd-anchor"></a>
 					<h3>cxy_<wbr>wh_<wbr>2_rect</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
@@ -165,7 +202,7 @@ image.src = <span class="hljs-string">'/path/to/your/image.jpg'</span>;</code></
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/ai/src/tracker.ts:381</li>
+									<li>Defined in packages/ai/src/tracker.ts:374</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -189,6 +226,39 @@ image.src = <span class="hljs-string">'/path/to/your/image.jpg'</span>;</code></
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="generatepoints" class="tsd-anchor"></a>
+					<h3>generate<wbr>Points</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">generate<wbr>Points<span class="tsd-signature-symbol">(</span>p<span class="tsd-signature-symbol">: </span><a href="../interfaces/_pixano_ai.point.html" class="tsd-signature-type">Point</a>, num<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_pixano_ai.point.html" class="tsd-signature-type">Point</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in packages/ai/src/pixel-to-bounding-box.ts:199</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Generate extra points from the original point <code>p</code></p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>p: <a href="../interfaces/_pixano_ai.point.html" class="tsd-signature-type">Point</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> num: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 5</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_pixano_ai.point.html" class="tsd-signature-type">Point</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="get_axis_aligned_bbox" class="tsd-anchor"></a>
 					<h3>get_<wbr>axis_<wbr>aligned_<wbr>bbox</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
@@ -198,7 +268,7 @@ image.src = <span class="hljs-string">'/path/to/your/image.jpg'</span>;</code></
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/ai/src/tracker.ts:360</li>
+									<li>Defined in packages/ai/src/tracker.ts:353</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -256,7 +326,7 @@ image.src = <span class="hljs-string">'/path/to/your/image.jpg'</span>;</code></
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/ai/src/tracker.ts:277</li>
+									<li>Defined in packages/ai/src/tracker.ts:270</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -282,6 +352,83 @@ image.src = <span class="hljs-string">'/path/to/your/image.jpg'</span>;</code></
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="isinside" class="tsd-anchor"></a>
+					<h3>is<wbr>Inside</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Inside<span class="tsd-signature-symbol">(</span>p<span class="tsd-signature-symbol">: </span><a href="../interfaces/_pixano_ai.point.html" class="tsd-signature-type">Point</a>, rect<span class="tsd-signature-symbol">: </span><a href="../interfaces/_pixano_ai.rectangle.html" class="tsd-signature-type">Rectangle</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in packages/ai/src/pixel-to-bounding-box.ts:153</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Test if a point is inside the given rectangle.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>p: <a href="../interfaces/_pixano_ai.point.html" class="tsd-signature-type">Point</a></h5>
+								</li>
+								<li>
+									<h5>rect: <a href="../interfaces/_pixano_ai.rectangle.html" class="tsd-signature-type">Rectangle</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="ismodelcached" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Model<wbr>Cached</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Model<wbr>Cached<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in packages/ai/src/tf-utils.ts:14</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>url: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="loadgraphmodel" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> load<wbr>Graph<wbr>Model</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">load<wbr>Graph<wbr>Model<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">GraphModel</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in packages/ai/src/tf-utils.ts:43</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>url: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">GraphModel</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="loadimage" class="tsd-anchor"></a>
 					<h3>load<wbr>Image</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
@@ -291,7 +438,7 @@ image.src = <span class="hljs-string">'/path/to/your/image.jpg'</span>;</code></
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/ai/src/tracker.ts:408</li>
+									<li>Defined in packages/ai/src/tracker.ts:401</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -305,6 +452,29 @@ image.src = <span class="hljs-string">'/path/to/your/image.jpg'</span>;</code></
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="logmodelload" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> log<wbr>Model<wbr>Load</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">log<wbr>Model<wbr>Load<span class="tsd-signature-symbol">(</span>p<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in packages/ai/src/tf-utils.ts:36</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>p: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="python2round" class="tsd-anchor"></a>
 					<h3>python2round</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
@@ -314,7 +484,7 @@ image.src = <span class="hljs-string">'/path/to/your/image.jpg'</span>;</code></
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/ai/src/tracker.ts:369</li>
+									<li>Defined in packages/ai/src/tracker.ts:362</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -395,7 +565,7 @@ image.src = <span class="hljs-string">'/path/to/your/image.jpg'</span>;</code></
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/ai/src/tracker.ts:394</li>
+									<li>Defined in packages/ai/src/tracker.ts:387</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -421,7 +591,7 @@ image.src = <span class="hljs-string">'/path/to/your/image.jpg'</span>;</code></
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/ai/src/tracker.ts:401</li>
+									<li>Defined in packages/ai/src/tracker.ts:394</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -438,13 +608,13 @@ image.src = <span class="hljs-string">'/path/to/your/image.jpg'</span>;</code></
 					<a name="update_tracks" class="tsd-anchor"></a>
 					<h3>update_<wbr>tracks</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">update_<wbr>tracks<span class="tsd-signature-symbol">(</span>model<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">GraphModel</span>, template<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">tf.Tensor3D</span>, search<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">tf.Tensor3D</span>, targetPos<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, targetSz<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, window<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">tf.Tensor2D</span>, scaleZ<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, p<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>context_amount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>exemplar_size<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>instance_size<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>lr<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>penalty_k<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>ratio<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>score_size<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>total_stride<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>window_influence<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>windowing<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">update_<wbr>tracks<span class="tsd-signature-symbol">(</span>model<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">GraphModel</span>, template<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">tf.Tensor3D</span>, search<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">tf.Tensor3D</span>, targetPos<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, targetSz<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, window<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">tf.Tensor2D</span>, scaleZ<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, p<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>context_amount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>lr<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>penalty_k<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>ratio<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>score_size<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>search_size<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>template_size<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>total_stride<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>window_influence<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>windowing<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/ai/src/tracker.ts:152</li>
+									<li>Defined in packages/ai/src/tracker.ts:137</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -477,18 +647,12 @@ image.src = <span class="hljs-string">'/path/to/your/image.jpg'</span>;</code></
 									<h5>scaleZ: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>p: <span class="tsd-signature-symbol">{ </span>context_amount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>exemplar_size<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>instance_size<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>lr<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>penalty_k<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>ratio<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>score_size<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>total_stride<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>window_influence<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>windowing<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
+									<h5>p: <span class="tsd-signature-symbol">{ </span>context_amount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>lr<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>penalty_k<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>ratio<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>score_size<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>search_size<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>template_size<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>total_stride<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>window_influence<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>windowing<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
 									<div class="tsd-comment tsd-typography">
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter">
 											<h5>context_<wbr>amount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
-										</li>
-										<li class="tsd-parameter">
-											<h5>exemplar_<wbr>size<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
-										</li>
-										<li class="tsd-parameter">
-											<h5>instance_<wbr>size<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
 										</li>
 										<li class="tsd-parameter">
 											<h5>lr<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
@@ -501,6 +665,12 @@ image.src = <span class="hljs-string">'/path/to/your/image.jpg'</span>;</code></
 										</li>
 										<li class="tsd-parameter">
 											<h5>score_<wbr>size<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>search_<wbr>size<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>template_<wbr>size<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
 										</li>
 										<li class="tsd-parameter">
 											<h5>total_<wbr>stride<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
@@ -536,7 +706,7 @@ image.src = <span class="hljs-string">'/path/to/your/image.jpg'</span>;</code></
 							<dd><p>CEA-LIST/DIASI/SIALV/LVA (2019)</p>
 							</dd>
 							<dt>author</dt>
-							<dd><p>CEA-LIST/DIASI/SIALV/LVA <a href="mailto:&#x70;&#x69;&#x78;&#x61;&#x6e;&#111;&#x40;&#99;&#101;&#x61;&#x2e;&#x66;&#114;">&#x70;&#x69;&#x78;&#x61;&#x6e;&#111;&#x40;&#99;&#101;&#x61;&#x2e;&#x66;&#114;</a></p>
+							<dd><p>CEA-LIST/DIASI/SIALV/LVA <a href="mailto:&#x70;&#x69;&#120;&#x61;&#x6e;&#x6f;&#64;&#99;&#101;&#x61;&#x2e;&#102;&#x72;">&#x70;&#x69;&#120;&#x61;&#x6e;&#x6f;&#64;&#99;&#101;&#x61;&#x2e;&#102;&#x72;</a></p>
 							</dd>
 							<dt>license</dt>
 							<dd><p>CECILL-C</p>
@@ -1390,7 +1560,13 @@ image.src = <span class="hljs-string">'/path/to/your/image.jpg'</span>;</code></
 						<a href="_pixano_ai.html#change" class="tsd-kind-icon">change</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="_pixano_ai.html#cropimage" class="tsd-kind-icon">crop<wbr>Image</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="_pixano_ai.html#cxy_wh_2_rect" class="tsd-kind-icon">cxy_<wbr>wh_<wbr>2_rect</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="_pixano_ai.html#generatepoints" class="tsd-kind-icon">generate<wbr>Points</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="_pixano_ai.html#get_axis_aligned_bbox" class="tsd-kind-icon">get_<wbr>axis_<wbr>aligned_<wbr>bbox</a>
@@ -1399,7 +1575,19 @@ image.src = <span class="hljs-string">'/path/to/your/image.jpg'</span>;</code></
 						<a href="_pixano_ai.html#get_subwindow_tracking" class="tsd-kind-icon">get_<wbr>subwindow_<wbr>tracking</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="_pixano_ai.html#isinside" class="tsd-kind-icon">is<wbr>Inside</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="_pixano_ai.html#ismodelcached" class="tsd-kind-icon">is<wbr>Model<wbr>Cached</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="_pixano_ai.html#loadgraphmodel" class="tsd-kind-icon">load<wbr>Graph<wbr>Model</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="_pixano_ai.html#loadimage" class="tsd-kind-icon">load<wbr>Image</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="_pixano_ai.html#logmodelload" class="tsd-kind-icon">log<wbr>Model<wbr>Load</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="_pixano_ai.html#python2round" class="tsd-kind-icon">python2round</a>

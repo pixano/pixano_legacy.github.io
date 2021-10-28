@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>@pixano/core | @pixano - v0.5.16</title>
-	<meta name="description" content="Documentation for @pixano - v0.5.16">
+	<title>@pixano/core | @pixano - v0.5.17</title>
+	<meta name="description" content="Documentation for @pixano - v0.5.17">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">@pixano - v0.5.16</a>
+					<a href="../index.html" class="title">@pixano - v0.5.17</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -139,6 +139,7 @@
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_pixano_core.html#subtractcircle" class="tsd-kind-icon">subtract<wbr>Circle</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_pixano_core.html#swap" class="tsd-kind-icon">swap</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_pixano_core.html#switchtrack" class="tsd-kind-icon">switch<wbr>Track</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_pixano_core.html#track" class="tsd-kind-icon">track</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_pixano_core.html#trileft" class="tsd-kind-icon">tri<wbr>Left</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_pixano_core.html#triright" class="tsd-kind-icon">tri<wbr>Right</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_pixano_core.html#union" class="tsd-kind-icon">union</a></li>
@@ -151,6 +152,7 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_core.html#checkpathexists" class="tsd-kind-icon">check<wbr>Path<wbr>Exists</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_core.html#coloranytohex" class="tsd-kind-icon">color<wbr>Any<wbr>ToHex</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_core.html#coloranytohexnumber" class="tsd-kind-icon">color<wbr>Any<wbr>ToHex<wbr>Number</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_core.html#colortohex" class="tsd-kind-icon">color<wbr>ToHex</a></li>
@@ -314,7 +316,7 @@
 					<div class="tsd-signature tsd-kind-icon">demo<wbr>Styles<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CSSResult</span><span class="tsd-signature-symbol"> = css&#x60;main {display: flex;height: 100%;width: 100%;--mdc-theme-secondary: #79005D;}.right-panel {position: absolute;display: flex;flex-direction: column;right: 0px;top: 0px;bottom: 0px;display: flex;margin: auto;width: auto;}.icon {-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;right: 0px;margin-bottom: 10px;margin-left: 10px;margin-right: 10px;display: flex;margin-top: 10px;height: 24px;width: 24px;z-index: 1;color: black;background: white;fill: var(--mdc-theme-secondary);padding: 10px;border-radius: 50%;cursor: pointer;font-size: 18px;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-o-transition: all 0.5s ease;-ms-transition: all 0.5s ease;transition: all 0.5s ease;}.icon:hover {background: var(--mdc-theme-secondary);fill: white;}svg {overflow: visible;width: inherit;}.icons {height: calc(100% - 44px);padding-top: 60px;flex-wrap: wrap;display: flex;flex-direction: column;align-items: flex-end;}&#x60;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in packages/core/src/style.ts:49</li>
+							<li>Defined in packages/core/src/style.ts:51</li>
 						</ul>
 					</aside>
 				</section>
@@ -374,7 +376,7 @@
 					<div class="tsd-signature tsd-kind-icon">generic<wbr>Styles<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CSSResult</span><span class="tsd-signature-symbol"> = css&#x60;#container {width: 100%;height: 100%;display: flex;flex-direction: column;}[name&#x3D;&quot;slider&quot;] &gt; div {height: 50px;flex: 0 0 50px;display: flex;}playback-control {background: #f9f9f9;color: var(--font-color);}&#x60;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in packages/core/src/style.ts:114</li>
+							<li>Defined in packages/core/src/style.ts:116</li>
 						</ul>
 					</aside>
 				</section>
@@ -559,6 +561,16 @@
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
+					<a name="track" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> track</h3>
+					<div class="tsd-signature tsd-kind-icon">track<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TemplateResult</span><span class="tsd-signature-symbol"> = html&#x60;&lt;svg width&#x3D;&quot;24pt&quot; height&#x3D;&quot;24pt&quot; viewBox&#x3D;&quot;0 0 24 24&quot; version&#x3D;&quot;1.1&quot;&gt;&lt;g&gt;&lt;path style&#x3D;&quot; stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;&quot; d&#x3D;&quot;M 11.054688 0.09375 C 10.960938 0.144531 10.832031 0.261719 10.773438 0.359375 C 10.671875 0.523438 10.664062 0.59375 10.648438 1.335938 L 10.632812 2.136719 L 10.179688 2.210938 C 6.21875 2.898438 2.898438 6.21875 2.210938 10.179688 L 2.136719 10.632812 L 1.335938 10.648438 C 0.59375 10.664062 0.523438 10.671875 0.359375 10.777344 C 0.046875 10.96875 0 11.132812 0 12 C 0 12.867188 0.046875 13.03125 0.359375 13.222656 C 0.523438 13.328125 0.59375 13.335938 1.335938 13.351562 L 2.136719 13.367188 L 2.210938 13.820312 C 2.898438 17.78125 6.21875 21.101562 10.179688 21.789062 L 10.632812 21.863281 L 10.648438 22.664062 C 10.664062 23.40625 10.671875 23.476562 10.777344 23.640625 C 10.96875 23.953125 11.132812 24 12 24 C 12.867188 24 13.03125 23.953125 13.222656 23.640625 C 13.328125 23.476562 13.335938 23.40625 13.351562 22.664062 L 13.367188 21.863281 L 13.820312 21.789062 C 17.78125 21.101562 21.101562 17.78125 21.789062 13.820312 L 21.863281 13.367188 L 22.664062 13.351562 C 23.40625 13.335938 23.476562 13.328125 23.640625 13.222656 C 23.953125 13.03125 24 12.867188 24 12 C 24 11.132812 23.953125 10.96875 23.640625 10.777344 C 23.476562 10.671875 23.40625 10.664062 22.664062 10.648438 L 21.863281 10.632812 L 21.789062 10.179688 C 21.101562 6.21875 17.78125 2.898438 13.820312 2.210938 L 13.367188 2.136719 L 13.351562 1.335938 C 13.335938 0.59375 13.328125 0.523438 13.222656 0.359375 C 13.03125 0.046875 12.867188 0 11.992188 0 C 11.328125 0.00390625 11.203125 0.015625 11.054688 0.09375 Z M 10.640625 5.492188 C 10.640625 6.167969 10.695312 6.382812 10.925781 6.59375 C 11.113281 6.769531 11.277344 6.796875 12 6.796875 C 12.722656 6.796875 12.886719 6.769531 13.074219 6.59375 C 13.304688 6.382812 13.359375 6.167969 13.359375 5.492188 C 13.359375 5.15625 13.375 4.875 13.386719 4.875 C 13.476562 4.875 14.210938 5.085938 14.527344 5.203125 C 16.472656 5.921875 18.078125 7.527344 18.796875 9.472656 C 18.914062 9.789062 19.125 10.523438 19.125 10.613281 C 19.125 10.625 18.84375 10.640625 18.507812 10.640625 C 17.832031 10.640625 17.617188 10.695312 17.40625 10.925781 C 17.230469 11.113281 17.203125 11.277344 17.203125 12 C 17.203125 12.722656 17.230469 12.886719 17.40625 13.074219 C 17.617188 13.304688 17.832031 13.359375 18.507812 13.359375 C 18.84375 13.359375 19.125 13.375 19.125 13.386719 C 19.125 13.402344 19.082031 13.578125 19.03125 13.78125 C 18.375 16.355469 16.355469 18.375 13.785156 19.03125 C 13.578125 19.082031 13.402344 19.125 13.386719 19.125 C 13.375 19.125 13.359375 18.84375 13.359375 18.5 C 13.359375 17.832031 13.304688 17.617188 13.074219 17.40625 C 12.886719 17.230469 12.722656 17.203125 12 17.203125 C 11.277344 17.203125 11.113281 17.230469 10.925781 17.40625 C 10.695312 17.617188 10.640625 17.832031 10.640625 18.5 C 10.640625 18.84375 10.625 19.125 10.613281 19.125 C 10.597656 19.125 10.421875 19.082031 10.214844 19.03125 C 9.449219 18.835938 8.738281 18.523438 8.085938 18.101562 C 6.773438 17.257812 5.699219 15.917969 5.183594 14.492188 C 5.082031 14.203125 4.875 13.46875 4.875 13.386719 C 4.875 13.375 5.15625 13.359375 5.5 13.359375 C 6.167969 13.359375 6.382812 13.304688 6.59375 13.074219 C 6.769531 12.886719 6.796875 12.722656 6.796875 12 C 6.796875 11.277344 6.769531 11.113281 6.59375 10.925781 C 6.382812 10.695312 6.167969 10.640625 5.5 10.640625 C 5.15625 10.640625 4.875 10.625 4.875 10.613281 C 4.875 10.53125 5.082031 9.796875 5.183594 9.507812 C 5.875 7.59375 7.496094 5.949219 9.40625 5.222656 C 9.722656 5.105469 10.46875 4.882812 10.585938 4.878906 C 10.625 4.875 10.640625 5.03125 10.640625 5.492188 Z M 10.640625 5.492188 &quot;/&gt;&lt;path style&#x3D;&quot; stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;&quot; d&#x3D;&quot;M 11.382812 10.46875 C 9.867188 11.105469 10.121094 13.332031 11.738281 13.585938 C 12.617188 13.726562 13.421875 13.167969 13.597656 12.296875 C 13.75 11.574219 13.367188 10.820312 12.703125 10.503906 C 12.328125 10.332031 11.75 10.3125 11.382812 10.46875 Z M 11.382812 10.46875 &quot;/&gt;&lt;/g&gt;&lt;/svg&gt;&#x60;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in packages/core/src/style.ts:48</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="trileft" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> tri<wbr>Left</h3>
 					<div class="tsd-signature tsd-kind-icon">tri<wbr>Left<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TemplateResult</span><span class="tsd-signature-symbol"> = html&#x60;&lt;svg width&#x3D;&quot;24pt&quot; height&#x3D;&quot;24pt&quot; viewBox&#x3D;&quot;0 0 24 24&quot;&gt;&lt;polygon points&#x3D;&quot;0 12, 24 0, 24 24&quot;/&gt;&lt;/svg&gt;&#x60;</span></div>
@@ -631,6 +643,29 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="checkpathexists" class="tsd-anchor"></a>
+					<h3>check<wbr>Path<wbr>Exists</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">check<wbr>Path<wbr>Exists<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in packages/core/src/utils.ts:879</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>path: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="coloranytohex" class="tsd-anchor"></a>
 					<h3>color<wbr>Any<wbr>ToHex</h3>
@@ -1146,7 +1181,7 @@
 							<dd><p>CEA-LIST/DIASI/SIALV/LVA (2019)</p>
 							</dd>
 							<dt>author</dt>
-							<dd><p>CEA-LIST/DIASI/SIALV/LVA <a href="mailto:&#x70;&#105;&#120;&#x61;&#110;&#x6f;&#64;&#x63;&#x65;&#97;&#46;&#x66;&#x72;">&#x70;&#105;&#120;&#x61;&#110;&#x6f;&#64;&#x63;&#x65;&#97;&#46;&#x66;&#x72;</a></p>
+							<dd><p>CEA-LIST/DIASI/SIALV/LVA <a href="mailto:&#x70;&#105;&#x78;&#x61;&#x6e;&#111;&#64;&#99;&#101;&#97;&#x2e;&#x66;&#114;">&#x70;&#105;&#x78;&#x61;&#x6e;&#111;&#64;&#99;&#101;&#97;&#x2e;&#x66;&#114;</a></p>
 							</dd>
 							<dt>license</dt>
 							<dd><p>CECILL-C</p>
@@ -2810,6 +2845,9 @@
 						<a href="_pixano_core.html#switchtrack" class="tsd-kind-icon">switch<wbr>Track</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="_pixano_core.html#track" class="tsd-kind-icon">track</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="_pixano_core.html#trileft" class="tsd-kind-icon">tri<wbr>Left</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
@@ -2829,6 +2867,9 @@
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="_pixano_core.html#zoomout" class="tsd-kind-icon">zoom<wbr>Out</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="_pixano_core.html#checkpathexists" class="tsd-kind-icon">check<wbr>Path<wbr>Exists</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="_pixano_core.html#coloranytohex" class="tsd-kind-icon">color<wbr>Any<wbr>ToHex</a>

@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>PlaybackControl | @pixano - v0.5.16</title>
-	<meta name="description" content="Documentation for @pixano - v0.5.16">
+	<title>PlaybackControl | @pixano - v0.5.17</title>
+	<meta name="description" content="Documentation for @pixano - v0.5.17">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">@pixano - v0.5.16</a>
+					<a href="../index.html" class="title">@pixano - v0.5.17</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -126,6 +126,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_pixano_core.playbackcontrol.html#clienttop" class="tsd-kind-icon">client<wbr>Top</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_pixano_core.playbackcontrol.html#clientwidth" class="tsd-kind-icon">client<wbr>Width</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_pixano_core.playbackcontrol.html#contenteditable" class="tsd-kind-icon">content<wbr>Editable</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_pixano_core.playbackcontrol.html#current" class="tsd-kind-icon">current</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_pixano_core.playbackcontrol.html#dataset" class="tsd-kind-icon">dataset</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_pixano_core.playbackcontrol.html#dir" class="tsd-kind-icon">dir</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_pixano_core.playbackcontrol.html#draggable" class="tsd-kind-icon">draggable</a></li>
@@ -884,6 +885,16 @@
 						<p>Inherited from <a href="_pixano_core.playbackcontrol.html">PlaybackControl</a>.<a href="_pixano_core.playbackcontrol.html#contenteditable">contentEditable</a></p>
 						<ul>
 							<li>Defined in node_modules/typescript/lib/lib.dom.d.ts:5416</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="current" class="tsd-anchor"></a>
+					<h3>current</h3>
+					<div class="tsd-signature tsd-kind-icon">current<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in packages/core/src/playback-control.ts:19</li>
 						</ul>
 					</aside>
 				</section>
@@ -3915,7 +3926,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides UpdatingElement.firstUpdated</p>
 								<ul>
-									<li>Defined in packages/core/src/playback-control.ts:129</li>
+									<li>Defined in packages/core/src/playback-control.ts:127</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -4825,7 +4836,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/core/src/playback-control.ts:124</li>
+									<li>Defined in packages/core/src/playback-control.ts:123</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -5693,10 +5704,17 @@
 									<li>Defined in packages/core/src/playback-control.ts:149</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Set from inside, notify change</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>value: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -5828,7 +5846,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/core/src/playback-control.ts:144</li>
+									<li>Defined in packages/core/src/playback-control.ts:141</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -5845,7 +5863,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/core/src/playback-control.ts:139</li>
+									<li>Defined in packages/core/src/playback-control.ts:137</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -6412,6 +6430,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="_pixano_core.playbackcontrol.html#contenteditable" class="tsd-kind-icon">content<wbr>Editable</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_pixano_core.playbackcontrol.html#current" class="tsd-kind-icon">current</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="_pixano_core.playbackcontrol.html#dataset" class="tsd-kind-icon">dataset</a>

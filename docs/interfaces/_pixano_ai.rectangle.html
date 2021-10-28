@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Rectangle | @pixano - v0.5.16</title>
-	<meta name="description" content="Documentation for @pixano - v0.5.16">
+	<title>Rectangle | @pixano - v0.5.17</title>
+	<meta name="description" content="Documentation for @pixano - v0.5.17">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">@pixano - v0.5.16</a>
+					<a href="../index.html" class="title">@pixano - v0.5.17</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -80,10 +80,10 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_pixano_ai.rectangle.html#height" class="tsd-kind-icon">height</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_pixano_ai.rectangle.html#width" class="tsd-kind-icon">width</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_pixano_ai.rectangle.html#x" class="tsd-kind-icon">x</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_pixano_ai.rectangle.html#y" class="tsd-kind-icon">y</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_pixano_ai.rectangle.html#b" class="tsd-kind-icon">b</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_pixano_ai.rectangle.html#l" class="tsd-kind-icon">l</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_pixano_ai.rectangle.html#r" class="tsd-kind-icon">r</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_pixano_ai.rectangle.html#t" class="tsd-kind-icon">t</a></li>
 							</ul>
 						</section>
 					</div>
@@ -92,9 +92,9 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="height" class="tsd-anchor"></a>
-					<h3>height</h3>
-					<div class="tsd-signature tsd-kind-icon">height<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="b" class="tsd-anchor"></a>
+					<h3>b</h3>
+					<div class="tsd-signature tsd-kind-icon">b<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in packages/ai/src/structures.ts:16</li>
@@ -102,19 +102,9 @@
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="width" class="tsd-anchor"></a>
-					<h3>width</h3>
-					<div class="tsd-signature tsd-kind-icon">width<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in packages/ai/src/structures.ts:15</li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="x" class="tsd-anchor"></a>
-					<h3>x</h3>
-					<div class="tsd-signature tsd-kind-icon">x<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="l" class="tsd-anchor"></a>
+					<h3>l</h3>
+					<div class="tsd-signature tsd-kind-icon">l<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in packages/ai/src/structures.ts:13</li>
@@ -122,9 +112,19 @@
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="y" class="tsd-anchor"></a>
-					<h3>y</h3>
-					<div class="tsd-signature tsd-kind-icon">y<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="r" class="tsd-anchor"></a>
+					<h3>r</h3>
+					<div class="tsd-signature tsd-kind-icon">r<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in packages/ai/src/structures.ts:15</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="t" class="tsd-anchor"></a>
+					<h3>t</h3>
+					<div class="tsd-signature tsd-kind-icon">t<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in packages/ai/src/structures.ts:14</li>
@@ -176,16 +176,16 @@
 						<a href="_pixano_ai.rectangle.html" class="tsd-kind-icon">Rectangle</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_pixano_ai.rectangle.html#height" class="tsd-kind-icon">height</a>
+								<a href="_pixano_ai.rectangle.html#b" class="tsd-kind-icon">b</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_pixano_ai.rectangle.html#width" class="tsd-kind-icon">width</a>
+								<a href="_pixano_ai.rectangle.html#l" class="tsd-kind-icon">l</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_pixano_ai.rectangle.html#x" class="tsd-kind-icon">x</a>
+								<a href="_pixano_ai.rectangle.html#r" class="tsd-kind-icon">r</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_pixano_ai.rectangle.html#y" class="tsd-kind-icon">y</a>
+								<a href="_pixano_ai.rectangle.html#t" class="tsd-kind-icon">t</a>
 							</li>
 						</ul>
 					</li>
@@ -195,7 +195,13 @@
 						<a href="../modules/_pixano_ai.html#change" class="tsd-kind-icon">change</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="../modules/_pixano_ai.html#cropimage" class="tsd-kind-icon">crop<wbr>Image</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="../modules/_pixano_ai.html#cxy_wh_2_rect" class="tsd-kind-icon">cxy_<wbr>wh_<wbr>2_rect</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="../modules/_pixano_ai.html#generatepoints" class="tsd-kind-icon">generate<wbr>Points</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="../modules/_pixano_ai.html#get_axis_aligned_bbox" class="tsd-kind-icon">get_<wbr>axis_<wbr>aligned_<wbr>bbox</a>
@@ -204,7 +210,19 @@
 						<a href="../modules/_pixano_ai.html#get_subwindow_tracking" class="tsd-kind-icon">get_<wbr>subwindow_<wbr>tracking</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="../modules/_pixano_ai.html#isinside" class="tsd-kind-icon">is<wbr>Inside</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="../modules/_pixano_ai.html#ismodelcached" class="tsd-kind-icon">is<wbr>Model<wbr>Cached</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="../modules/_pixano_ai.html#loadgraphmodel" class="tsd-kind-icon">load<wbr>Graph<wbr>Model</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="../modules/_pixano_ai.html#loadimage" class="tsd-kind-icon">load<wbr>Image</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="../modules/_pixano_ai.html#logmodelload" class="tsd-kind-icon">log<wbr>Model<wbr>Load</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="../modules/_pixano_ai.html#python2round" class="tsd-kind-icon">python2round</a>
