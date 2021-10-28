@@ -23,7 +23,7 @@ Try our demo [here](https://pixano.github.io/demo/demo)!
 
 ## Pixano documentation
 
-Documentation of Pixano elements is available [here](https://pixano.github.io/docs/docs).
+Documentation of Pixano elements is available [here](https://pixano.github.io/docs).
 
 
 ## License
