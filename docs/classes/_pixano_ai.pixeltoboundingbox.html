@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>PixelToBoundingBox | @pixano - v0.5.8</title>
-	<meta name="description" content="Documentation for @pixano - v0.5.8">
+	<title>PixelToBoundingBox | @pixano - v0.5.17</title>
+	<meta name="description" content="Documentation for @pixano - v0.5.17">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../docs.html" class="title">@pixano - v0.5.8</a>
+					<a href="../index.html" class="title">@pixano - v0.5.17</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -49,7 +49,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../index.html">Globals</a>
 				</li>
 				<li>
 					<a href="../modules/_pixano_ai.html">@pixano/ai</a>
@@ -95,8 +95,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_pixano_ai.pixeltoboundingbox.html#dispose" class="tsd-kind-icon">dispose</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_pixano_ai.pixeltoboundingbox.html#getscale" class="tsd-kind-icon">get<wbr>Scale</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_pixano_ai.pixeltoboundingbox.html#isinside" class="tsd-kind-icon">is<wbr>Inside</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_pixano_ai.pixeltoboundingbox.html#load" class="tsd-kind-icon">load</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_pixano_ai.pixeltoboundingbox.html#loadmodel" class="tsd-kind-icon">load<wbr>Model</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_pixano_ai.pixeltoboundingbox.html#predict" class="tsd-kind-icon">predict</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_pixano_ai.pixeltoboundingbox.html#scaleroidown" class="tsd-kind-icon">scale<wbr>Roi<wbr>Down</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_pixano_ai.pixeltoboundingbox.html#scaleroiup" class="tsd-kind-icon">scale<wbr>Roi<wbr>Up</a></li>
@@ -114,7 +113,7 @@
 					<div class="tsd-signature tsd-kind-icon">base<wbr>Roi<wbr>Size<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 256</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in packages/ai/src/pixel-to-bounding-box.ts:18</li>
+							<li>Defined in packages/ai/src/pixel-to-bounding-box.ts:26</li>
 						</ul>
 					</aside>
 				</section>
@@ -131,7 +130,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/ai/src/pixel-to-bounding-box.ts:218</li>
+									<li>Defined in packages/ai/src/pixel-to-bounding-box.ts:138</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -155,7 +154,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/ai/src/pixel-to-bounding-box.ts:153</li>
+									<li>Defined in packages/ai/src/pixel-to-bounding-box.ts:121</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -163,49 +162,24 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="isinside" class="tsd-anchor"></a>
-					<h3>is<wbr>Inside</h3>
+					<a name="loadmodel" class="tsd-anchor"></a>
+					<h3>load<wbr>Model</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Inside<span class="tsd-signature-symbol">(</span>p<span class="tsd-signature-symbol">: </span><a href="../interfaces/_pixano_ai.point.html" class="tsd-signature-type">Point</a>, rectangle<span class="tsd-signature-symbol">: </span><a href="../interfaces/_pixano_ai.rectangle.html" class="tsd-signature-type">Rectangle</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">load<wbr>Model<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/ai/src/pixel-to-bounding-box.ts:204</li>
+									<li>Defined in packages/ai/src/pixel-to-bounding-box.ts:31</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Test if a point is inside the given rectangle.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>p: <a href="../interfaces/_pixano_ai.point.html" class="tsd-signature-type">Point</a></h5>
-								</li>
-								<li>
-									<h5>rectangle: <a href="../interfaces/_pixano_ai.rectangle.html" class="tsd-signature-type">Rectangle</a></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> url: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = modelsEnum.v2_Lite</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="load" class="tsd-anchor"></a>
-					<h3>load</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">load<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in packages/ai/src/pixel-to-bounding-box.ts:23</li>
-								</ul>
-							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
@@ -220,7 +194,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/ai/src/pixel-to-bounding-box.ts:39</li>
+									<li>Defined in packages/ai/src/pixel-to-bounding-box.ts:41</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -251,7 +225,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/ai/src/pixel-to-bounding-box.ts:161</li>
+									<li>Defined in packages/ai/src/pixel-to-bounding-box.ts:129</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -268,7 +242,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/ai/src/pixel-to-bounding-box.ts:157</li>
+									<li>Defined in packages/ai/src/pixel-to-bounding-box.ts:125</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -285,7 +259,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/ai/src/pixel-to-bounding-box.ts:149</li>
+									<li>Defined in packages/ai/src/pixel-to-bounding-box.ts:117</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -311,7 +285,7 @@
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+						<a href="../index.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/_pixano_ai.html">@pixano/ai</a>
@@ -347,10 +321,7 @@
 								<a href="_pixano_ai.pixeltoboundingbox.html#getscale" class="tsd-kind-icon">get<wbr>Scale</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_pixano_ai.pixeltoboundingbox.html#isinside" class="tsd-kind-icon">is<wbr>Inside</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_pixano_ai.pixeltoboundingbox.html#load" class="tsd-kind-icon">load</a>
+								<a href="_pixano_ai.pixeltoboundingbox.html#loadmodel" class="tsd-kind-icon">load<wbr>Model</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_pixano_ai.pixeltoboundingbox.html#predict" class="tsd-kind-icon">predict</a>
@@ -384,7 +355,13 @@
 						<a href="../modules/_pixano_ai.html#change" class="tsd-kind-icon">change</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="../modules/_pixano_ai.html#cropimage" class="tsd-kind-icon">crop<wbr>Image</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="../modules/_pixano_ai.html#cxy_wh_2_rect" class="tsd-kind-icon">cxy_<wbr>wh_<wbr>2_rect</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="../modules/_pixano_ai.html#generatepoints" class="tsd-kind-icon">generate<wbr>Points</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="../modules/_pixano_ai.html#get_axis_aligned_bbox" class="tsd-kind-icon">get_<wbr>axis_<wbr>aligned_<wbr>bbox</a>
@@ -393,7 +370,19 @@
 						<a href="../modules/_pixano_ai.html#get_subwindow_tracking" class="tsd-kind-icon">get_<wbr>subwindow_<wbr>tracking</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="../modules/_pixano_ai.html#isinside" class="tsd-kind-icon">is<wbr>Inside</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="../modules/_pixano_ai.html#ismodelcached" class="tsd-kind-icon">is<wbr>Model<wbr>Cached</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="../modules/_pixano_ai.html#loadgraphmodel" class="tsd-kind-icon">load<wbr>Graph<wbr>Model</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="../modules/_pixano_ai.html#loadimage" class="tsd-kind-icon">load<wbr>Image</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="../modules/_pixano_ai.html#logmodelload" class="tsd-kind-icon">log<wbr>Model<wbr>Load</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="../modules/_pixano_ai.html#python2round" class="tsd-kind-icon">python2round</a>
