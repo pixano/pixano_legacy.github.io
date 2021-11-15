@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>@pixano/graphics-2d | @pixano - v0.5.17</title>
-	<meta name="description" content="Documentation for @pixano - v0.5.17">
+	<title>@pixano/graphics-2d | @pixano - v0.6.0</title>
+	<meta name="description" content="Documentation for @pixano - v0.6.0">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">@pixano - v0.5.17</a>
+					<a href="../index.html" class="title">@pixano - v0.6.0</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -591,6 +591,22 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 								<td><code>p</code></td>
 								<td><code>Brighten image</code></td>
 							</tr>
+							<tr>
+								<td><code>Ctrl+C</code></td>
+								<td><code>Copy in clipboard currently selected shapes/instance</code></td>
+							</tr>
+							<tr>
+								<td><code>Ctrl+V</code></td>
+								<td><code>Create new shapes/instance (with new ids) from the clipboard content</code></td>
+							</tr>
+							<tr>
+								<td><code>Ctrl+Space</code></td>
+								<td><code>Toggle labels (hide / show)</code></td>
+							</tr>
+							<tr>
+								<td><code>Tab</code></td>
+								<td><code>Loop throught the scene shapes/instances</code></td>
+							</tr>
 					</tbody></table>
 					<a href="#pxn-canvas-2d-3" id="pxn-canvas-2d-3" style="color: inherit; text-decoration: none;">
 						<h4>pxn-canvas-2d</h4>
@@ -603,10 +619,6 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 							</tr>
 						</thead>
 						<tbody><tr>
-								<td><code>Tab</code></td>
-								<td><code>Loop throught the scene shapes</code></td>
-							</tr>
-							<tr>
 								<td><code>Escape</code></td>
 								<td><code>Unselect shapes</code></td>
 							</tr>
@@ -614,13 +626,24 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 								<td><code>Delete</code></td>
 								<td><code>Delete selected shapes</code></td>
 							</tr>
+					</tbody></table>
+					<a href="#segmentation--controller-mask" id="segmentation--controller-mask" style="color: inherit; text-decoration: none;">
+						<h4>segmentation / controller-mask</h4>
+					</a>
+					<table>
+						<thead>
 							<tr>
-								<td><code>Ctrl+C</code></td>
-								<td><code>Copy in clipboard currently selected shapes</code></td>
+								<th>Key</th>
+								<th>Description</th>
+							</tr>
+						</thead>
+						<tbody><tr>
+								<td><code>Escape</code></td>
+								<td><code>Unselect instance</code></td>
 							</tr>
 							<tr>
-								<td><code>Ctrl+V</code></td>
-								<td><code>Create new shapes (with new ids) from the clipboard content</code></td>
+								<td><code>Delete</code></td>
+								<td><code>Delete selected instance</code></td>
 							</tr>
 					</tbody></table>
 				</div>
@@ -652,13 +675,13 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.graphcreatecontroller.html" class="tsd-kind-icon">Graph<wbr>Create<wbr>Controller</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.graphic.html" class="tsd-kind-icon">Graphic</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.graphicgraph.html" class="tsd-kind-icon">Graphic<wbr>Graph</a></li>
-								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.graphicline.html" class="tsd-kind-icon">Graphic<wbr>Line</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.graphicmask.html" class="tsd-kind-icon">Graphic<wbr>Mask</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.graphicmultipolygon.html" class="tsd-kind-icon">Graphic<wbr>Multi<wbr>Polygon</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.graphicpolygon.html" class="tsd-kind-icon">Graphic<wbr>Polygon</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.graphicrectangle.html" class="tsd-kind-icon">Graphic<wbr>Rectangle</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.graphsupdatecontroller.html" class="tsd-kind-icon">Graphs<wbr>Update<wbr>Controller</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.lockcontroller.html" class="tsd-kind-icon">Lock<wbr>Controller</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.maskcontroller.html" class="tsd-kind-icon">Mask<wbr>Controller</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.polygon.html" class="tsd-kind-icon">Polygon</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.polygoncreatecontroller.html" class="tsd-kind-icon">Polygon<wbr>Create<wbr>Controller</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.polygonseditcontroller.html" class="tsd-kind-icon">Polygons<wbr>Edit<wbr>Controller</a></li>
@@ -764,10 +787,10 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="control_points" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> CONTROL_<wbr>POINTS</h3>
-					<div class="tsd-signature tsd-kind-icon">CONTROL_<wbr>POINTS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>cursor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [{ cursor: &quot;ns-resize&quot;, x: 0.5, y: 0}, // n{ cursor: &quot;ns-resize&quot;, x: 0.5, y: 1}, // s{ cursor: &quot;ew-resize&quot;, x: 1, y: 0.5}, // e{ cursor: &quot;ew-resize&quot;, x: 0, y: 0.5}, // w{ cursor: &quot;nwse-resize&quot;, x: 0, y: 0}, // nw{ cursor: &quot;nesw-resize&quot;, x: 1, y: 0}, // ne{ cursor: &quot;nesw-resize&quot;, x: 0, y: 1}, // sw{ cursor: &quot;nwse-resize&quot;, x: 1, y: 1} // se]</span></div>
+					<div class="tsd-signature tsd-kind-icon">CONTROL_<wbr>POINTS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>cursor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [{ cursor: &quot;ns-resize&quot;, x: 0.5, y: 0 }, // n{ cursor: &quot;ns-resize&quot;, x: 0.5, y: 1 }, // s{ cursor: &quot;ew-resize&quot;, x: 1, y: 0.5 }, // e{ cursor: &quot;ew-resize&quot;, x: 0, y: 0.5 }, // w{ cursor: &quot;nwse-resize&quot;, x: 0, y: 0 }, // nw{ cursor: &quot;nesw-resize&quot;, x: 1, y: 0 }, // ne{ cursor: &quot;nesw-resize&quot;, x: 0, y: 1 }, // sw{ cursor: &quot;nwse-resize&quot;, x: 1, y: 1 } // se]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in packages/graphics-2d/src/graphic.ts:14</li>
+							<li>Defined in packages/graphics-2d/src/graphic.ts:16</li>
 						</ul>
 					</aside>
 				</section>
@@ -1167,7 +1190,7 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/controller-mask.ts:650</li>
+									<li>Defined in packages/graphics-2d/src/controller-mask.ts:636</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1485,7 +1508,7 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/controller-mask.ts:622</li>
+									<li>Defined in packages/graphics-2d/src/controller-mask.ts:608</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1997,7 +2020,7 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 								<li>
 									<h5>shape: <a href="../interfaces/_pixano_graphics_2d.keyshapedata.html" class="tsd-signature-type">KeyShapeData</a></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>the shape  to add</p>
+										<p>the shape    to add</p>
 									</div>
 								</li>
 							</ul>
@@ -2237,7 +2260,7 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/controller-mask.ts:638</li>
+									<li>Defined in packages/graphics-2d/src/controller-mask.ts:624</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2278,7 +2301,7 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
 						<a name="settings.edges" class="tsd-anchor"></a>
 						<h3>edges</h3>
-						<div class="tsd-signature tsd-kind-icon">edges<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [[0,1], [0,2]]</span></div>
+						<div class="tsd-signature tsd-kind-icon">edges<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [[0, 1], [0, 2]]</span></div>
 						<aside class="tsd-sources">
 							<ul>
 								<li>Defined in packages/graphics-2d/src/graphic-graph.ts:36</li>
@@ -2396,9 +2419,6 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 						<a href="../classes/_pixano_graphics_2d.graphicgraph.html" class="tsd-kind-icon">Graphic<wbr>Graph</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/_pixano_graphics_2d.graphicline.html" class="tsd-kind-icon">Graphic<wbr>Line</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="../classes/_pixano_graphics_2d.graphicmask.html" class="tsd-kind-icon">Graphic<wbr>Mask</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
@@ -2415,6 +2435,9 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="../classes/_pixano_graphics_2d.lockcontroller.html" class="tsd-kind-icon">Lock<wbr>Controller</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/_pixano_graphics_2d.maskcontroller.html" class="tsd-kind-icon">Mask<wbr>Controller</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="../classes/_pixano_graphics_2d.polygon.html" class="tsd-kind-icon">Polygon</a>
