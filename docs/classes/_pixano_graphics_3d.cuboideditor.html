@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>CuboidEditor | @pixano - v0.6.0</title>
-	<meta name="description" content="Documentation for @pixano - v0.6.0">
+	<title>CuboidEditor | @pixano - v0.6.1</title>
+	<meta name="description" content="Documentation for @pixano - v0.6.1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">@pixano - v0.6.0</a>
+					<a href="../index.html" class="title">@pixano - v0.6.1</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -161,6 +161,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_pixano_graphics_3d.cuboideditor.html#inputmode" class="tsd-kind-icon">input<wbr>Mode</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_pixano_graphics_3d.cuboideditor.html#isconnected" class="tsd-kind-icon">is<wbr>Connected</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_pixano_graphics_3d.cuboideditor.html#iscontenteditable" class="tsd-kind-icon">is<wbr>Content<wbr>Editable</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_pixano_graphics_3d.cuboideditor.html#keyhandlerbind" class="tsd-kind-icon">key<wbr>Handler<wbr>Bind</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_pixano_graphics_3d.cuboideditor.html#lang" class="tsd-kind-icon">lang</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_pixano_graphics_3d.cuboideditor.html#lastchild" class="tsd-kind-icon">last<wbr>Child</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_pixano_graphics_3d.cuboideditor.html#lastelementchild" class="tsd-kind-icon">last<wbr>Element<wbr>Child</a></li>
@@ -337,13 +338,13 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_pixano_graphics_3d.cuboideditor.html#clonenode" class="tsd-kind-icon">clone<wbr>Node</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_pixano_graphics_3d.cuboideditor.html#closest" class="tsd-kind-icon">closest</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_pixano_graphics_3d.cuboideditor.html#comparedocumentposition" class="tsd-kind-icon">compare<wbr>Document<wbr>Position</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_pixano_graphics_3d.cuboideditor.html#connectedcallback" class="tsd-kind-icon">connected<wbr>Callback</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_pixano_graphics_3d.cuboideditor.html#connectedcallback" class="tsd-kind-icon">connected<wbr>Callback</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_pixano_graphics_3d.cuboideditor.html#contains" class="tsd-kind-icon">contains</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_pixano_graphics_3d.cuboideditor.html#copy" class="tsd-kind-icon">copy</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_pixano_graphics_3d.cuboideditor.html#createrenderroot" class="tsd-kind-icon">create<wbr>Render<wbr>Root</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_pixano_graphics_3d.cuboideditor.html#defaultonkeydown" class="tsd-kind-icon">default<wbr>OnKey<wbr>Down</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_pixano_graphics_3d.cuboideditor.html#destroy" class="tsd-kind-icon">destroy</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_pixano_graphics_3d.cuboideditor.html#disconnectedcallback" class="tsd-kind-icon">disconnected<wbr>Callback</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_pixano_graphics_3d.cuboideditor.html#disconnectedcallback" class="tsd-kind-icon">disconnected<wbr>Callback</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_pixano_graphics_3d.cuboideditor.html#dispatchevent" class="tsd-kind-icon">dispatch<wbr>Event</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_pixano_graphics_3d.cuboideditor.html#display" class="tsd-kind-icon">display</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_pixano_graphics_3d.cuboideditor.html#enableupdating" class="tsd-kind-icon">enable<wbr>Updating</a></li>
@@ -1100,6 +1101,37 @@
 							<li>Defined in node_modules/typescript/lib/lib.dom.d.ts:5418</li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="keyhandlerbind" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> key<wbr>Handler<wbr>Bind</h3>
+					<div class="tsd-signature tsd-kind-icon">key<wbr>Handler<wbr>Bind<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>evt<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> = this.defaultOnKeyDown.bind(this)</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in packages/graphics-3d/src/pxn-cuboid.ts:74</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>evt<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>evt: <span class="tsd-signature-type">any</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="lang" class="tsd-anchor"></a>
@@ -3215,7 +3247,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-3d/src/pxn-cuboid.ts:124</li>
+									<li>Defined in packages/graphics-3d/src/pxn-cuboid.ts:138</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">"perspective"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"orthographic"</span></h4>
@@ -3223,7 +3255,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-3d/src/pxn-cuboid.ts:127</li>
+									<li>Defined in packages/graphics-3d/src/pxn-cuboid.ts:141</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3247,7 +3279,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-3d/src/pxn-cuboid.ts:134</li>
+									<li>Defined in packages/graphics-3d/src/pxn-cuboid.ts:148</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3260,7 +3292,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-3d/src/pxn-cuboid.ts:138</li>
+									<li>Defined in packages/graphics-3d/src/pxn-cuboid.ts:152</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3289,7 +3321,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-3d/src/pxn-cuboid.ts:192</li>
+									<li>Defined in packages/graphics-3d/src/pxn-cuboid.ts:206</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3302,7 +3334,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-3d/src/pxn-cuboid.ts:195</li>
+									<li>Defined in packages/graphics-3d/src/pxn-cuboid.ts:209</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3331,7 +3363,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-3d/src/pxn-cuboid.ts:179</li>
+									<li>Defined in packages/graphics-3d/src/pxn-cuboid.ts:193</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3344,7 +3376,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-3d/src/pxn-cuboid.ts:182</li>
+									<li>Defined in packages/graphics-3d/src/pxn-cuboid.ts:196</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3618,7 +3650,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides GenericDisplay.styles</p>
 								<ul>
-									<li>Defined in packages/graphics-3d/src/pxn-cuboid.ts:84</li>
+									<li>Defined in packages/graphics-3d/src/pxn-cuboid.ts:98</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">CSSResult</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -3672,7 +3704,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-3d/src/pxn-cuboid.ts:212</li>
+									<li>Defined in packages/graphics-3d/src/pxn-cuboid.ts:226</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4189,19 +4221,18 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="connectedcallback" class="tsd-anchor"></a>
 					<h3>connected<wbr>Callback</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">connected<wbr>Callback<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_pixano_core.genericdisplay.html">GenericDisplay</a>.<a href="_pixano_core.genericdisplay.html#connectedcallback">connectedCallback</a></p>
-								<p>Overrides UpdatingElement.connectedCallback</p>
+								<p>Overrides <a href="_pixano_core.genericdisplay.html">GenericDisplay</a>.<a href="_pixano_core.genericdisplay.html#connectedcallback">connectedCallback</a></p>
 								<ul>
-									<li>Defined in node_modules/lit-element/lit-element.d.ts:151</li>
+									<li>Defined in packages/graphics-3d/src/pxn-cuboid.ts:76</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -4247,7 +4278,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-3d/src/pxn-cuboid.ts:221</li>
+									<li>Defined in packages/graphics-3d/src/pxn-cuboid.ts:235</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4296,7 +4327,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-3d/src/pxn-cuboid.ts:249</li>
+									<li>Defined in packages/graphics-3d/src/pxn-cuboid.ts:263</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4327,34 +4358,27 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-3d/src/pxn-cuboid.ts:75</li>
+									<li>Defined in packages/graphics-3d/src/pxn-cuboid.ts:89</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="disconnectedcallback" class="tsd-anchor"></a>
 					<h3>disconnected<wbr>Callback</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">disconnected<wbr>Callback<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_pixano_core.genericdisplay.html">GenericDisplay</a>.<a href="_pixano_core.genericdisplay.html#disconnectedcallback">disconnectedCallback</a></p>
+								<p>Overrides <a href="_pixano_core.genericdisplay.html">GenericDisplay</a>.<a href="_pixano_core.genericdisplay.html#disconnectedcallback">disconnectedCallback</a></p>
 								<ul>
-									<li>Defined in node_modules/lit-element/lib/updating-element.d.ts:305</li>
+									<li>Defined in packages/graphics-3d/src/pxn-cuboid.ts:82</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Allows for <code>super.disconnectedCallback()</code> in extensions while
-										reserving the possibility of making non-breaking feature additions
-									when disconnecting at some point in the future.</p>
-								</div>
-							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -4399,7 +4423,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides GenericDisplay.display</p>
 								<ul>
-									<li>Defined in packages/graphics-3d/src/pxn-cuboid.ts:118</li>
+									<li>Defined in packages/graphics-3d/src/pxn-cuboid.ts:132</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">TemplateResult</span></h4>
@@ -4435,7 +4459,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides GenericDisplay.firstUpdated</p>
 								<ul>
-									<li>Defined in packages/graphics-3d/src/pxn-cuboid.ts:108</li>
+									<li>Defined in packages/graphics-3d/src/pxn-cuboid.ts:122</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -4827,7 +4851,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-3d/src/pxn-cuboid.ts:151</li>
+									<li>Defined in packages/graphics-3d/src/pxn-cuboid.ts:165</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_pixano_graphics_3d.pointcloudplot.html" class="tsd-signature-type">PointCloudPlot</a></h4>
@@ -5399,7 +5423,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-3d/src/pxn-cuboid.ts:230</li>
+									<li>Defined in packages/graphics-3d/src/pxn-cuboid.ts:244</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -6095,7 +6119,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-3d/src/pxn-cuboid.ts:170</li>
+									<li>Defined in packages/graphics-3d/src/pxn-cuboid.ts:184</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_pixano_graphics_3d.cuboid.html" class="tsd-signature-type">Cuboid</a></h4>
@@ -6438,7 +6462,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-3d/src/pxn-cuboid.ts:161</li>
+									<li>Defined in packages/graphics-3d/src/pxn-cuboid.ts:175</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_pixano_graphics_3d.cuboid.html" class="tsd-signature-type">Cuboid</a></h4>
@@ -6521,7 +6545,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_pixano_core.genericdisplay.html">GenericDisplay</a>.<a href="_pixano_core.genericdisplay.html#updated">updated</a></p>
 								<ul>
-									<li>Defined in packages/graphics-3d/src/pxn-cuboid.ts:155</li>
+									<li>Defined in packages/graphics-3d/src/pxn-cuboid.ts:169</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -6992,6 +7016,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="_pixano_graphics_3d.cuboideditor.html#iscontenteditable" class="tsd-kind-icon">is<wbr>Content<wbr>Editable</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="_pixano_graphics_3d.cuboideditor.html#keyhandlerbind" class="tsd-kind-icon">key<wbr>Handler<wbr>Bind</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="_pixano_graphics_3d.cuboideditor.html#lang" class="tsd-kind-icon">lang</a>
@@ -7491,7 +7518,7 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_pixano_graphics_3d.cuboideditor.html#comparedocumentposition" class="tsd-kind-icon">compare<wbr>Document<wbr>Position</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="_pixano_graphics_3d.cuboideditor.html#connectedcallback" class="tsd-kind-icon">connected<wbr>Callback</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
@@ -7509,7 +7536,7 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_pixano_graphics_3d.cuboideditor.html#destroy" class="tsd-kind-icon">destroy</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="_pixano_graphics_3d.cuboideditor.html#disconnectedcallback" class="tsd-kind-icon">disconnected<wbr>Callback</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
@@ -7876,13 +7903,14 @@
 				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
 			</ul>
 			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+			</ul>
+			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
 			</ul>
 		</div>
 	</div>

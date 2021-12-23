@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>PlaybackControl | @pixano - v0.6.0</title>
-	<meta name="description" content="Documentation for @pixano - v0.6.0">
+	<title>PlaybackControl | @pixano - v0.6.1</title>
+	<meta name="description" content="Documentation for @pixano - v0.6.1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">@pixano - v0.6.0</a>
+					<a href="../index.html" class="title">@pixano - v0.6.1</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -309,7 +309,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_pixano_core.playbackcontrol.html#disconnectedcallback" class="tsd-kind-icon">disconnected<wbr>Callback</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_pixano_core.playbackcontrol.html#dispatchevent" class="tsd-kind-icon">dispatch<wbr>Event</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_pixano_core.playbackcontrol.html#enableupdating" class="tsd-kind-icon">enable<wbr>Updating</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_pixano_core.playbackcontrol.html#firstupdated" class="tsd-kind-icon">first<wbr>Updated</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_pixano_core.playbackcontrol.html#firstupdated" class="tsd-kind-icon">first<wbr>Updated</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_pixano_core.playbackcontrol.html#focus" class="tsd-kind-icon">focus</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_pixano_core.playbackcontrol.html#getanimations" class="tsd-kind-icon">get<wbr>Animations</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_pixano_core.playbackcontrol.html#getattribute" class="tsd-kind-icon">get<wbr>Attribute</a></li>
@@ -342,7 +342,6 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_pixano_core.playbackcontrol.html#msgetregioncontent" class="tsd-kind-icon">ms<wbr>Get<wbr>Region<wbr>Content</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_pixano_core.playbackcontrol.html#normalize" class="tsd-kind-icon">normalize</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_pixano_core.playbackcontrol.html#onnavigationkey" class="tsd-kind-icon">on<wbr>Navigation<wbr>Key</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_pixano_core.playbackcontrol.html#onsliderchange" class="tsd-kind-icon">on<wbr>Slider<wbr>Change</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_pixano_core.playbackcontrol.html#onsliderinput" class="tsd-kind-icon">on<wbr>Slider<wbr>Input</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_pixano_core.playbackcontrol.html#performupdate" class="tsd-kind-icon">perform<wbr>Update</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_pixano_core.playbackcontrol.html#prepend" class="tsd-kind-icon">prepend</a></li>
@@ -3160,7 +3159,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/core/src/playback-control.ts:154</li>
+									<li>Defined in packages/core/src/playback-control.ts:140</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Slider</span></h4>
@@ -3915,20 +3914,37 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="firstupdated" class="tsd-anchor"></a>
-					<h3>first<wbr>Updated</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">first<wbr>Updated<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> first<wbr>Updated</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">first<wbr>Updated<span class="tsd-signature-symbol">(</span>_changedProperties<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PropertyValues</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides UpdatingElement.firstUpdated</p>
+								<p>Inherited from <a href="_pixano_core.playbackcontrol.html">PlaybackControl</a>.<a href="_pixano_core.playbackcontrol.html#firstupdated">firstUpdated</a></p>
 								<ul>
-									<li>Defined in packages/core/src/playback-control.ts:127</li>
+									<li>Defined in node_modules/lit-element/lib/updating-element.d.ts:425</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Invoked when the element is first updated. Implement to perform one time
+									work on the element after update.</p>
+								</div>
+								<p>Setting properties inside this method will trigger the element to update
+								again after this update cycle completes.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>_changedProperties: <span class="tsd-signature-type">PropertyValues</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Map of changed properties with old values</p>
+									</div>
+								</li>
+							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -4827,23 +4843,6 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="onsliderchange" class="tsd-anchor"></a>
-					<h3>on<wbr>Slider<wbr>Change</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Slider<wbr>Change<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in packages/core/src/playback-control.ts:123</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="onsliderinput" class="tsd-anchor"></a>
 					<h3>on<wbr>Slider<wbr>Input</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -5333,7 +5332,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_pixano_core.playbackcontrol.html">PlaybackControl</a>.<a href="_pixano_core.playbackcontrol.html#render">render</a></p>
 								<ul>
-									<li>Defined in packages/core/src/playback-control.ts:170</li>
+									<li>Defined in packages/core/src/playback-control.ts:156</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -5701,7 +5700,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/core/src/playback-control.ts:149</li>
+									<li>Defined in packages/core/src/playback-control.ts:135</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -5846,7 +5845,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/core/src/playback-control.ts:141</li>
+									<li>Defined in packages/core/src/playback-control.ts:127</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -5863,7 +5862,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/core/src/playback-control.ts:137</li>
+									<li>Defined in packages/core/src/playback-control.ts:123</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -6004,7 +6003,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_pixano_core.genericdisplay.html">GenericDisplay</a>.<a href="_pixano_core.genericdisplay.html#updated">updated</a></p>
 								<ul>
-									<li>Defined in packages/core/src/playback-control.ts:158</li>
+									<li>Defined in packages/core/src/playback-control.ts:144</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -6950,7 +6949,7 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 								<a href="_pixano_core.playbackcontrol.html#enableupdating" class="tsd-kind-icon">enable<wbr>Updating</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 								<a href="_pixano_core.playbackcontrol.html#firstupdated" class="tsd-kind-icon">first<wbr>Updated</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
@@ -7048,9 +7047,6 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_pixano_core.playbackcontrol.html#onnavigationkey" class="tsd-kind-icon">on<wbr>Navigation<wbr>Key</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_pixano_core.playbackcontrol.html#onsliderchange" class="tsd-kind-icon">on<wbr>Slider<wbr>Change</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_pixano_core.playbackcontrol.html#onsliderinput" class="tsd-kind-icon">on<wbr>Slider<wbr>Input</a>
