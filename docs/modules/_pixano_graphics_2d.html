@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>@pixano/graphics-2d | @pixano - v0.6.1</title>
-	<meta name="description" content="Documentation for @pixano - v0.6.1">
+	<title>@pixano/graphics-2d | @pixano - v0.7.0</title>
+	<meta name="description" content="Documentation for @pixano - v0.7.0">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">@pixano - v0.6.1</a>
+					<a href="../index.html" class="title">@pixano - v0.7.0</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -209,7 +209,7 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 							</tr>
 					</tbody></table>
 					<p>*InteractionMode depends on the element:</p>
-					<pre><code class="language-ts"><span class="hljs-comment">// pxn-rectangle | pxn-polygon | pxn-graph</span>
+					<pre><code class="language-ts"><span class="hljs-comment">// pxn-rectangle | pxn-polygon | pxn-keypoints</span>
 <span class="hljs-keyword">type</span> InteractiveMode =  <span class="hljs-string">'edit'</span> | <span class="hljs-string">'create'</span> | <span class="hljs-string">'none'</span>;
 
 <span class="hljs-comment">// pxn-segmentation</span>
@@ -383,10 +383,10 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 								<td>Scaling factor from the base ROI used by the detector (256) to crop the image from</td>
 							</tr>
 					</tbody></table>
-					<a href="#pxn-graph" id="pxn-graph" style="color: inherit; text-decoration: none;">
-						<h4>pxn-graph</h4>
+					<a href="#pxn-keypoints" id="pxn-keypoints" style="color: inherit; text-decoration: none;">
+						<h4>pxn-keypoints</h4>
 					</a>
-					<p>Note: <code>pxn-graph</code> inherits from <code>pxn-canvas-2d</code> so all properties in <code>pxn-canvas-2d</code> will be available on <code>pxn-graph</code>. Additional properties are available:
+					<p>Note: <code>pxn-keypoints</code> inherits from <code>pxn-canvas-2d</code> so all properties in <code>pxn-canvas-2d</code> will be available on <code>pxn-keypoints</code>. Additional properties are available:
 						| Name                 | Type           | Default  | Description
 						| -------------------- | -------------- | -------- |------------
 					| <code>graphType</code>          | <code>GraphSettings</code>| <code>defaultSkeleton</code>      | Skeleton structure</p>
@@ -700,6 +700,7 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.smartsegmentation.html" class="tsd-kind-icon">Smart<wbr>Segmentation</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.smarttracking.html" class="tsd-kind-icon">Smart<wbr>Tracking</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.tracking.html" class="tsd-kind-icon">Tracking</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.trackinggraph.html" class="tsd-kind-icon">Tracking<wbr>Graph</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_graphics_2d.viewcontrols.html" class="tsd-kind-icon">View<wbr>Controls</a></li>
 							</ul>
 						</section>
@@ -710,7 +711,6 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_pixano_graphics_2d.densepolygon.html" class="tsd-kind-icon">Dense<wbr>Polygon</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_pixano_graphics_2d.geometry.html" class="tsd-kind-icon">Geometry</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_pixano_graphics_2d.igraphsettings.html" class="tsd-kind-icon">IGraph<wbr>Settings</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_pixano_graphics_2d.keyshapedata.html" class="tsd-kind-icon">Key<wbr>Shape<wbr>Data</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_pixano_graphics_2d.shapedata.html" class="tsd-kind-icon">Shape<wbr>Data</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_pixano_graphics_2d.trackdata.html" class="tsd-kind-icon">Track<wbr>Data</a></li>
 							</ul>
@@ -729,13 +729,11 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_graphics_2d.html#arraysmatch" class="tsd-kind-icon">arrays<wbr>Match</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_graphics_2d.html#bounds" class="tsd-kind-icon">bounds</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_graphics_2d.html#bytetohex" class="tsd-kind-icon">byte<wbr>ToHex</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_graphics_2d.html#calcstraightline" class="tsd-kind-icon">calc<wbr>Straight<wbr>Line</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_graphics_2d.html#chunk" class="tsd-kind-icon">chunk</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_graphics_2d.html#colortohex" class="tsd-kind-icon">color<wbr>ToHex</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_graphics_2d.html#colortorgba" class="tsd-kind-icon">color<wbr>ToRGBA</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_graphics_2d.html#convertindextodict" class="tsd-kind-icon">convert<wbr>Index<wbr>ToDict</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_graphics_2d.html#convertshapes" class="tsd-kind-icon">convert<wbr>Shapes</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_graphics_2d.html#copyshape" class="tsd-kind-icon">copy<wbr>Shape</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_graphics_2d.html#datatoshape" class="tsd-kind-icon">data<wbr>ToShape</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_graphics_2d.html#deleteshape" class="tsd-kind-icon">delete<wbr>Shape</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_graphics_2d.html#densifypolygon" class="tsd-kind-icon">densify<wbr>Polygon</a></li>
@@ -747,13 +745,14 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_graphics_2d.html#getdensepolysextrema" class="tsd-kind-icon">get<wbr>Dense<wbr>Polys<wbr>Extrema</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_graphics_2d.html#getkeyshape" class="tsd-kind-icon">get<wbr>Key<wbr>Shape</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_graphics_2d.html#getnewtrackid" class="tsd-kind-icon">get<wbr>New<wbr>Track<wbr>Id</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_graphics_2d.html#getnumkeyshapes" class="tsd-kind-icon">get<wbr>Num<wbr>Key<wbr>Shapes</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_graphics_2d.html#getnumshapes" class="tsd-kind-icon">get<wbr>Num<wbr>Shapes</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_graphics_2d.html#getpixelid" class="tsd-kind-icon">get<wbr>Pixel<wbr>Id</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_graphics_2d.html#getpolygonextrema" class="tsd-kind-icon">get<wbr>Polygon<wbr>Extrema</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_graphics_2d.html#getpolygons" class="tsd-kind-icon">get<wbr>Polygons</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_graphics_2d.html#getshape" class="tsd-kind-icon">get<wbr>Shape</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_graphics_2d.html#hextorgb255" class="tsd-kind-icon">hex<wbr>ToRgb255</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_graphics_2d.html#insertmidnode" class="tsd-kind-icon">insert<wbr>Mid<wbr>Node</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_graphics_2d.html#interpolate" class="tsd-kind-icon">interpolate</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_graphics_2d.html#invertcolor" class="tsd-kind-icon">invert<wbr>Color</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_graphics_2d.html#isclockwise" class="tsd-kind-icon">is<wbr>Clockwise</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_graphics_2d.html#isincludedrect" class="tsd-kind-icon">is<wbr>Included<wbr>Rect</a></li>
@@ -764,12 +763,10 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_graphics_2d.html#removeoraddkeyshape" class="tsd-kind-icon">remove<wbr>OrAdd<wbr>Key<wbr>Shape</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_graphics_2d.html#rgb2hex" class="tsd-kind-icon">rgb2hex</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_graphics_2d.html#rgbtohex" class="tsd-kind-icon">rgb<wbr>ToHex</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_graphics_2d.html#setkeyshape" class="tsd-kind-icon">set<wbr>Key<wbr>Shape</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_graphics_2d.html#simplify" class="tsd-kind-icon">simplify</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_graphics_2d.html#setshape" class="tsd-kind-icon">set<wbr>Shape</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_graphics_2d.html#sortdictbykey" class="tsd-kind-icon">sort<wbr>Dict<wbr>ByKey</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_graphics_2d.html#splittrack" class="tsd-kind-icon">split<wbr>Track</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_graphics_2d.html#switchtrack" class="tsd-kind-icon">switch<wbr>Track</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_graphics_2d.html#switchvisibility" class="tsd-kind-icon">switch<wbr>Visibility</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_graphics_2d.html#unfuseid" class="tsd-kind-icon">unfuse<wbr>Id</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_graphics_2d.html#updatedisplayedselection" class="tsd-kind-icon">update<wbr>Displayed<wbr>Selection</a></li>
 							</ul>
@@ -791,7 +788,7 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 					<div class="tsd-signature tsd-kind-icon">CONTROL_<wbr>POINTS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>cursor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [{ cursor: &quot;ns-resize&quot;, x: 0.5, y: 0 }, // n{ cursor: &quot;ns-resize&quot;, x: 0.5, y: 1 }, // s{ cursor: &quot;ew-resize&quot;, x: 1, y: 0.5 }, // e{ cursor: &quot;ew-resize&quot;, x: 0, y: 0.5 }, // w{ cursor: &quot;nwse-resize&quot;, x: 0, y: 0 }, // nw{ cursor: &quot;nesw-resize&quot;, x: 1, y: 0 }, // ne{ cursor: &quot;nesw-resize&quot;, x: 0, y: 1 }, // sw{ cursor: &quot;nwse-resize&quot;, x: 1, y: 1 } // se]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in packages/graphics-2d/src/graphic.ts:16</li>
+							<li>Defined in packages/graphics-2d/src/graphic.ts:17</li>
 						</ul>
 					</aside>
 				</section>
@@ -821,7 +818,7 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 					<div class="tsd-signature tsd-kind-icon">track<wbr>Colors<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [&#x27;#ff1100&#x27;, &#x27;#ff867d&#x27;, &#x27;#ffe0de&#x27;, &#x27;#a89594&#x27;, &#x27;#ad514c&#x27;, &#x27;#ad0900&#x27;, &#x27;#610500&#x27;, &#x27;#59302e&#x27;, &#x27;#61504f&#x27;,&#x27;#ff9500&#x27;, &#x27;#ffc778&#x27;, &#x27;#ffe0ad&#x27;, &#x27;#b36f00&#x27;, &#x27;#b38d50&#x27;, &#x27;#5e3e0b&#x27;, &#x27;#fffb00&#x27;, &#x27;#8f8d00&#x27;, &#x27;#f2f188&#x27;,&#x27;#6fff00&#x27;, &#x27;#ceffa8&#x27;, &#x27;#3c8a00&#x27;, &#x27;#173600&#x27;, &#x27;#5f8544&#x27;, &#x27;#00ffcc&#x27;, &#x27;#00997a&#x27;, &#x27;#004a3b&#x27;, &#x27;#409483&#x27;,&#x27;#00b7ff&#x27;, &#x27;#0077a6&#x27;, &#x27;#004b69&#x27;, &#x27;#96e1ff&#x27;, &#x27;#3c7f99&#x27;, &#x27;#002aff&#x27;, &#x27;#001891&#x27;, &#x27;#2a387d&#x27;, &#x27;#7a91ff&#x27;,&#x27;#4400ff&#x27;, &#x27;#230085&#x27;, &#x27;#15014d&#x27;, &#x27;#533b96&#x27;, &#x27;#b296ff&#x27;, &#x27;#895eff&#x27;, &#x27;#ff00fb&#x27;, &#x27;#850083&#x27;, &#x27;#360035&#x27;,&#x27;#fc95fb&#x27;, &#x27;#8f278e&#x27;, &#x27;#a86da8&#x27;, &#x27;#873587&#x27;, &#x27;#ff0062&#x27;, &#x27;#bf2e66&#x27;, &#x27;#73002c&#x27;]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in packages/graphics-2d/src/utils-video.ts:314</li>
+							<li>Defined in packages/graphics-2d/src/utils-video.ts:392</li>
 						</ul>
 					</aside>
 				</section>
@@ -864,7 +861,7 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/utils.ts:64</li>
+									<li>Defined in packages/graphics-2d/src/utils.ts:32</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -880,29 +877,6 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="bytetohex" class="tsd-anchor"></a>
-					<h3>byte<wbr>ToHex</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">byte<wbr>ToHex<span class="tsd-signature-symbol">(</span>num<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in packages/graphics-2d/src/utils.ts:44</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>num: <span class="tsd-signature-type">number</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -953,7 +927,7 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/utils.ts:113</li>
+									<li>Defined in packages/graphics-2d/src/utils.ts:81</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -966,52 +940,6 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="colortohex" class="tsd-anchor"></a>
-					<h3>color<wbr>ToHex</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">color<wbr>ToHex<span class="tsd-signature-symbol">(</span>color<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in packages/graphics-2d/src/utils.ts:49</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>color: <span class="tsd-signature-type">string</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="colortorgba" class="tsd-anchor"></a>
-					<h3>color<wbr>ToRGBA</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">color<wbr>ToRGBA<span class="tsd-signature-symbol">(</span>color<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8ClampedArray</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in packages/graphics-2d/src/utils.ts:28</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>color: <span class="tsd-signature-type">string</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Uint8ClampedArray</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1062,7 +990,7 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/utils-video.ts:216</li>
+									<li>Defined in packages/graphics-2d/src/utils-video.ts:294</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1080,6 +1008,40 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_pixano_graphics_2d.shapedata.html" class="tsd-signature-type">ShapeData</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="copyshape" class="tsd-anchor"></a>
+					<h3>copy<wbr>Shape</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">copy<wbr>Shape<span class="tsd-signature-symbol">(</span>track<span class="tsd-signature-symbol">: </span><a href="../interfaces/_pixano_graphics_2d.trackdata.html" class="tsd-signature-type">TrackData</a>, timestamp<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_pixano_graphics_2d.shapedata.html" class="tsd-signature-type">ShapeData</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in packages/graphics-2d/src/utils-video.ts:161</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Cpoy shape from closest key frames bounding boxes</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>track: <a href="../interfaces/_pixano_graphics_2d.trackdata.html" class="tsd-signature-type">TrackData</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the track processed</p>
+									</div>
+								</li>
+								<li>
+									<h5>timestamp: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_pixano_graphics_2d.shapedata.html" class="tsd-signature-type">ShapeData</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1116,31 +1078,19 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/utils-video.ts:128</li>
+									<li>Defined in packages/graphics-2d/src/utils-video.ts:185</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Get shape at a given frame index</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>track: <a href="../interfaces/_pixano_graphics_2d.trackdata.html" class="tsd-signature-type">TrackData</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>the track</p>
-									</div>
 								</li>
 								<li>
 									<h5>fIdx: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>the frame index</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-							<p>true if delete is successfull</p>
 						</li>
 					</ul>
 				</section>
@@ -1295,13 +1245,13 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 					<a name="getclosestframes" class="tsd-anchor"></a>
 					<h3>get<wbr>Closest<wbr>Frames</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Closest<wbr>Frames<span class="tsd-signature-symbol">(</span>track<span class="tsd-signature-symbol">: </span><a href="../interfaces/_pixano_graphics_2d.trackdata.html" class="tsd-signature-type">TrackData</a>, timestamp<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Closest<wbr>Frames<span class="tsd-signature-symbol">(</span>track<span class="tsd-signature-symbol">: </span><a href="../interfaces/_pixano_graphics_2d.trackdata.html" class="tsd-signature-type">TrackData</a>, timestamp<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, key<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/utils-video.ts:64</li>
+									<li>Defined in packages/graphics-2d/src/utils-video.ts:84</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1321,6 +1271,12 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 									<h5>timestamp: <span class="tsd-signature-type">number</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>the frame timestamp</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> key: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = true</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>if the shape is a key shape (by default true)</p>
 									</div>
 								</li>
 							</ul>
@@ -1356,7 +1312,7 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 					<a name="getkeyshape" class="tsd-anchor"></a>
 					<h3>get<wbr>Key<wbr>Shape</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Key<wbr>Shape<span class="tsd-signature-symbol">(</span>track<span class="tsd-signature-symbol">: </span><a href="../interfaces/_pixano_graphics_2d.trackdata.html" class="tsd-signature-type">TrackData</a>, fIdx<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_pixano_graphics_2d.keyshapedata.html" class="tsd-signature-type">KeyShapeData</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Key<wbr>Shape<span class="tsd-signature-symbol">(</span>track<span class="tsd-signature-symbol">: </span><a href="../interfaces/_pixano_graphics_2d.trackdata.html" class="tsd-signature-type">TrackData</a>, fIdx<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_pixano_graphics_2d.shapedata.html" class="tsd-signature-type">ShapeData</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -1385,7 +1341,7 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_pixano_graphics_2d.keyshapedata.html" class="tsd-signature-type">KeyShapeData</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_pixano_graphics_2d.shapedata.html" class="tsd-signature-type">ShapeData</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
 							<p>the key shape if exist, undefined otherwise</p>
 						</li>
 					</ul>
@@ -1400,7 +1356,7 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/utils-video.ts:211</li>
+									<li>Defined in packages/graphics-2d/src/utils-video.ts:289</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1419,16 +1375,16 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="getnumkeyshapes" class="tsd-anchor"></a>
-					<h3>get<wbr>Num<wbr>Key<wbr>Shapes</h3>
+					<a name="getnumshapes" class="tsd-anchor"></a>
+					<h3>get<wbr>Num<wbr>Shapes</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Num<wbr>Key<wbr>Shapes<span class="tsd-signature-symbol">(</span>track<span class="tsd-signature-symbol">: </span><a href="../interfaces/_pixano_graphics_2d.trackdata.html" class="tsd-signature-type">TrackData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Num<wbr>Shapes<span class="tsd-signature-symbol">(</span>track<span class="tsd-signature-symbol">: </span><a href="../interfaces/_pixano_graphics_2d.trackdata.html" class="tsd-signature-type">TrackData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/utils-video.ts:44</li>
+									<li>Defined in packages/graphics-2d/src/utils-video.ts:60</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1446,7 +1402,7 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-							<p>the number of key shapes for this track</p>
+							<p>the number of shapes for this track</p>
 						</li>
 					</ul>
 				</section>
@@ -1544,18 +1500,18 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 					<a name="getshape" class="tsd-anchor"></a>
 					<h3>get<wbr>Shape</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Shape<span class="tsd-signature-symbol">(</span>track<span class="tsd-signature-symbol">: </span><a href="../interfaces/_pixano_graphics_2d.trackdata.html" class="tsd-signature-type">TrackData</a>, timestamp<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>isLast<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>keyshape<span class="tsd-signature-symbol">: </span><a href="../interfaces/_pixano_graphics_2d.keyshapedata.html" class="tsd-signature-type">KeyShapeData</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> }</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Shape<span class="tsd-signature-symbol">(</span>track<span class="tsd-signature-symbol">: </span><a href="../interfaces/_pixano_graphics_2d.trackdata.html" class="tsd-signature-type">TrackData</a>, timestamp<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_pixano_graphics_2d.shapedata.html" class="tsd-signature-type">ShapeData</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/utils-video.ts:85</li>
+									<li>Defined in packages/graphics-2d/src/utils-video.ts:110</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Interpolate shape from closest key frames bounding boxes</p>
+									<p>Get shape at a given frame index</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1563,22 +1519,18 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 								<li>
 									<h5>track: <a href="../interfaces/_pixano_graphics_2d.trackdata.html" class="tsd-signature-type">TrackData</a></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>the track processed</p>
+										<p>the track</p>
 									</div>
 								</li>
 								<li>
 									<h5>timestamp: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the frame index</p>
+									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>isLast<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>keyshape<span class="tsd-signature-symbol">: </span><a href="../interfaces/_pixano_graphics_2d.keyshapedata.html" class="tsd-signature-type">KeyShapeData</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> }</span></h4>
-							<ul class="tsd-parameters">
-								<li class="tsd-parameter">
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> is<wbr>Last<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h5>
-								</li>
-								<li class="tsd-parameter">
-									<h5>keyshape<span class="tsd-signature-symbol">: </span><a href="../interfaces/_pixano_graphics_2d.keyshapedata.html" class="tsd-signature-type">KeyShapeData</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
-								</li>
-							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_pixano_graphics_2d.shapedata.html" class="tsd-signature-type">ShapeData</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h4>
+							<p>the shape if exist, undefined otherwise</p>
 						</li>
 					</ul>
 				</section>
@@ -1625,7 +1577,7 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/utils.ts:86</li>
+									<li>Defined in packages/graphics-2d/src/utils.ts:54</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1653,6 +1605,48 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="interpolate" class="tsd-anchor"></a>
+					<h3>interpolate</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">interpolate<span class="tsd-signature-symbol">(</span>track<span class="tsd-signature-symbol">: </span><a href="../interfaces/_pixano_graphics_2d.trackdata.html" class="tsd-signature-type">TrackData</a>, timestamp<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>isLast<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>shape<span class="tsd-signature-symbol">: </span><a href="../interfaces/_pixano_graphics_2d.shapedata.html" class="tsd-signature-type">ShapeData</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> }</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in packages/graphics-2d/src/utils-video.ts:122</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Interpolate shape from closest key frames bounding boxes</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>track: <a href="../interfaces/_pixano_graphics_2d.trackdata.html" class="tsd-signature-type">TrackData</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the track processed</p>
+									</div>
+								</li>
+								<li>
+									<h5>timestamp: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>isLast<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>shape<span class="tsd-signature-symbol">: </span><a href="../interfaces/_pixano_graphics_2d.shapedata.html" class="tsd-signature-type">ShapeData</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> }</span></h4>
+							<ul class="tsd-parameters">
+								<li class="tsd-parameter">
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> is<wbr>Last<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h5>
+								</li>
+								<li class="tsd-parameter">
+									<h5>shape<span class="tsd-signature-symbol">: </span><a href="../interfaces/_pixano_graphics_2d.shapedata.html" class="tsd-signature-type">ShapeData</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="invertcolor" class="tsd-anchor"></a>
 					<h3>invert<wbr>Color</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
@@ -1662,7 +1656,7 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/utils-video.ts:326</li>
+									<li>Defined in packages/graphics-2d/src/utils-video.ts:404</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1717,7 +1711,7 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/utils.ts:97</li>
+									<li>Defined in packages/graphics-2d/src/utils.ts:65</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1769,7 +1763,7 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/utils-video.ts:54</li>
+									<li>Defined in packages/graphics-2d/src/utils-video.ts:70</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1807,7 +1801,7 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/utils.ts:157</li>
+									<li>Defined in packages/graphics-2d/src/utils.ts:125</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1841,7 +1835,7 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/utils-video.ts:189</li>
+									<li>Defined in packages/graphics-2d/src/utils-video.ts:267</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1903,7 +1897,7 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/utils-video.ts:150</li>
+									<li>Defined in packages/graphics-2d/src/utils-video.ts:206</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1987,21 +1981,21 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="setkeyshape" class="tsd-anchor"></a>
-					<h3>set<wbr>Key<wbr>Shape</h3>
+					<a name="setshape" class="tsd-anchor"></a>
+					<h3>set<wbr>Shape</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Key<wbr>Shape<span class="tsd-signature-symbol">(</span>track<span class="tsd-signature-symbol">: </span><a href="../interfaces/_pixano_graphics_2d.trackdata.html" class="tsd-signature-type">TrackData</a>, fIdx<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, shape<span class="tsd-signature-symbol">: </span><a href="../interfaces/_pixano_graphics_2d.keyshapedata.html" class="tsd-signature-type">KeyShapeData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Shape<span class="tsd-signature-symbol">(</span>track<span class="tsd-signature-symbol">: </span><a href="../interfaces/_pixano_graphics_2d.trackdata.html" class="tsd-signature-type">TrackData</a>, fIdx<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, shape<span class="tsd-signature-symbol">: </span><a href="../interfaces/_pixano_graphics_2d.shapedata.html" class="tsd-signature-type">ShapeData</a>, key<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/utils-video.ts:35</li>
+									<li>Defined in packages/graphics-2d/src/utils-video.ts:45</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Get key shape at a given frame index</p>
+									<p>Set key shape at a given frame index</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2019,55 +2013,19 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 									</div>
 								</li>
 								<li>
-									<h5>shape: <a href="../interfaces/_pixano_graphics_2d.keyshapedata.html" class="tsd-signature-type">KeyShapeData</a></h5>
+									<h5>shape: <a href="../interfaces/_pixano_graphics_2d.shapedata.html" class="tsd-signature-type">ShapeData</a></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>the shape    to add</p>
+										<p>the shape to add</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> key: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = true</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>if the shape is a key shape (by default true)</p>
 									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="simplify" class="tsd-anchor"></a>
-					<h3>simplify</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">simplify<span class="tsd-signature-symbol">(</span>points<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span>, tolerance<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, highestQuality<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in packages/graphics-2d/src/utils.ts:285</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Simplify polygon</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>points: <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Array&lt;[number, number]&gt; input points</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> tolerance: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>number</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> highestQuality: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
-									<div class="tsd-comment tsd-typography">
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -2081,7 +2039,7 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/utils-video.ts:308</li>
+									<li>Defined in packages/graphics-2d/src/utils-video.ts:386</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2123,7 +2081,7 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/utils-video.ts:241</li>
+									<li>Defined in packages/graphics-2d/src/utils-video.ts:317</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2162,7 +2120,7 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages/graphics-2d/src/utils-video.ts:165</li>
+									<li>Defined in packages/graphics-2d/src/utils-video.ts:221</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2191,37 +2149,6 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 								</li>
 								<li>
 									<h5>fIdx: <span class="tsd-signature-type">number</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="switchvisibility" class="tsd-anchor"></a>
-					<h3>switch<wbr>Visibility</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">switch<wbr>Visibility<span class="tsd-signature-symbol">(</span>t<span class="tsd-signature-symbol">: </span><a href="../interfaces/_pixano_graphics_2d.trackdata.html" class="tsd-signature-type">TrackData</a>, tIdx<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in packages/graphics-2d/src/utils-video.ts:276</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Switch visibility of current shape.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>t: <a href="../interfaces/_pixano_graphics_2d.trackdata.html" class="tsd-signature-type">TrackData</a></h5>
-								</li>
-								<li>
-									<h5>tIdx: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -2495,6 +2422,9 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 						<a href="../classes/_pixano_graphics_2d.tracking.html" class="tsd-kind-icon">Tracking</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/_pixano_graphics_2d.trackinggraph.html" class="tsd-kind-icon">Tracking<wbr>Graph</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="../classes/_pixano_graphics_2d.viewcontrols.html" class="tsd-kind-icon">View<wbr>Controls</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
@@ -2508,9 +2438,6 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/_pixano_graphics_2d.igraphsettings.html" class="tsd-kind-icon">IGraph<wbr>Settings</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/_pixano_graphics_2d.keyshapedata.html" class="tsd-kind-icon">Key<wbr>Shape<wbr>Data</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/_pixano_graphics_2d.shapedata.html" class="tsd-kind-icon">Shape<wbr>Data</a>
@@ -2537,25 +2464,19 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 						<a href="_pixano_graphics_2d.html#bounds" class="tsd-kind-icon">bounds</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="_pixano_graphics_2d.html#bytetohex" class="tsd-kind-icon">byte<wbr>ToHex</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="_pixano_graphics_2d.html#calcstraightline" class="tsd-kind-icon">calc<wbr>Straight<wbr>Line</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="_pixano_graphics_2d.html#chunk" class="tsd-kind-icon">chunk</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="_pixano_graphics_2d.html#colortohex" class="tsd-kind-icon">color<wbr>ToHex</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="_pixano_graphics_2d.html#colortorgba" class="tsd-kind-icon">color<wbr>ToRGBA</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="_pixano_graphics_2d.html#convertindextodict" class="tsd-kind-icon">convert<wbr>Index<wbr>ToDict</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="_pixano_graphics_2d.html#convertshapes" class="tsd-kind-icon">convert<wbr>Shapes</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="_pixano_graphics_2d.html#copyshape" class="tsd-kind-icon">copy<wbr>Shape</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="_pixano_graphics_2d.html#datatoshape" class="tsd-kind-icon">data<wbr>ToShape</a>
@@ -2591,7 +2512,7 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 						<a href="_pixano_graphics_2d.html#getnewtrackid" class="tsd-kind-icon">get<wbr>New<wbr>Track<wbr>Id</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="_pixano_graphics_2d.html#getnumkeyshapes" class="tsd-kind-icon">get<wbr>Num<wbr>Key<wbr>Shapes</a>
+						<a href="_pixano_graphics_2d.html#getnumshapes" class="tsd-kind-icon">get<wbr>Num<wbr>Shapes</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="_pixano_graphics_2d.html#getpixelid" class="tsd-kind-icon">get<wbr>Pixel<wbr>Id</a>
@@ -2610,6 +2531,9 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="_pixano_graphics_2d.html#insertmidnode" class="tsd-kind-icon">insert<wbr>Mid<wbr>Node</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="_pixano_graphics_2d.html#interpolate" class="tsd-kind-icon">interpolate</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="_pixano_graphics_2d.html#invertcolor" class="tsd-kind-icon">invert<wbr>Color</a>
@@ -2642,10 +2566,7 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 						<a href="_pixano_graphics_2d.html#rgbtohex" class="tsd-kind-icon">rgb<wbr>ToHex</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="_pixano_graphics_2d.html#setkeyshape" class="tsd-kind-icon">set<wbr>Key<wbr>Shape</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="_pixano_graphics_2d.html#simplify" class="tsd-kind-icon">simplify</a>
+						<a href="_pixano_graphics_2d.html#setshape" class="tsd-kind-icon">set<wbr>Shape</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="_pixano_graphics_2d.html#sortdictbykey" class="tsd-kind-icon">sort<wbr>Dict<wbr>ByKey</a>
@@ -2655,9 +2576,6 @@ customElements.define(<span class="hljs-string">'my-demo-rectangle'</span>, MyDe
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="_pixano_graphics_2d.html#switchtrack" class="tsd-kind-icon">switch<wbr>Track</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="_pixano_graphics_2d.html#switchvisibility" class="tsd-kind-icon">switch<wbr>Visibility</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="_pixano_graphics_2d.html#unfuseid" class="tsd-kind-icon">unfuse<wbr>Id</a>
