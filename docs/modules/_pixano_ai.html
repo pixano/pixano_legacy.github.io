@@ -95,6 +95,7 @@ image.src = <span class="hljs-string">'/path/to/your/image.jpg'</span>;</code></
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_ai.boxsegmentation.html" class="tsd-kind-icon">Box<wbr>Segmentation</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_ai.pixeltoboundingbox.html" class="tsd-kind-icon">Pixel<wbr>ToBounding<wbr>Box</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_ai.pixeltoboundingbox-1.html" class="tsd-kind-icon">Pixel<wbr>ToBounding<wbr>Box</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_pixano_ai.tracker.html" class="tsd-kind-icon">Tracker</a></li>
 							</ul>
 						</section>
@@ -111,11 +112,13 @@ image.src = <span class="hljs-string">'/path/to/your/image.jpg'</span>;</code></
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_ai.html#change" class="tsd-kind-icon">change</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_ai.html#cropimage" class="tsd-kind-icon">crop<wbr>Image</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_ai.html#cropimage-1" class="tsd-kind-icon">crop<wbr>Image</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_ai.html#cxy_wh_2_rect" class="tsd-kind-icon">cxy_<wbr>wh_<wbr>2_rect</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_ai.html#generatepoints" class="tsd-kind-icon">generate<wbr>Points</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_ai.html#get_axis_aligned_bbox" class="tsd-kind-icon">get_<wbr>axis_<wbr>aligned_<wbr>bbox</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_ai.html#get_subwindow_tracking" class="tsd-kind-icon">get_<wbr>subwindow_<wbr>tracking</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_ai.html#isinside" class="tsd-kind-icon">is<wbr>Inside</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_ai.html#isinside-1" class="tsd-kind-icon">is<wbr>Inside</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_ai.html#ismodelcached" class="tsd-kind-icon">is<wbr>Model<wbr>Cached</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_ai.html#loadgraphmodel" class="tsd-kind-icon">load<wbr>Graph<wbr>Model</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_pixano_ai.html#loadimage" class="tsd-kind-icon">load<wbr>Image</a></li>
@@ -172,6 +175,37 @@ image.src = <span class="hljs-string">'/path/to/your/image.jpg'</span>;</code></
 							<aside class="tsd-sources">
 								<ul>
 									<li>Defined in packages/ai/src/pixel-to-bounding-box.ts:168</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Crop an image.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>image: <span class="tsd-signature-type">HTMLImageElement</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">HTMLCanvasElement</span></h5>
+								</li>
+								<li>
+									<h5>roi: <a href="../interfaces/_pixano_ai.rectangle.html" class="tsd-signature-type">Rectangle</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">HTMLCanvasElement</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="cropimage-1" class="tsd-anchor"></a>
+					<h3>crop<wbr>Image</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">crop<wbr>Image<span class="tsd-signature-symbol">(</span>image<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLImageElement</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">HTMLCanvasElement</span>, roi<span class="tsd-signature-symbol">: </span><a href="../interfaces/_pixano_ai.rectangle.html" class="tsd-signature-type">Rectangle</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLCanvasElement</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in packages/ai/src/lapnet.ts:167</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -353,6 +387,37 @@ image.src = <span class="hljs-string">'/path/to/your/image.jpg'</span>;</code></
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="isinside" class="tsd-anchor"></a>
+					<h3>is<wbr>Inside</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Inside<span class="tsd-signature-symbol">(</span>p<span class="tsd-signature-symbol">: </span><a href="../interfaces/_pixano_ai.point.html" class="tsd-signature-type">Point</a>, rect<span class="tsd-signature-symbol">: </span><a href="../interfaces/_pixano_ai.rectangle.html" class="tsd-signature-type">Rectangle</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in packages/ai/src/lapnet.ts:151</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Test if a point is inside the given rectangle.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>p: <a href="../interfaces/_pixano_ai.point.html" class="tsd-signature-type">Point</a></h5>
+								</li>
+								<li>
+									<h5>rect: <a href="../interfaces/_pixano_ai.rectangle.html" class="tsd-signature-type">Rectangle</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="isinside-1" class="tsd-anchor"></a>
 					<h3>is<wbr>Inside</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 						<li class="tsd-signature tsd-kind-icon">is<wbr>Inside<span class="tsd-signature-symbol">(</span>p<span class="tsd-signature-symbol">: </span><a href="../interfaces/_pixano_ai.point.html" class="tsd-signature-type">Point</a>, rect<span class="tsd-signature-symbol">: </span><a href="../interfaces/_pixano_ai.rectangle.html" class="tsd-signature-type">Rectangle</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
@@ -706,7 +771,7 @@ image.src = <span class="hljs-string">'/path/to/your/image.jpg'</span>;</code></
 							<dd><p>CEA-LIST/DIASI/SIALV/LVA (2019)</p>
 							</dd>
 							<dt>author</dt>
-							<dd><p>CEA-LIST/DIASI/SIALV/LVA <a href="mailto:&#x70;&#x69;&#x78;&#x61;&#110;&#x6f;&#x40;&#x63;&#x65;&#x61;&#x2e;&#x66;&#114;">&#x70;&#x69;&#x78;&#x61;&#110;&#x6f;&#x40;&#x63;&#x65;&#x61;&#x2e;&#x66;&#114;</a></p>
+							<dd><p>CEA-LIST/DIASI/SIALV/LVA <a href="mailto:&#112;&#x69;&#x78;&#97;&#x6e;&#111;&#x40;&#99;&#x65;&#97;&#x2e;&#102;&#114;">&#112;&#x69;&#x78;&#97;&#x6e;&#111;&#x40;&#99;&#x65;&#97;&#x2e;&#102;&#114;</a></p>
 							</dd>
 							<dt>license</dt>
 							<dd><p>CECILL-C</p>
@@ -1545,6 +1610,9 @@ image.src = <span class="hljs-string">'/path/to/your/image.jpg'</span>;</code></
 						<a href="../classes/_pixano_ai.pixeltoboundingbox.html" class="tsd-kind-icon">Pixel<wbr>ToBounding<wbr>Box</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/_pixano_ai.pixeltoboundingbox-1.html" class="tsd-kind-icon">Pixel<wbr>ToBounding<wbr>Box</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="../classes/_pixano_ai.tracker.html" class="tsd-kind-icon">Tracker</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
@@ -1563,6 +1631,9 @@ image.src = <span class="hljs-string">'/path/to/your/image.jpg'</span>;</code></
 						<a href="_pixano_ai.html#cropimage" class="tsd-kind-icon">crop<wbr>Image</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="_pixano_ai.html#cropimage-1" class="tsd-kind-icon">crop<wbr>Image</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="_pixano_ai.html#cxy_wh_2_rect" class="tsd-kind-icon">cxy_<wbr>wh_<wbr>2_rect</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
@@ -1576,6 +1647,9 @@ image.src = <span class="hljs-string">'/path/to/your/image.jpg'</span>;</code></
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="_pixano_ai.html#isinside" class="tsd-kind-icon">is<wbr>Inside</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="_pixano_ai.html#isinside-1" class="tsd-kind-icon">is<wbr>Inside</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="_pixano_ai.html#ismodelcached" class="tsd-kind-icon">is<wbr>Model<wbr>Cached</a>
